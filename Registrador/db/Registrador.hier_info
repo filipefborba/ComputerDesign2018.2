@@ -1,0 +1,43 @@
+|Registrador
+entrada[0] => saida[0]~reg0.DATAIN
+entrada[1] => saida[1]~reg0.DATAIN
+entrada[2] => saida[2]~reg0.DATAIN
+entrada[3] => saida[3]~reg0.DATAIN
+entrada[4] => saida[4]~reg0.DATAIN
+entrada[5] => saida[5]~reg0.DATAIN
+entrada[6] => saida[6]~reg0.DATAIN
+entrada[7] => saida[7]~reg0.DATAIN
+enable => saida[7]~reg0.ENA
+enable => saida[6]~reg0.ENA
+enable => saida[5]~reg0.ENA
+enable => saida[4]~reg0.ENA
+enable => saida[3]~reg0.ENA
+enable => saida[2]~reg0.ENA
+enable => saida[1]~reg0.ENA
+enable => saida[0]~reg0.ENA
+clock => saida[0]~reg0.CLK
+clock => saida[1]~reg0.CLK
+clock => saida[2]~reg0.CLK
+clock => saida[3]~reg0.CLK
+clock => saida[4]~reg0.CLK
+clock => saida[5]~reg0.CLK
+clock => saida[6]~reg0.CLK
+clock => saida[7]~reg0.CLK
+reset => saida[0]~reg0.ACLR
+reset => saida[1]~reg0.ACLR
+reset => saida[2]~reg0.ACLR
+reset => saida[3]~reg0.ACLR
+reset => saida[4]~reg0.ACLR
+reset => saida[5]~reg0.ACLR
+reset => saida[6]~reg0.ACLR
+reset => saida[7]~reg0.ACLR
+saida[0] << saida[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] << saida[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] << saida[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] << saida[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] << saida[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] << saida[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] << saida[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+saida[7] << saida[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
