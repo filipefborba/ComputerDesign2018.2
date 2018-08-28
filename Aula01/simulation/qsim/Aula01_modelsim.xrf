@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/borba/Documentos/ComputerDesign/Aula01/Aula01.bdf
+source_file = 1, /home/borba/Documentos/ComputerDesign/Aula01/Waveform.vwf
+source_file = 1, /home/borba/Documentos/ComputerDesign/Aula01/db/Aula01.cbx.xml
+design_name = Aula01
+instance = comp, \OUT~output , OUT~output, Aula01, 1
+instance = comp, \D~input , D~input, Aula01, 1
+instance = comp, \A~input , A~input, Aula01, 1
+instance = comp, \C~input , C~input, Aula01, 1
+instance = comp, \B~input , B~input, Aula01, 1
+instance = comp, \inst7~0 , inst7~0, Aula01, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

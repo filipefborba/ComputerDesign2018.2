@@ -1,0 +1,147 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/borba/Documentos/ComputerDesign/Aula03/simulation/qsim
+Eflipflop
+Z1 w1534444607
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 U]E`hi0:`oKa5cWiFZ>hl3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 7:=`d=[QUY_aUcbj<lC000
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R0
+Z10 8flipflop.vho
+Z11 Fflipflop.vho
+l0
+L79
+VIBb8LDY5d3dS2`dhN>QgY0
+!s100 7[XlIFUfa?jzT6b2eRhP:2
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1534444607
+!i10b 1
+Z14 !s108 1534444607.000000
+Z15 !s90 -work|work|flipflop.vho|
+Z16 !s107 flipflop.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 8 flipflop 0 22 IBb8LDY5d3dS2`dhN>QgY0
+l127
+L95
+VOAS^ngfLgJWHDg8fL8U8P0
+!s100 1KQPgoi<mgU]CQREUcbK[2
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Eflipflop_vhd_vec_tst
+Z19 w1534444605
+R7
+R8
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L31
+V@@lghYQfWCO8ihJ;PJQTz0
+!s100 YW39G9Y2:Jl1<=NA35W_U1
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 1
+R17
+R18
+Aflipflop_arch
+R7
+R8
+Z24 DEx4 work 20 flipflop_vhd_vec_tst 0 22 @@lghYQfWCO8ihJ;PJQTz0
+l48
+L33
+VZYVgZ<QDkjaf3F?f`mGQB2
+!s100 IMB^o@m]J;59<9^2lX7bz0
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 1
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+R0
+R10
+R11
+l0
+L34
+VOgIg9T_BR7joedFDVM>H13
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 OgIg9T_BR7joedFDVM>H13
+l64
+L50
+V`^CmQg<48W[ez[JL_5@Yn2
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
