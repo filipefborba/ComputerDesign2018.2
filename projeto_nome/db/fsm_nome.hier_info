@@ -1,0 +1,19 @@
+|fsm_nome
+y0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+clear => inst6.ACLR
+clear => inst7.ACLR
+clk => inst6.CLK
+clk => inst7.CLK
+Entrada => instAND3.IN1
+Entrada => inst10.IN0
+Entrada => inst1.IN1
+Entrada => inst9.IN0
+y1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= instOR5.DB_MAX_OUTPUT_PORT_TYPE
+y4 <= <GND>
+y5 <= <GND>
+y6 <= <VCC>
+y7 <= <GND>
+
+

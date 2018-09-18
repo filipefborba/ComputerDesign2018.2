@@ -1,0 +1,83 @@
+Archive Project report for fsm_nome
+Tue Sep  4 14:52:38 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Tue Sep  4 14:52:38 2018 ;
+; Revision Name          ; fsm_nome                              ;
+; Top-level Entity Name  ; fsm_nome                              ;
+; Family                 ; Cyclone IV E                          ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info (292036): Thank you for using the Quartus Prime software 30-day evaluation. You have 4 days remaining (until Sep 08, 2018) to use the Quartus Prime software with compilation and simulation support.
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory /home/borba/Documentos/ComputerVision/projeto_nome/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive '/home/borba/Documentos/ComputerVision/projeto_nome/fsm_nome.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'fsm_nome.archive.rpt'
+Info (23030): Evaluation of Tcl script /home/borba/intelFPGA_lite/18.0/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1064 megabytes
+    Info: Processing ended: Tue Sep  4 14:52:38 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------------------------------------------+
+; Files Archived                                                          ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; /home/borba/intelFPGA_lite/18.0/quartus/linux64/assignment_defaults.qdf ;
+; fsm_nome.bdf                                                            ;
+; fsm_nome.qpf                                                            ;
+; fsm_nome.qsf                                                            ;
+; Waveform.vwf                                                            ;
+; Waveform1.vwf                                                           ;
+; Waveform2.vwf                                                           ;
++-------------------------------------------------------------------------+
+
+

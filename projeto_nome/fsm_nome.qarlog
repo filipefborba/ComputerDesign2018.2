@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	/home/borba/Documentos/ComputerVision/projeto_nome/fsm_nome.qarlog
+
+Archive:	/home/borba/Documentos/ComputerVision/projeto_nome/fsm_nome.qar
+Date:		Tue Sep  4 14:52:38 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/home/borba/Documentos/ComputerVision/projeto_nome/Waveform.vwf
+/home/borba/Documentos/ComputerVision/projeto_nome/Waveform1.vwf
+/home/borba/Documentos/ComputerVision/projeto_nome/Waveform2.vwf
+/home/borba/Documentos/ComputerVision/projeto_nome/fsm_nome.bdf
+/home/borba/Documentos/ComputerVision/projeto_nome/fsm_nome.qpf
+/home/borba/Documentos/ComputerVision/projeto_nome/fsm_nome.qsf
+/home/borba/intelFPGA_lite/18.0/quartus/linux64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

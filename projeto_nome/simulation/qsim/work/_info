@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/borba/Documentos/ComputerVision/projeto_nome/simulation/qsim
+vfsm_nome
+Z1 !s110 1536083503
+!i10b 1
+!s100 E@K6KfDj[6D<0_XE05mR>2
+I_^^[gN2;jk^B<aFYnZel71
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1536083502
+Z4 8fsm_nome.vo
+Z5 Ffsm_nome.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1536083503.000000
+Z8 !s107 fsm_nome.vo|
+Z9 !s90 -work|work|fsm_nome.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vfsm_nome_vlg_vec_tst
+R1
+!i10b 1
+!s100 a_iC;KT7<jnD=cR2i^AXf0
+IX27aFLUGVV7dG_Q@E=2AS3
+R2
+R0
+w1536083501
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 YZJNG_9^cQ2`GdLeRT@7R0
+I25kZi2_iMBAz>NzXTe1aV2
+R2
+R0
+R3
+R4
+R5
+L0 372
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
