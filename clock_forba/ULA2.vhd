@@ -5,11 +5,11 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity ULA is
+entity ULA2 is
 
 	generic
 	(
-		DATA_WIDTH : natural := 8
+		DATA_WIDTH : natural := 3 --para entrada ter 4 bits, vai contar ate 9 no maximo
 	);
 
 	port 
@@ -23,7 +23,7 @@ entity ULA is
 
 end entity;
 
-architecture rtl of ULA is
+architecture rtl of ULA2 is
 
 signal zero: std_logic_vector ((DATA_WIDTH-1) downto 0);
 
@@ -36,8 +36,8 @@ zero <= (others => '0');
 	process(a,b,m)
 	begin
 		case m is
-			when "00" => result <= std_logic_vector(signed(a) + signed(b));
-			when "01" => result <= std_logic_vector(signed(a) - signed(b));
+			when "00" => result <= std_logic_vector(unsigned(a) + unsigned(b));
+			when "01" => result <= std_logic_vector(unsigned(a) - unsigned(b));
 			when others => result <= (others => '0');
 		end case;
 		
