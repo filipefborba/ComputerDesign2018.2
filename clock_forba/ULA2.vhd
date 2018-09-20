@@ -9,7 +9,7 @@ entity ULA is
 
 	generic
 	(
-		DATA_WIDTH : natural := 8
+		DATA_WIDTH : natural := 3--(maximo dos valores de entrada eh 9, por fazer por dezena e unidade)
 	);
 
 	port 
@@ -44,6 +44,6 @@ zero <= (others => '0');
 	end process;
 	
 	
-	z <= '1' when result = zero else '0';
+	z <= '1' when result = zero else '0';--flag zero da para fazer um or com os valores da saida e negar
 
 end rtl;

@@ -84,7 +84,7 @@ begin
     Port map (saida7seg => HEX7, dadoHex => auxPasso, apaga => '0', overFlow => '0', negativo => '0');
 
   -- Instacia a maquina de estados:
-  sequenciador : entity work.SM1
+  sequenciador : entity work.ControlUnit
     port map( reset => auxReset, clock => auxClock,
     leituraA => auxLeituraA, leituraB => auxLeituraB,
     controle => controle, passo => auxPasso,

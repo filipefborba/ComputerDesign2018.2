@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity ULA is
     Port ( A :  in std_logic_vector(7 downto 0);
            B :  in std_logic_vector(7 downto 0);
-        Sel: in std_logic_vector(1 downto 0);
+			  Sel: in std_logic_vector(1 downto 0);
            C : out std_logic_vector(7 downto 0);
         overflow: out std_logic
    );
