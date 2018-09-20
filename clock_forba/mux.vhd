@@ -16,9 +16,10 @@ entity Mux is
 	(
 		-- Input ports
 		a	: in  std_logic_vector (LEN - 1 downto 0); --9(um,us)
-		b	: in  std_logic_vector (LEN - 1 downto 0); --6(dm,ds)
+		b	: in  std_logic_vector (LEN - 1 downto 0); --5(dm,ds)
 		c	: in  std_logic_vector (LEN - 1 downto 0); --2(dh)
 		d	: in  std_logic_vector (LEN - 1 downto 0); --4(uh)
+		e	: in  std_logic_vector (LEN - 1 downto 0); --1(soma)
 		sel	: in  std_logic;
 
 		-- Output ports
@@ -28,8 +29,9 @@ end Mux;
 
 architecture arch of Mux is	
 begin
-	output <= a when sel = '00' else
-			  b when sel = '01' else
-			  c when sel = '10' else
-			  d when sel = '11';
+	output <= a when sel = '000' else
+			  b when sel = '001' else
+			  c when sel = '010' else
+			  d when sel = '011' else
+			  e when sel = '100';
 end arch;
