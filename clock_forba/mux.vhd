@@ -15,8 +15,10 @@ entity Mux is
 	port
 	(
 		-- Input ports
-		a	: in  std_logic_vector (LEN - 1 downto 0);
-		b	: in  std_logic_vector (LEN - 1 downto 0);
+		a	: in  std_logic_vector (LEN - 1 downto 0); --9(um,us)
+		b	: in  std_logic_vector (LEN - 1 downto 0); --6(dm,ds)
+		c	: in  std_logic_vector (LEN - 1 downto 0); --2(dh)
+		d	: in  std_logic_vector (LEN - 1 downto 0); --4(uh)
 		sel	: in  std_logic;
 
 		-- Output ports
@@ -24,9 +26,10 @@ entity Mux is
 	);
 end Mux;
 
-architecture arch of Mux is
-	-- Declarations (optional)
-	
+architecture arch of Mux is	
 begin
-	output <= a when sel = '0' else b;
+	output <= a when sel = '00' else
+			  b when sel = '01' else
+			  c when sel = '10' else
+			  d when sel = '11';
 end arch;

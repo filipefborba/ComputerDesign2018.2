@@ -76,9 +76,9 @@ begin
   --  1 = Subtrai
   --  2 = XOR
   --  3 = AND
+
   display6 : entity work.conversorHex7seg
     Port map (saida7seg => HEX6, dadoHex => '0' & '0' & auxFuncaoULA);
-
   -- Indica o estado atual da maquina de estado, em decimal:
   display7 : entity work.conversorHex7seg
     Port map (saida7seg => HEX7, dadoHex => auxPasso, apaga => '0', overFlow => '0', negativo => '0');
