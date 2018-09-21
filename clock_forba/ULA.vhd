@@ -3,12 +3,17 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity ULA is
-    Port ( A :  in std_logic_vector(7 downto 0);
-           B :  in std_logic_vector(7 downto 0);
-			  Sel: in std_logic_vector(1 downto 0);
-           C : out std_logic_vector(7 downto 0);
-        overflow: out std_logic
-   );
+	generic
+	(
+		DATA_WIDTH : natural := 3 --para entrada ter 4 bits, vai contar ate 9 no maximo
+	);
+	
+	port ( A :  in std_logic_vector((DATA_WIDTH-1) downto 0);
+		B :  in std_logic_vector((DATA_WIDTH-1) downto 0);
+		Sel: in std_logic_vector(1 downto 0);
+		C : out std_logic_vector((DATA_WIDTH-1) downto 0);
+		overflow: out std_logic
+	);
 end entity;
 
 architecture comportamento of ULA is

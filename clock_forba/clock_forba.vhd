@@ -8,6 +8,9 @@ entity clock_forba is
 		CLOCK_50 : in STD_LOGIC;
 		KEY: in STD_LOGIC_VECTOR(3 DOWNTO 0);
 		SW: in STD_LOGIC_VECTOR(17 DOWNTO 0);
+		
+		-- Entradas HORAS
+		UN_SEG, DEZ_SEG, UN_MIN, DEZ_MIN, UN_HORA, DEZ_HORA: in STD_LOGIC_VECTOR(3 downto 0);
 
 		-- Saidas (placa)
 		--    LEDR  : out STD_LOGIC_VECTOR(17 DOWNTO 0) := (others => '0');
@@ -18,10 +21,6 @@ end entity;
 
 
 architecture comportamento of clock_forba is
-	signal SaidaUnMinuto : std_logic_vector(3 downto 0);
-	signal SaidaDezMinuto : std_logic_vector(3 downto 0);
-	signal SaidaUnHora : std_logic_vector(3 downto 0);
-	signal SaidaDezHora : std_logic_vector(3 downto 0);
 --	signal loNibble : std_logic_vector(3 downto 0);
 --	signal hiNibble : std_logic_vector(7 downto 4);
 --	signal auxFuncaoULA : std_logic_vector(1 downto 0);
@@ -51,26 +50,40 @@ begin
 --	carregaA => auxCarregaA, carregaB => auxCarregaB,
 --	carregaSaida => auxCarregaSaida, saida => auxSaida      
 --	);
+	FD : entity work.fluxoDados
+	port map (
+	--PORT MAP INCOMPLETO
+	un_segundo_out => UN_SEG, dez_segundo_out => DEZ_SEG,
+	un_minuto_out => UN_MIN, dez_minuto_out => DEZ_MIN,
+	un_hora_out => UN_HORA, dez_hora_out => DEZ_HORA);
 
 	-- Displays e Leds:
 	freqPisca : entity work.divisorGenerico (divisaoGenerica)  generic map (divisor => 25) --(divisaoGenerica) := 2^divisor  
 	port map (clk =>  auxClock, saida_clk => pisca);
 	
+	-- Unidade de Segundo
+	display2 : entity work.conversorHex7seg
+	Port map (saida7seg => HEX2, dadoHex => UN_SEG, apaga => auxOverFlow);
+	
+	-- Dezena de Segundo
+	display3 : entity work.conversorHex7seg
+	Port map (saida7seg => HEX3, dadoHex => DEZ_SEG, apaga => auxOverFlow);
+	
 	-- Unidade de Minuto
 	display4 : entity work.conversorHex7seg
-	Port map (saida7seg => HEX4, dadoHex => auxSaida(3 downto 0), apaga => auxOverFlow);
+	Port map (saida7seg => HEX4, dadoHex => UN_MIN, apaga => auxOverFlow);
 
 	-- Dezena de Minuto
 	display5 : entity work.conversorHex7seg
-	Port map (saida7seg => HEX5, dadoHex => auxSaida(3 downto 0), apaga => auxOverFlow);
+	Port map (saida7seg => HEX5, dadoHex => DEZ_MIN, apaga => auxOverFlow);
 
 	-- Unidade de Hora
 	display6 : entity work.conversorHex7seg
-	Port map (saida7seg => HEX6, dadoHex => auxSaida(3 downto 0), apaga => auxOverFlow);
+	Port map (saida7seg => HEX6, dadoHex => UN_HORA, apaga => auxOverFlow);
 
 	-- Dezena de Hora
 	display7 : entity work.conversorHex7seg
-	Port map (saida7seg => HEX7, dadoHex => auxSaida(3 downto 0), apaga => auxOverFlow);
+	Port map (saida7seg => HEX7, dadoHex => DEZ_HORA, apaga => auxOverFlow);
 	
 	
 	--Instanciar a ControlUnit
