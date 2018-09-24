@@ -1,0 +1,17 @@
+
+State Machine - |clock_forba|ControlUnit:CU|fstate
+Name fstate.nada fstate.mais_dh fstate.mais_uh fstate.cuh_9 fstate.cuh_4 fstate.cdh_2 fstate.mais_dm fstate.cdm fstate.mais_um fstate.cum fstate.mais_ds fstate.cds fstate.mais_us fstate.cus 
+fstate.cus 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+fstate.mais_us 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+fstate.cds 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+fstate.mais_ds 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+fstate.cum 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+fstate.mais_um 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+fstate.cdm 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+fstate.mais_dm 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+fstate.cdh_2 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+fstate.cuh_4 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+fstate.cuh_9 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+fstate.mais_uh 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+fstate.mais_dh 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+fstate.nada 1 0 0 0 0 0 0 0 0 0 0 0 0 1 

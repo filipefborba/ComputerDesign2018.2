@@ -9,7 +9,7 @@ use ieee.std_logic_1164.all;
 entity mux6to1 is
 	generic
 	(
-	LEN : natural := 8 -- Bits in each input
+	LEN : natural := 4 -- Bits in each input
 	);
 	
 	port
@@ -21,19 +21,19 @@ entity mux6to1 is
 		dezena_m	: in  std_logic_vector (LEN - 1 downto 0); 
 		unidade_h	: in  std_logic_vector (LEN - 1 downto 0);
 		dezena_h	: in  std_logic_vector (LEN - 1 downto 0);
-		sel	: in  std_logic;
+		sel	: in  std_logic_vector (2 downto 0);
 
 		-- Output ports
 		output	: out std_logic_vector (LEN - 1 downto 0)
 	);
-end Mux;
+end entity;
 
 architecture arch of mux6to1 is	
 begin
-	output <= unidade_s when sel = '000' else
-			  dezena_s when sel = '001' else
-			  unidade_m when sel = '010' else
-			  dezena_m when sel = '011' else
-			  unidade_h when sel = '100' else
-			  dezena_h when sel = '101';
+	output <= unidade_s when sel = "000" else
+			  dezena_s when sel = "001" else
+			  unidade_m when sel = "010" else
+			  dezena_m when sel = "011" else
+			  unidade_h when sel = "100" else
+			  dezena_h when sel = "101";
 end arch;
