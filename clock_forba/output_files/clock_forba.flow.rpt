@@ -1,5 +1,5 @@
 Flow report for clock_forba
-Mon Sep 24 19:13:38 2018
+Mon Sep 24 19:45:21 2018
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Sep 24 19:13:38 2018       ;
+; Flow Status                        ; Successful - Mon Sep 24 19:45:21 2018       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; clock_forba                                 ;
 ; Top-level Entity Name              ; clock_forba                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
+; Total logic elements               ; 0 / 114,480 ( 0 % )                         ;
+;     Total combinational functions  ; 0 / 114,480 ( 0 % )                         ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 80                                          ;
+; Total pins                         ; 80 / 529 ( 15 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/24/2018 19:13:18 ;
+; Start date & time ; 09/24/2018 19:43:26 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; clock_forba         ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110073157944050.153782719812736        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 110073157944050.153782900613569        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -98,8 +98,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 970 MB              ; 00:00:39                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:39                           ;
+; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 968 MB              ; 00:00:40                           ;
+; Fitter               ; 00:00:22     ; 1.0                     ; 1423 MB             ; 00:00:18                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 833 MB              ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:20     ; 1.0                     ; 888 MB              ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1065 MB             ; 00:00:01                           ;
+; Total                ; 00:01:20     ; --                      ; --                  ; 00:01:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,6 +113,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
 +----------------------+------------------+----------------+------------+----------------+
 ; Analysis & Synthesis ; borba            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; Fitter               ; borba            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; Assembler            ; borba            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; Timing Analyzer      ; borba            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; EDA Netlist Writer   ; borba            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
 
 
@@ -116,6 +124,10 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off clock_forba -c clock_forba
+quartus_fit --read_settings_files=off --write_settings_files=off clock_forba -c clock_forba
+quartus_asm --read_settings_files=off --write_settings_files=off clock_forba -c clock_forba
+quartus_sta clock_forba -c clock_forba
+quartus_eda --read_settings_files=off --write_settings_files=off clock_forba -c clock_forba
 
 
 

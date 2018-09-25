@@ -38,7 +38,7 @@ begin
 	FD : entity work.fluxoDados
 	port map (
 	selectFuncaoULA => auxSelectFuncaoULA,
-	selectTempo => auxSelectTempo,
+	selectTempo => auxSelectTempo,2
 	selectConstante => auxSelectConstante,
 	carregaSaida => auxCarregaSaida,
 	clk => auxClock, rst => auxReset, Z => auxZ,
@@ -137,6 +137,7 @@ begin
 	--Estado 4: controle(15) = 1 (valor decimal = 32768) = auxCarregaSaida;
 
 	auxClock <= CLOCK_50;
+
 --	UN_SEG <= AUXUN_SEG;
 --	DEZ_SEG <= AUXDEZ_SEG;
 --	
