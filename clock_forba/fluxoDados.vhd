@@ -24,7 +24,14 @@ architecture simples of fluxoDados is
 	signal auxUM_atual, auxDM_atual: std_logic_vector(3 downto 0);
 	signal auxUH_atual, auxDH_atual: std_logic_vector(3 downto 0);
 	
+	constant um : std_logic_vector(3 downto 0) := "0001";
+	constant dois : std_logic_vector(3 downto 0) := "0010";
+	constant quatro : std_logic_vector(3 downto 0) := "0100";
+	constant cinco : std_logic_vector(3 downto 0) := "0101";
+	constant nove : std_logic_vector(3 downto 0) := "1001";
+	
 	signal saidaMuxTempo, saidaMuxConstante, saidaULA: std_logic_vector(3 downto 0);
+	
 begin
 	muxTempo: entity work.mux6to1
 		port map (unidade_s => auxUS_atual, dezena_s => auxDS_atual,
@@ -33,7 +40,8 @@ begin
 		sel => selectTempo, output => saidaMuxTempo);
 
 	muxConstante: entity work.mux5to1
-		port map (sel_2 => selectConstante, output => saidaMuxConstante);
+		port map (A => um, B => dois, C => quatro, D => cinco, E => nove,
+		sel => selectConstante, q => saidaMuxConstante);
 		
 	ULA: entity work.ULA
 		port map (A => saidaMuxTempo, B => saidaMuxConstante,

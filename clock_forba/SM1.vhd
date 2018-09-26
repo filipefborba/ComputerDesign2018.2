@@ -20,10 +20,10 @@ USE ieee.std_logic_1164.all;
 
 ENTITY SM1 IS
     PORT (
-        reset : IN STD_LOGIC := '0';
+        reset : IN STD_LOGIC;
         clock : IN STD_LOGIC;
-        Z : IN STD_LOGIC := '0';
-        vai_nada : IN STD_LOGIC := '0';
+        Z : IN STD_LOGIC;
+        vai_nada : IN STD_LOGIC := '1';
         proximo : IN STD_LOGIC := '0';
         enable : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
         selectTempo : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -317,17 +317,6 @@ BEGIN
                         reg_fstate <= nada;
                     END IF;
 						  
-						  zeraProximo <= '1';
-
-                    enable <= "000000";
-
-                    selectFuncaoULA <= '0';
-
-                    selectConstante <= "000";
-
-                    selectTempo <= "000";
-
-                    resetReg <= "000000";
                 WHEN OTHERS => 
                     enable <= "XXXXXX";
                     selectTempo <= "XXX";

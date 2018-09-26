@@ -9,27 +9,20 @@ entity clock_forba is
 		KEY: in STD_LOGIC_VECTOR(3 DOWNTO 0);
 		SW: in STD_LOGIC_VECTOR(17 DOWNTO 0);
 		
-		-- Entradas HORAS
-		--UN_SEG, DEZ_SEG, UN_MIN, DEZ_MIN, UN_HORA, DEZ_HORA: in STD_LOGIC_VECTOR(3 downto 0);
-
-		-- Saidas (placa)
-		--    LEDR  : out STD_LOGIC_VECTOR(17 DOWNTO 0) := (others => '0');
-		--    LEDG  : out STD_LOGIC_VECTOR(8 DOWNTO 0) := (others => '0');
 		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT STD_LOGIC_VECTOR(6 downto 0)
 	);
 end entity;
 
 
 architecture comportamento of clock_forba is	
-	signal auxClock, auxclk_1seg : std_logic := '0';
-	signal auxReset : std_logic := '0';
+	signal auxClock, auxclk_1seg : std_logic;
 	signal auxSelectFuncaoULA: std_logic;
 	signal auxSelectTempo:  std_logic_vector (2 downto 0);
 	signal auxSelectConstante: std_logic_vector (2 downto 0);
 	signal auxCarregaSaida: std_logic_vector(5 downto 0);
 	signal auxResetReg: std_logic_vector(5 downto 0);
-	signal auxZ, auxZteste: std_logic := '0';
-	signal resetEstado : std_logic := '0';
+	signal auxZ: std_logic;
+	signal resetEstado : std_logic;
 	signal proximoEstado : std_logic := '0';
 	signal auxvai_nada : std_logic := '1';
 	signal AUXUN_SEG, AUXDEZ_SEG, AUXUN_MIN, AUXDEZ_MIN, AUXUN_HORA, AUXDEZ_HORA: std_logic_vector(3 downto 0);
@@ -63,10 +56,10 @@ begin
 		zeraProximo => auxZeraProximo);
 
 	display0 : entity work.conversorHex7seg
-	Port map (saida7seg => HEX0, dadoHex => AUXUN_SEG, apaga => '1');
+	Port map (saida7seg => HEX0, dadoHex => '0' & '0' & '0' & auxZ);
 	
 	display1 : entity work.conversorHex7seg
-	Port map (saida7seg => HEX1, dadoHex => AUXUN_SEG, apaga => '1');
+	Port map (saida7seg => HEX1, dadoHex => '0' & '0' & '0' & auxCarregaSaida(0));
 	
 	-- Unidade de Segundo
 	display2 : entity work.conversorHex7seg
@@ -90,7 +83,7 @@ begin
 
 	-- Dezena de Hora
 	display7 : entity work.conversorHex7seg
-	Port map (saida7seg => HEX7, dadoHex => AUXDEZ_HORA);
+	Port map (saida7seg => HEX7, dadoHex => '0' & '0' & '0' & resetEstado);
 	
 	--Clock de 1 seg
 	clock_1seg: entity work.clock_50_to_1s
@@ -114,12 +107,13 @@ begin
 	-- Botoes da Placa
 --	auxLeituraA <= not(KEY(3)); --  Pressionando a tecla 3
 --	auxZteste <= not(KEY(2)); --  Pressionando a tecla 2
-	resetEstado <= not(KEY(1)); --  Pressionando a tecla 1
+ resetEstado <= '1'; --  Pressionando a tecla 1
 --	auxResetReg <= "11111" & not(KEY(0)); --  Pressionando a tecla 0
 	--  Pressionando a tecla 3, carrega o valor definido nas chaves para a entrada A da ULA;
 	--  Pressionando a tecla 2, carrega o valor definido nas chaves para a entrada B da ULA;
 	--  Pressionando a tecla 1, reinicia a maquina de estados para o estado 1;
 	--  Pressionando a tecla 0, faz um hard reset em todos os registradores.
 	auxClock <= CLOCK_50;
+	auxvai_nada <= '1';
 
 end architecture;

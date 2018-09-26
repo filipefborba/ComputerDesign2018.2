@@ -29,11 +29,20 @@ entity mux6to1 is
 end entity;
 
 architecture arch of mux6to1 is	
+
 begin
-	output <= unidade_s when sel = "000" else
-			  dezena_s when sel = "001" else
-			  unidade_m when sel = "010" else
-			  dezena_m when sel = "011" else
-			  unidade_h when sel = "100" else
-			  dezena_h when sel = "101";
-end arch;
+
+	process(sel)
+	begin
+		 case sel is
+			  when "000" => output <= unidade_s;
+			  when "001" => output <= dezena_s;
+			  when "010" => output <= unidade_m;
+			  when "011" => output <= dezena_m;
+			  when "100" => output <= unidade_h;
+			  when "101" => output <= dezena_h;
+			  when others => report "unreachable" severity failure;
+		 end case;
+	end process;
+	
+end architecture;
