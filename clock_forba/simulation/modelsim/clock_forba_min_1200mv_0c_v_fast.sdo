@@ -1,4 +1,4 @@
-// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
 // Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
@@ -29,10 +29,10 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "clock_forba")
-  (DATE "09/24/2018 19:45:21")
+  (DATE "09/25/2018 16:33:41")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
-  (VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition")
+  (VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition")
   (DIVIDER .)
   (TIMESCALE 1 ps)
 

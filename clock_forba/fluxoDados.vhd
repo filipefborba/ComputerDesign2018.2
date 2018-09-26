@@ -8,7 +8,8 @@ entity fluxoDados is
         selectTempo:  in std_logic_vector (2 downto 0);
         selectConstante:  in std_logic_vector (2 downto 0);
         carregaSaida: in std_logic_vector(5 downto 0);
-		  clk, rst:  in std_logic;
+		  rst: in std_logic_vector(5 downto 0);
+		  clk:  in std_logic;
 		  
 		  -- Saidas para os displays de 7 segmentos
 		  un_segundo_atual, dez_segundo_atual: out std_logic_vector(3 downto 0);
@@ -23,11 +24,11 @@ architecture simples of fluxoDados is
 	signal un_minuto_prox, dez_minuto_prox: std_logic_vector(3 downto 0);
 	signal un_hora_prox, dez_hora_prox: std_logic_vector(3 downto 0);
 	
-	signal auxun_segundo_atual, auxdez_segundo_atual: std_logic_vector(3 downto 0) := "0000";
-	signal auxun_minuto_atual, auxdez_minuto_atual: std_logic_vector(3 downto 0) := "0000";
-	signal auxun_hora_atual, auxdez_hora_atual: std_logic_vector(3 downto 0) := "0000";
+	signal auxun_segundo_atual, auxdez_segundo_atual: std_logic_vector(3 downto 0);
+	signal auxun_minuto_atual, auxdez_minuto_atual: std_logic_vector(3 downto 0);
+	signal auxun_hora_atual, auxdez_hora_atual: std_logic_vector(3 downto 0);
 	
-	signal saidaMuxTempo, saidaMuxConstante, saidaULA: std_logic_vector(3 downto 0) := "0000";
+	signal saidaMuxTempo, saidaMuxConstante, saidaULA: std_logic_vector(3 downto 0);
 begin
 	muxTempo: entity work.mux6to1
 		port map (unidade_s => auxun_segundo_atual, dezena_s => auxdez_segundo_atual,
@@ -35,7 +36,7 @@ begin
 		unidade_h => auxun_hora_atual, dezena_h => auxdez_hora_atual,
 		sel => selectTempo,
 		output => saidaMuxTempo);
-	
+
 	muxConstante: entity work.mux5to1
 		port map (sel_2 => selectConstante, output => saidaMuxConstante);
 		
@@ -47,27 +48,27 @@ begin
 	un_segundo_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
 						port map (DIN => un_segundo_prox, DOUT => un_segundo_atual,
-							ENABLE => carregaSaida(0), CLK => clk, RST => rst);
+							ENABLE => carregaSaida(0), CLK => clk, RST => rst(0));
 	dez_segundo_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
 						port map (DIN => dez_segundo_prox, DOUT => dez_segundo_atual,
-							ENABLE => carregaSaida(1), CLK => clk, RST => rst);
+							ENABLE => carregaSaida(1), CLK => clk, RST => rst(1));
 	un_minuto_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
 						port map (DIN => un_minuto_prox, DOUT => un_minuto_atual,
-							ENABLE => carregaSaida(2), CLK => clk, RST => rst);
+							ENABLE => carregaSaida(2), CLK => clk, RST => rst(2));
 	dez_minuto_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
 						port map (DIN => dez_minuto_prox, DOUT => dez_minuto_atual,
-							ENABLE => carregaSaida(3), CLK => clk, RST => rst);
+							ENABLE => carregaSaida(3), CLK => clk, RST => rst(3));
 	un_hora_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
 						port map (DIN => un_hora_prox, DOUT => un_hora_atual,
-							ENABLE => carregaSaida(4), CLK => clk, RST => rst);
+							ENABLE => carregaSaida(4), CLK => clk, RST => rst(4));
 	dez_hora_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
 						port map (DIN => dez_hora_prox, DOUT => dez_hora_atual,
-							ENABLE => carregaSaida(5), CLK => clk, RST => rst);
+							ENABLE => carregaSaida(5), CLK => clk, RST => rst(5));
 							
 	auxun_segundo_atual <= un_segundo_atual;
 	auxdez_segundo_atual <= dez_segundo_atual;

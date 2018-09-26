@@ -84,7 +84,7 @@ BEGIN
                         reg_fstate <= nada;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
-                        reg_fstate <= mais_us;
+                        reg_fstate <= nada;
                     END IF;
 
                     enable <= "000001";
@@ -120,7 +120,7 @@ BEGIN
                         reg_fstate <= nada;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
-                        reg_fstate <= mais_ds;
+                        reg_fstate <= nada;
                     END IF;
 
                     enable <= "000010";
@@ -156,7 +156,7 @@ BEGIN
                         reg_fstate <= nada;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
-                        reg_fstate <= mais_um;
+                        reg_fstate <= nada;
                     END IF;
 
                     enable <= "000100";
@@ -192,7 +192,7 @@ BEGIN
                         reg_fstate <= nada;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
-                        reg_fstate <= mais_dm;
+                        reg_fstate <= nada;
                     END IF;
 
                     enable <= "001000";
@@ -264,7 +264,7 @@ BEGIN
                         reg_fstate <= nada;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
-                        reg_fstate <= mais_uh;
+                        reg_fstate <= nada;
                     END IF;
 
                     enable <= "010000";
@@ -281,7 +281,7 @@ BEGIN
                         reg_fstate <= nada;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
-                        reg_fstate <= mais_dh;
+                        reg_fstate <= nada;
                     END IF;
 
                     enable <= "100000";
