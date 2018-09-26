@@ -33,6 +33,8 @@ architecture comportamento of clock_forba is
 	signal proximoEstado : std_logic := '0';
 	signal auxvai_nada : std_logic := '1';
 	signal AUXUN_SEG, AUXDEZ_SEG, AUXUN_MIN, AUXDEZ_MIN, AUXUN_HORA, AUXDEZ_HORA: std_logic_vector(3 downto 0);
+	signal BotaoTeste: std_logic;
+	signal auxZeraProximo: std_logic;
 		
 begin
 	FD : entity work.fluxoDados
@@ -41,7 +43,7 @@ begin
 		selectTempo => auxSelectTempo,
 		selectConstante => auxSelectConstante,
 		carregaSaida => auxCarregaSaida,
-		clk => auxClock, rst => auxResetReg, Z => auxZ,
+		clk => CLOCK_50, rst => auxResetReg, Z => auxZ,
 		US_atual => AUXUN_SEG, DS_atual => AUXDEZ_SEG,
 		UM_atual => AUXUN_MIN, DM_atual => AUXDEZ_MIN,
 		UH_atual => AUXUN_HORA, DH_atual => AUXDEZ_HORA);
@@ -49,7 +51,7 @@ begin
 	CU : entity work.SM1
 	port map (
 		reset => resetEstado,
-		clock => auxClock,
+		clock => CLOCK_50,
 		Z => auxZ,
 		vai_nada => auxvai_nada,
 		proximo => proximoEstado,
@@ -57,7 +59,8 @@ begin
 		selectTempo => auxSelectTempo,
 		selectConstante => auxSelectConstante,
 		selectFuncaoULA => auxSelectFuncaoULA,
-		resetReg => auxResetReg);
+		resetReg => auxResetReg,
+		zeraProximo => auxZeraProximo);
 
 	display0 : entity work.conversorHex7seg
 	Port map (saida7seg => HEX0, dadoHex => AUXUN_SEG, apaga => '1');
@@ -93,20 +96,30 @@ begin
 	clock_1seg: entity work.clock_50_to_1s
    port map (clk_50 => CLOCK_50, clk_1s => auxclk_1seg);
 	
---	detectorSub0: entity work.edgeDetector(bordaSubida) 
---	port map (clk => CLOCK_50, entrada => auxclk_1seg, saida => proximoEstado);
+--	process(auxclk_1seg)
+--	begin
+--		if(rising_edge(auxclk_1seg)) then
+--			proximoEstado <= '1';
+--		end if;
+--		if(auxZeraProximo = '1') then
+--			proximoEstado <= '0';
+--		end if;
+--	end process;
+--	
+	detectorSub0: entity work.edgeDetector(bordaSubida) 
+	port map (clk => CLOCK_50, entrada => auxclk_1seg, saida => proximoEstado);
+--	
 	
 
 	-- Botoes da Placa
 --	auxLeituraA <= not(KEY(3)); --  Pressionando a tecla 3
 --	auxZteste <= not(KEY(2)); --  Pressionando a tecla 2
---	resetEstado <= not(KEY(1)); --  Pressionando a tecla 1
--- AUXUN_SEGteste <= not(KEY(0)); --  Pressionando a tecla 0
+	resetEstado <= not(KEY(1)); --  Pressionando a tecla 1
+--	auxResetReg <= "11111" & not(KEY(0)); --  Pressionando a tecla 0
 	--  Pressionando a tecla 3, carrega o valor definido nas chaves para a entrada A da ULA;
 	--  Pressionando a tecla 2, carrega o valor definido nas chaves para a entrada B da ULA;
 	--  Pressionando a tecla 1, reinicia a maquina de estados para o estado 1;
 	--  Pressionando a tecla 0, faz um hard reset em todos os registradores.
-
 	auxClock <= CLOCK_50;
 
 end architecture;

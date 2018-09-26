@@ -29,7 +29,8 @@ ENTITY SM1 IS
         selectTempo : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
         selectConstante : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
         selectFuncaoULA : OUT STD_LOGIC;
-        resetReg : OUT STD_LOGIC_VECTOR(5 DOWNTO 0)
+        resetReg : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
+		  zeraProximo : out std_logic
     );
 END SM1;
 
@@ -62,9 +63,9 @@ BEGIN
             resetReg <= "000000";
             CASE fstate IS
                 WHEN cus =>
-                    IF (NOT((Z = '1'))) THEN
+                    IF (NOT(Z = '1')) THEN
                         reg_fstate <= mais_us;
-                    ELSIF ((Z = '1')) THEN
+                    ELSIF (((Z = '1'))) THEN
                         reg_fstate <= cds;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
@@ -80,6 +81,7 @@ BEGIN
                     selectTempo <= "000";
 
                     resetReg <= "000001";
+						  zeraProximo <= '0';
                 WHEN mais_us =>
                     IF ((vai_nada = '1')) THEN
                         reg_fstate <= nada;
@@ -97,10 +99,11 @@ BEGIN
                     selectTempo <= "000";
 
                     resetReg <= "000000";
+						  zeraProximo <= '1';
                 WHEN cds =>
-                    IF (NOT((Z = '1'))) THEN
+                    IF (NOT(Z = '1')) THEN
                         reg_fstate <= mais_ds;
-                    ELSIF ((Z = '1')) THEN
+                    ELSIF (((Z = '1'))) THEN
                         reg_fstate <= cum;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
@@ -116,6 +119,7 @@ BEGIN
                     selectTempo <= "001";
 
                     resetReg <= "000010";
+						  zeraProximo <= '0';
                 WHEN mais_ds =>
                     IF ((vai_nada = '1')) THEN
                         reg_fstate <= nada;
@@ -133,6 +137,7 @@ BEGIN
                     selectTempo <= "001";
 
                     resetReg <= "000000";
+						  zeraProximo <= '1';
                 WHEN cum =>
                     IF (NOT((Z = '1'))) THEN
                         reg_fstate <= mais_um;
@@ -152,6 +157,7 @@ BEGIN
                     selectTempo <= "010";
 
                     resetReg <= "000100";
+						  zeraProximo <= '0';
                 WHEN mais_um =>
                     IF ((vai_nada = '1')) THEN
                         reg_fstate <= nada;
@@ -169,6 +175,7 @@ BEGIN
                     selectTempo <= "010";
 
                     resetReg <= "000000";
+						  zeraProximo <= '1';
                 WHEN cdm =>
                     IF ((Z = '1')) THEN
                         reg_fstate <= cdh_2;
@@ -188,6 +195,7 @@ BEGIN
                     selectTempo <= "011";
 
                     resetReg <= "001000";
+						  zeraProximo <= '0';
                 WHEN mais_dm =>
                     IF ((vai_nada = '1')) THEN
                         reg_fstate <= nada;
@@ -205,6 +213,7 @@ BEGIN
                     selectTempo <= "011";
 
                     resetReg <= "000000";
+						  zeraProximo <= '1';
                 WHEN cdh_2 =>
                     IF (NOT((Z = '1'))) THEN
                         reg_fstate <= cuh_9;
@@ -224,6 +233,7 @@ BEGIN
                     selectTempo <= "101";
 
                     resetReg <= "000000";
+						  zeraProximo <= '0';
                 WHEN cuh_4 =>
                     IF (NOT((Z = '1'))) THEN
                         reg_fstate <= mais_uh;
@@ -241,6 +251,7 @@ BEGIN
                     selectTempo <= "100";
 
                     resetReg <= "110000";
+						  zeraProximo <= '0';
                 WHEN cuh_9 =>
                     IF (NOT((Z = '1'))) THEN
                         reg_fstate <= mais_uh;
@@ -260,6 +271,7 @@ BEGIN
                     selectTempo <= "100";
 
                     resetReg <= "010000";
+						  zeraProximo <= '0';
                 WHEN mais_uh =>
                     IF ((vai_nada = '1')) THEN
                         reg_fstate <= nada;
@@ -277,6 +289,7 @@ BEGIN
                     selectTempo <= "100";
 
                     resetReg <= "000000";
+						  zeraProximo <= '1';
                 WHEN mais_dh =>
                     IF ((vai_nada = '1')) THEN
                         reg_fstate <= nada;
@@ -294,13 +307,17 @@ BEGIN
                     selectTempo <= "101";
 
                     resetReg <= "000000";
+						  zeraProximo <= '1';
                 WHEN nada =>
+						  
                     IF ((proximo = '1')) THEN
                         reg_fstate <= cus;
                     -- Inserting 'else' block to prevent latch inference
                     ELSE
                         reg_fstate <= nada;
                     END IF;
+						  
+						  zeraProximo <= '1';
 
                     enable <= "000000";
 

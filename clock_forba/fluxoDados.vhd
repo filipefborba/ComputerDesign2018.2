@@ -20,10 +20,6 @@ entity fluxoDados is
 end entity;
 
 architecture simples of fluxoDados is
-	signal US_prox, DS_prox: std_logic_vector(3 downto 0);
-	signal UM_prox, DM_prox: std_logic_vector(3 downto 0);
-	signal UH_prox, DH_prox: std_logic_vector(3 downto 0);
-	
 	signal auxUS_atual, auxDS_atual: std_logic_vector(3 downto 0);
 	signal auxUM_atual, auxDM_atual: std_logic_vector(3 downto 0);
 	signal auxUH_atual, auxDH_atual: std_logic_vector(3 downto 0);
@@ -46,28 +42,28 @@ begin
 
 	un_segundo_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => US_prox, DOUT => US_atual,
-							ENABLE => carregaSaida(0), CLK => clk, RST => rst(0));
+						port map (DIN => saidaULA, DOUT => US_atual,
+							ENABLE => carregaSaida(0), CLK => clk, RST => (rst(0) and Z));
 	dez_segundo_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => DS_prox, DOUT => DS_atual,
-							ENABLE => carregaSaida(1), CLK => clk, RST => rst(1));
+						port map (DIN => saidaULA, DOUT => DS_atual,
+							ENABLE => carregaSaida(1), CLK => clk, RST => (rst(1) and Z));
 	un_minuto_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => UM_prox, DOUT => UM_atual,
-							ENABLE => carregaSaida(2), CLK => clk, RST => rst(2));
+						port map (DIN => saidaULA, DOUT => UM_atual,
+							ENABLE => carregaSaida(2), CLK => clk, RST => (rst(2) and Z));
 	dez_minuto_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => DM_prox, DOUT => DM_atual,
-							ENABLE => carregaSaida(3), CLK => clk, RST => rst(3));
+						port map (DIN => saidaULA, DOUT => DM_atual,
+							ENABLE => carregaSaida(3), CLK => clk, RST => (rst(3) and Z));
 	un_hora_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => UH_prox, DOUT => UH_atual,
-							ENABLE => carregaSaida(4), CLK => clk, RST => rst(4));
+						port map (DIN => saidaULA, DOUT => UH_atual,
+							ENABLE => carregaSaida(4), CLK => clk, RST => (rst(4) and Z));
 	dez_hora_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => DH_prox, DOUT => DH_atual,
-							ENABLE => carregaSaida(5), CLK => clk, RST => rst(5));
+						port map (DIN => saidaULA, DOUT => DH_atual,
+							ENABLE => carregaSaida(5), CLK => clk, RST => (rst(5) and Z));
 							
 	auxUS_atual <= US_atual;
 	auxDS_atual <= DS_atual;
