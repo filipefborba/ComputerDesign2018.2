@@ -1,5 +1,5 @@
 
-State Machine - |clock_forba|ControlUnit:CU|fstate
+State Machine - |clock_forba|SM1:CU|fstate
 Name fstate.nada fstate.mais_dh fstate.mais_uh fstate.cuh_9 fstate.cuh_4 fstate.cdh_2 fstate.mais_dm fstate.cdm fstate.mais_um fstate.cum fstate.mais_ds fstate.cds fstate.mais_us fstate.cus 
 fstate.cus 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 fstate.mais_us 0 0 0 0 0 0 0 0 0 0 0 0 1 1 

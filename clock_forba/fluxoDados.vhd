@@ -12,68 +12,71 @@ entity fluxoDados is
 		  clk:  in std_logic;
 		  
 		  -- Saidas para os displays de 7 segmentos
-		  un_segundo_atual, dez_segundo_atual: out std_logic_vector(3 downto 0);
-		  un_minuto_atual, dez_minuto_atual: out std_logic_vector(3 downto 0);
-		  un_hora_atual, dez_hora_atual: out std_logic_vector(3 downto 0);
+		  US_atual, DS_atual: out std_logic_vector(3 downto 0);
+		  UM_atual, DM_atual: out std_logic_vector(3 downto 0);
+		  UH_atual, DH_atual: out std_logic_vector(3 downto 0);
 		  Z: out std_logic
    );
 end entity;
 
 architecture simples of fluxoDados is
-	signal un_segundo_prox, dez_segundo_prox: std_logic_vector(3 downto 0);
-	signal un_minuto_prox, dez_minuto_prox: std_logic_vector(3 downto 0);
-	signal un_hora_prox, dez_hora_prox: std_logic_vector(3 downto 0);
+	signal US_prox, DS_prox: std_logic_vector(3 downto 0);
+	signal UM_prox, DM_prox: std_logic_vector(3 downto 0);
+	signal UH_prox, DH_prox: std_logic_vector(3 downto 0);
 	
-	signal auxun_segundo_atual, auxdez_segundo_atual: std_logic_vector(3 downto 0);
-	signal auxun_minuto_atual, auxdez_minuto_atual: std_logic_vector(3 downto 0);
-	signal auxun_hora_atual, auxdez_hora_atual: std_logic_vector(3 downto 0);
+	signal auxUS_atual, auxDS_atual: std_logic_vector(3 downto 0);
+	signal auxUM_atual, auxDM_atual: std_logic_vector(3 downto 0);
+	signal auxUH_atual, auxDH_atual: std_logic_vector(3 downto 0);
 	
 	signal saidaMuxTempo, saidaMuxConstante, saidaULA: std_logic_vector(3 downto 0);
 begin
 	muxTempo: entity work.mux6to1
-		port map (unidade_s => auxun_segundo_atual, dezena_s => auxdez_segundo_atual,
-		unidade_m => auxun_minuto_atual, dezena_m => auxdez_minuto_atual,
-		unidade_h => auxun_hora_atual, dezena_h => auxdez_hora_atual,
-		sel => selectTempo,
-		output => saidaMuxTempo);
+		port map (unidade_s => auxUS_atual, dezena_s => auxDS_atual,
+		unidade_m => auxUM_atual, dezena_m => auxDM_atual,
+		unidade_h => auxUH_atual, dezena_h => auxDH_atual,
+		sel => selectTempo, output => saidaMuxTempo);
 
 	muxConstante: entity work.mux5to1
 		port map (sel_2 => selectConstante, output => saidaMuxConstante);
 		
 	ULA: entity work.ULA
 		port map (A => saidaMuxTempo, B => saidaMuxConstante,
-		Sel => selectFuncaoULA, result => saidaULA, z_ula => Z
+		Sel => '0' & selectFuncaoULA, C => saidaULA
 	);
 
 	un_segundo_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => un_segundo_prox, DOUT => un_segundo_atual,
+						port map (DIN => US_prox, DOUT => US_atual,
 							ENABLE => carregaSaida(0), CLK => clk, RST => rst(0));
 	dez_segundo_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => dez_segundo_prox, DOUT => dez_segundo_atual,
+						port map (DIN => DS_prox, DOUT => DS_atual,
 							ENABLE => carregaSaida(1), CLK => clk, RST => rst(1));
 	un_minuto_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => un_minuto_prox, DOUT => un_minuto_atual,
+						port map (DIN => UM_prox, DOUT => UM_atual,
 							ENABLE => carregaSaida(2), CLK => clk, RST => rst(2));
 	dez_minuto_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => dez_minuto_prox, DOUT => dez_minuto_atual,
+						port map (DIN => DM_prox, DOUT => DM_atual,
 							ENABLE => carregaSaida(3), CLK => clk, RST => rst(3));
 	un_hora_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => un_hora_prox, DOUT => un_hora_atual,
+						port map (DIN => UH_prox, DOUT => UH_atual,
 							ENABLE => carregaSaida(4), CLK => clk, RST => rst(4));
 	dez_hora_reg: entity work.registradorGenerico 
 						generic map (larguraDados => 4)
-						port map (DIN => dez_hora_prox, DOUT => dez_hora_atual,
+						port map (DIN => DH_prox, DOUT => DH_atual,
 							ENABLE => carregaSaida(5), CLK => clk, RST => rst(5));
 							
-	auxun_segundo_atual <= un_segundo_atual;
-	auxdez_segundo_atual <= dez_segundo_atual;
-	auxun_minuto_atual <= un_minuto_atual;
-	auxdez_minuto_atual <= dez_minuto_atual;
-	auxun_hora_atual <= un_hora_atual;
-	auxdez_hora_atual <= dez_hora_atual;
+	auxUS_atual <= US_atual;
+	auxDS_atual <= DS_atual;
+	auxUM_atual <= UM_atual;
+	auxDM_atual <= DM_atual;
+	auxUH_atual <= UH_atual;
+	auxDH_atual <= DH_atual;
+	US_PROX_TESTE <= US_prox;
+	
+	Z <= NOT(saidaULA(3) OR saidaULA(2) OR saidaULA(1) OR saidaULA(0));
+	
 end architecture;

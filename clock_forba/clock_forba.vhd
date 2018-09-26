@@ -8,7 +8,6 @@ entity clock_forba is
 		CLOCK_50 : in STD_LOGIC;
 		KEY: in STD_LOGIC_VECTOR(3 DOWNTO 0);
 		SW: in STD_LOGIC_VECTOR(17 DOWNTO 0);
-		proximoClock: in STD_LOGIC;
 		
 		-- Entradas HORAS
 		--UN_SEG, DEZ_SEG, UN_MIN, DEZ_MIN, UN_HORA, DEZ_HORA: in STD_LOGIC_VECTOR(3 downto 0);
@@ -22,20 +21,18 @@ end entity;
 
 
 architecture comportamento of clock_forba is
-	signal auxOverFlow : std_logic := '0';
 	signal auxClock, auxclk_1seg : std_logic := '0';
 	signal auxReset : std_logic := '0';
-	signal pisca : std_logic := '0';
 	signal auxSelectFuncaoULA: std_logic;
 	signal auxSelectTempo:  std_logic_vector (2 downto 0);
 	signal auxSelectConstante: std_logic_vector (2 downto 0);
 	signal auxCarregaSaida: std_logic_vector(5 downto 0);
 	signal auxResetReg: std_logic_vector(5 downto 0);
-	signal auxZ: std_logic := '0';
+	signal auxZ, auxZteste: std_logic := '0';
 	signal auxProximoClock: std_logic;
 	signal resetEstado : std_logic := '0';
 	signal proximoEstado : std_logic;
-	signal AUXUN_SEG, AUXUN_SEGteste, AUXDEZ_SEG, AUXUN_MIN, AUXDEZ_MIN, AUXUN_HORA, AUXDEZ_HORA: std_logic_vector(3 downto 0);
+	signal AUXUN_SEG, AUXDEZ_SEG, AUXUN_MIN, AUXDEZ_MIN, AUXUN_HORA, AUXDEZ_HORA: std_logic_vector(3 downto 0);
 		
 begin
 	FD : entity work.fluxoDados
@@ -45,11 +42,11 @@ begin
 		selectConstante => auxSelectConstante,
 		carregaSaida => auxCarregaSaida,
 		clk => auxClock, rst => auxResetReg, Z => auxZ,
-		un_segundo_atual => AUXUN_SEG, dez_segundo_atual => AUXDEZ_SEG,
-		un_minuto_atual => AUXUN_MIN, dez_minuto_atual => AUXDEZ_MIN,
-		un_hora_atual => AUXUN_HORA, dez_hora_atual => AUXDEZ_HORA);
+		US_atual => AUXUN_SEG, DS_atual => AUXDEZ_SEG,
+		UM_atual => AUXUN_MIN, DM_atual => AUXDEZ_MIN,
+		UH_atual => AUXUN_HORA, DH_atual => AUXDEZ_HORA);
 	
-	CU : entity work.ControlUnit
+	CU : entity work.SM1
 	port map (
 		reset => resetEstado,
 		clock => auxClock,
