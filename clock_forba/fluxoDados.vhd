@@ -75,7 +75,6 @@ begin
 	auxDM_atual <= DM_atual;
 	auxUH_atual <= UH_atual;
 	auxDH_atual <= DH_atual;
-	US_PROX_TESTE <= US_prox;
 	
 	Z <= NOT(saidaULA(3) OR saidaULA(2) OR saidaULA(1) OR saidaULA(0));
 	

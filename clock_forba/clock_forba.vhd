@@ -20,7 +20,7 @@ entity clock_forba is
 end entity;
 
 
-architecture comportamento of clock_forba is
+architecture comportamento of clock_forba is	
 	signal auxClock, auxclk_1seg : std_logic := '0';
 	signal auxReset : std_logic := '0';
 	signal auxSelectFuncaoULA: std_logic;
@@ -29,9 +29,9 @@ architecture comportamento of clock_forba is
 	signal auxCarregaSaida: std_logic_vector(5 downto 0);
 	signal auxResetReg: std_logic_vector(5 downto 0);
 	signal auxZ, auxZteste: std_logic := '0';
-	signal auxProximoClock: std_logic;
 	signal resetEstado : std_logic := '0';
-	signal proximoEstado : std_logic;
+	signal proximoEstado : std_logic := '0';
+	signal auxvai_nada : std_logic := '1';
 	signal AUXUN_SEG, AUXDEZ_SEG, AUXUN_MIN, AUXDEZ_MIN, AUXUN_HORA, AUXDEZ_HORA: std_logic_vector(3 downto 0);
 		
 begin
@@ -51,6 +51,7 @@ begin
 		reset => resetEstado,
 		clock => auxClock,
 		Z => auxZ,
+		vai_nada => auxvai_nada,
 		proximo => proximoEstado,
 		enable => auxCarregaSaida,
 		selectTempo => auxSelectTempo,
@@ -92,8 +93,8 @@ begin
 	clock_1seg: entity work.clock_50_to_1s
    port map (clk_50 => CLOCK_50, clk_1s => auxclk_1seg);
 	
-	detectorSub0: entity work.edgeDetector(bordaSubida) 
-	port map (clk => CLOCK_50, entrada => auxclk_1seg, saida => proximoEstado);
+--	detectorSub0: entity work.edgeDetector(bordaSubida) 
+--	port map (clk => CLOCK_50, entrada => auxclk_1seg, saida => proximoEstado);
 	
 
 	-- Botoes da Placa
