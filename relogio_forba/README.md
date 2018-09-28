@@ -41,5 +41,7 @@ Figura 3 - Máquina de Estados do nosso projeto.
 
 ## Dificuldades do Projeto
 A primeira dificuldade surgiu na criação da própria máquina de estados. A primeira versão dela foi feito com base em um rascunho que tínhamos feito em aula, porém ela não satisfazia todas as condições das casas decimais do relógio. Por exemplo, havia a mudança da dezena da hora para o próximo estado tanto quanto o conjunto dezena-unidade da hora era 23 como 19, e isso causou uma certa dificuldade.
+
 A segunda dificuldade que enfrentamos foi um pouco mais técnica uma vez que não conseguiamos transferir o código do Quartus para a placa Cyclone. A transferência por algum motivo não funcionava no sistema operacional Linux, por isso optamos por continuar o desenvolvimento do projeto no Windows.
+
 A terceira e principal dificuldade foi um problema no sinal reset que estava saindo da máquina de estado no estado errado. Na nossa lógica, resetamos a casa decimal abaixo quando era feita a comparação na ALU com uma constante escolhida e o Z da saída resultava em 1. Mas o que deveria ser feito seria resetar a casa decimal abaixo quando aumentássemos a de cima (se somamos um na dezena de segundo, a unidade de segundo deveria voltar a ser 0 por exemplo).
