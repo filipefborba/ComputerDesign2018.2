@@ -35,7 +35,8 @@ Nossa unidade de controle será explicada na próxima sessão.
 Figura 2 - Fluxo de Dados do nosso projeto.
 
 ## Máquina de Estados
-Nossa Unidade de Controle é dada por uma Máquina de Estados.
+Nossa Unidade de Controle é dada por uma Máquina de Estados, representada na Figura 3.
+A nossa máquina se inicia no Nada, onde espera o primeiro clock mudar o sinal Proximo para 1, com isso, ele vai para o estado cus, que é responsável por comparar a unidade de segundos por 9, caso o resultado desta comparação(subtração do valor do registrador por 9) resultar em 0, alterando o sinal Z para 1, ele irá comparar a dezena de segundo por 5, caso contrário, vai para o estado mais_us que soma um no registrador da unidade de segundo e muda o sinal proximo para 0 e vai para o estado Nada novamente. Depois ele segue a máquina de estado por completo. Mudando um pouco o raciocínio ao chegar na comparação das horas, neste caso, verificamos a dezena da hora se for 2, assim, evitamos um problema que iria ocorrer caso comparacemos a unidade da hora por 3 antes de somar a dezena da hora......................
 ![Maquina de Estados](https://i.imgur.com/KPPrZpd.jpg)
 Figura 3 - Máquina de Estados do nosso projeto.
 
