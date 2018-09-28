@@ -18,7 +18,7 @@ Projeto de um relógio para FPGA feito em VHDL.
 - Guilherme Graicer
 
 ## Modo de Usar
-Para utilizar o relógio, basta abrir o arquivo relogio_forba.qaf em seu Intel Quartus Software e compilar o código. Feito isso, é necessário mandar o código para a placa através da interface Programmer do Quartus.
+Para utilizar o relógio, basta abrir o arquivo relogio_forba.qar em seu Intel Quartus Software e compilar o código. Feito isso, é necessário mandar o código para a placa através da interface Programmer do Quartus.
 
 O relógio iniciará em 00:00:00, cabendo ao usuário ajustá-lo para o horário correto. Para tanto, são utilizadas as chaves SW(0) para ajuste de segundo, SW(1) para ajuste de minuto e SW(2) para ajuste de hora. Essas chaves estão indicadas na figura abaixo. Além disso, caso o usuário queira parar o relógio, basta segurar o KEY(1). Caso queira resetar o relógio, basta apertar o KEY(0).
 
