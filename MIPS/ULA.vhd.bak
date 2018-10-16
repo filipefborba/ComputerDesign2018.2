@@ -8,13 +8,13 @@ use ieee.std_logic_1164.all;
 -- SIGNED and UNSIGNED types, and relevant functions
 use ieee.numeric_std.all;
 
-entity ULA is
+entity soma is
 	port
 	(
 		-- Input ports
 		A		: in  std_logic_vector(31 downto 0);
 		B		: in  std_logic_vector(31 downto 0);
-		CIn	: in  std_logic_vector(31 downto 0);
+		CIn	: in  std_logic;
     selector: in std_logic_vector(1 downto 0);
 
 		-- Output ports
@@ -27,21 +27,27 @@ end entity;
 -- Library Clause(s) (optional)
 -- Use Clause(s) (optional)
 
-architecture arch_ula of ULA is
-signal OUT_AND, OUT_OR : std_logic_vector(31 downto 0);
-signal COut_Aux, CIn_Aux, zero : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+architecture arch_soma of soma is
+signal OUT_AND : std_logic_vector(31 downto 0);
+signal OUT_OR : std_logic_vector(31 downto 0);
 signal SUM : std_logic_vector(31 downto 0);
+signal zero: "00000000000000000000000000000000";
 	-- Declarations (optional)
 
 begin
-	OUT_AND <= A AND B;
-	OUT_OR <= A OR B;
+	process(A, B, CIn, sel)
+	begin
+    OUT_AND <= A AND B;
+    OUT_OR <= A OR B;
 
-	SOMA: entity work.soma
-	port map(A => A, B => B, CarryIn => CIn_Aux, SOMAOUT => SUM, CarryOut => COut_Aux);
+		soma: entity work.arch_soma
+			port map(A => A, B => B, CarryIn => CIn, SOMA => SUM, CarryOut => COut)
 
-	MUX: entity work.mux
-	port map (A => OUT_AND, B => OUT_OR, C => SUM, D => zero, sel => selector, q => r);
-   COut <= COut_Aux;
-	overflow <= CIn_Aux(31) XOR COut_Aux(31);
+    mux: entity work.rtl
+      port map (A => OUT_AND, B => OUT_OR, C => SUM, D => zero, sel => selector)
+
+		overflow <= CIn[31] xor COut[31];
+			
+
+	end process;
 end architecture;
