@@ -14,6 +14,8 @@ entity ULA is
 		-- Input ports
 		A		: in  std_logic_vector(31 downto 0);
 		B		: in  std_logic_vector(31 downto 0);
+		invA: in  std_logic;
+		invB: in  std_logic;
 		CIn	: in  std_logic_vector(31 downto 0);
     selector: in std_logic_vector(1 downto 0);
 
@@ -31,14 +33,23 @@ architecture arch_ula of ULA is
 signal OUT_AND, OUT_OR : std_logic_vector(31 downto 0);
 signal COut_Aux, CIn_Aux, zero : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal SUM : std_logic_vector(31 downto 0);
+signal ENTRADA_A: std_logic_vector(31 downto 0);
+signal ENTRADA_B: std_logic_vector(31 downto 0);
 	-- Declarations (optional)
 
 begin
+	INVERTE_A: entity work.mux2
+	port map(A => A, B => NOT A, sel => invA, q => ENTRADA_A);
+
+	INVERTE_B: entity work.mux2
+	port map(A => B, B => NOT B, sel => invB, q => ENTRADA_B);
+
 	OUT_AND <= A AND B;
 	OUT_OR <= A OR B;
 
+
 	SOMA: entity work.soma
-	port map(A => A, B => B, CarryIn => CIn_Aux, SOMAOUT => SUM, CarryOut => COut_Aux);
+	port map(A => ENTRADA_A, B => ENTRADA_B, CarryIn => CIn_Aux, SOMAOUT => SUM, CarryOut => COut_Aux);
 
 	MUX: entity work.mux
 	port map (A => OUT_AND, B => OUT_OR, C => SUM, D => zero, sel => selector, q => r);
