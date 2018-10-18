@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "10/18/2018 13:58:03"
+-- Generated on "10/18/2018 14:23:02"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ULA
 -- 
@@ -37,6 +37,8 @@ SIGNAL A : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL B : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL CIn : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL COut : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL invA : STD_LOGIC;
+SIGNAL invB : STD_LOGIC;
 SIGNAL overflow : STD_LOGIC;
 SIGNAL r : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL selector : STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -46,6 +48,8 @@ COMPONENT ULA
 	B : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 	CIn : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 	COut : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	invA : IN STD_LOGIC;
+	invB : IN STD_LOGIC;
 	overflow : OUT STD_LOGIC;
 	r : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
 	selector : IN STD_LOGIC_VECTOR(1 DOWNTO 0)
@@ -59,6 +63,8 @@ BEGIN
 	B => B,
 	CIn => CIn,
 	COut => COut,
+	invA => invA,
+	invB => invB,
 	overflow => overflow,
 	r => r,
 	selector => selector
@@ -229,31 +235,54 @@ END PROCESS t_prcs_A_5;
 t_prcs_A_4: PROCESS
 BEGIN
 	A(4) <= '0';
+	WAIT FOR 800000 ps;
+	A(4) <= '1';
 WAIT;
 END PROCESS t_prcs_A_4;
 -- A[3]
 t_prcs_A_3: PROCESS
 BEGIN
 	A(3) <= '0';
+	WAIT FOR 400000 ps;
+	A(3) <= '1';
+	WAIT FOR 400000 ps;
+	A(3) <= '0';
 WAIT;
 END PROCESS t_prcs_A_3;
 -- A[2]
 t_prcs_A_2: PROCESS
 BEGIN
+	FOR i IN 1 TO 2
+	LOOP
+		A(2) <= '0';
+		WAIT FOR 200000 ps;
+		A(2) <= '1';
+		WAIT FOR 200000 ps;
+	END LOOP;
 	A(2) <= '0';
 WAIT;
 END PROCESS t_prcs_A_2;
 -- A[1]
 t_prcs_A_1: PROCESS
 BEGIN
+LOOP
 	A(1) <= '0';
-WAIT;
+	WAIT FOR 100000 ps;
+	A(1) <= '1';
+	WAIT FOR 100000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_A_1;
 -- A[0]
 t_prcs_A_0: PROCESS
 BEGIN
+LOOP
 	A(0) <= '0';
-WAIT;
+	WAIT FOR 50000 ps;
+	A(0) <= '1';
+	WAIT FOR 50000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_A_0;
 -- B[31]
 t_prcs_B_31: PROCESS
@@ -427,25 +456,43 @@ END PROCESS t_prcs_B_4;
 t_prcs_B_3: PROCESS
 BEGIN
 	B(3) <= '0';
+	WAIT FOR 800000 ps;
+	B(3) <= '1';
 WAIT;
 END PROCESS t_prcs_B_3;
 -- B[2]
 t_prcs_B_2: PROCESS
 BEGIN
 	B(2) <= '0';
+	WAIT FOR 400000 ps;
+	B(2) <= '1';
+	WAIT FOR 400000 ps;
+	B(2) <= '0';
 WAIT;
 END PROCESS t_prcs_B_2;
 -- B[1]
 t_prcs_B_1: PROCESS
 BEGIN
+	FOR i IN 1 TO 2
+	LOOP
+		B(1) <= '0';
+		WAIT FOR 200000 ps;
+		B(1) <= '1';
+		WAIT FOR 200000 ps;
+	END LOOP;
 	B(1) <= '0';
 WAIT;
 END PROCESS t_prcs_B_1;
 -- B[0]
 t_prcs_B_0: PROCESS
 BEGIN
+LOOP
 	B(0) <= '0';
-WAIT;
+	WAIT FOR 100000 ps;
+	B(0) <= '1';
+	WAIT FOR 100000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_B_0;
 -- CIn[31]
 t_prcs_CIn_31: PROCESS
@@ -651,4 +698,29 @@ BEGIN
 	selector(0) <= '0';
 WAIT;
 END PROCESS t_prcs_selector_0;
+
+-- invA
+t_prcs_invA: PROCESS
+BEGIN
+	FOR i IN 1 TO 2
+	LOOP
+		invA <= '0';
+		WAIT FOR 200000 ps;
+		invA <= '1';
+		WAIT FOR 200000 ps;
+	END LOOP;
+	invA <= '0';
+WAIT;
+END PROCESS t_prcs_invA;
+
+-- invB
+t_prcs_invB: PROCESS
+BEGIN
+	invB <= '0';
+	WAIT FOR 400000 ps;
+	invB <= '1';
+	WAIT FOR 400000 ps;
+	invB <= '0';
+WAIT;
+END PROCESS t_prcs_invB;
 END ULA_arch;

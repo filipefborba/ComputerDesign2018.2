@@ -1,5 +1,5 @@
 Flow report for MIPS
-Thu Oct 18 14:17:30 2018
+Thu Oct 18 14:23:03 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -37,26 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------------------+
-; Flow Summary                                                                              ;
-+------------------------------------+------------------------------------------------------+
-; Flow Status                        ; EDA Netlist Writer Failed - Thu Oct 18 14:17:30 2018 ;
-; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition          ;
-; Revision Name                      ; MIPS                                                 ;
-; Top-level Entity Name              ; ULA                                                  ;
-; Family                             ; Cyclone IV E                                         ;
-; Device                             ; EP4CE115F29C7                                        ;
-; Timing Models                      ; Final                                                ;
-; Total logic elements               ; 137 / 114,480 ( < 1 % )                              ;
-;     Total combinational functions  ; 137 / 114,480 ( < 1 % )                              ;
-;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                                  ;
-; Total registers                    ; 0                                                    ;
-; Total pins                         ; 165 / 529 ( 31 % )                                   ;
-; Total virtual pins                 ; 0                                                    ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                                ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                      ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                        ;
-+------------------------------------+------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Oct 18 14:23:03 2018       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; MIPS                                        ;
+; Top-level Entity Name              ; ULA                                         ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 137 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 137 / 114,480 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 165 / 529 ( 31 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -104,7 +104,13 @@ refer to the applicable agreement for further details.
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 885 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1057 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1042 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:33     ; --                      ; --                  ; 00:00:57                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1043 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1047 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1043 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1050 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1043 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1047 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:36     ; --                      ; --                  ; 00:00:58                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,6 +125,12 @@ refer to the applicable agreement for further details.
 ; TimeQuest Timing Analyzer ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
 ; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
 ; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
+; EDA Netlist Writer        ; tirta            ; Ubuntu 18.04.1 ; 18         ; x86_64         ;
 +---------------------------+------------------+----------------+------------+----------------+
 
 
@@ -131,6 +143,12 @@ quartus_asm --read_settings_files=off --write_settings_files=off MIPS -c MIPS
 quartus_sta MIPS -c MIPS
 quartus_eda --read_settings_files=off --write_settings_files=off MIPS -c MIPS
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=/home/borba/Documentos/ComputerDesign/ComputerDesign2018.2/MIPS/Waveform.vwf --testbench_file=/home/borba/Documentos/ComputerDesign/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform.vwf.vht
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=/home/guizg/Documents/ComputerDesign2018.2/MIPS/Waveform1.vwf --testbench_file=/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform1.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim/ MIPS -c MIPS
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=/home/guizg/Documents/ComputerDesign2018.2/MIPS/Waveform1.vwf --testbench_file=/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform1.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim/ MIPS -c MIPS
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=/home/guizg/Documents/ComputerDesign2018.2/MIPS/Waveform1.vwf --testbench_file=/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform1.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim/ MIPS -c MIPS
 
 
 
