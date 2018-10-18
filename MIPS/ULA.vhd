@@ -44,8 +44,8 @@ begin
 	INVERTE_B: entity work.mux2
 	port map(A => B, B => NOT B, sel => invB, q => ENTRADA_B);
 
-	OUT_AND <= A AND B;
-	OUT_OR <= A OR B;
+	OUT_AND <= ENTRADA_A AND ENTRADA_B;
+	OUT_OR <= ENTRADA_A OR ENTRADA_B;
 
 
 	SOMA: entity work.soma

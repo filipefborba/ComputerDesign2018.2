@@ -3,7 +3,7 @@ $comment
 		vcd file MIPS.msim.vcd -direction
 $end
 $date
-	Tue Oct 16 15:40:56 2018
+	Thu Oct 18 13:58:06 2018
 $end
 $version
 	ModelSim Version 10.5b
@@ -448,116 +448,116 @@ $var wire 1 V$ \COut[29]~output_o\ $end
 $var wire 1 W$ \COut[30]~output_o\ $end
 $var wire 1 X$ \COut[31]~output_o\ $end
 $var wire 1 Y$ \A[31]~input_o\ $end
-$var wire 1 Z$ \B[31]~input_o\ $end
-$var wire 1 [$ \A[30]~input_o\ $end
-$var wire 1 \$ \B[30]~input_o\ $end
-$var wire 1 ]$ \A[28]~input_o\ $end
-$var wire 1 ^$ \B[28]~input_o\ $end
+$var wire 1 Z$ \A[30]~input_o\ $end
+$var wire 1 [$ \B[30]~input_o\ $end
+$var wire 1 \$ \A[29]~input_o\ $end
+$var wire 1 ]$ \B[28]~input_o\ $end
+$var wire 1 ^$ \A[28]~input_o\ $end
 $var wire 1 _$ \SOMA|CarryOut[28]~0_combout\ $end
-$var wire 1 `$ \A[26]~input_o\ $end
+$var wire 1 `$ \A[27]~input_o\ $end
 $var wire 1 a$ \B[26]~input_o\ $end
-$var wire 1 b$ \SOMA|CarryOut[26]~1_combout\ $end
-$var wire 1 c$ \A[24]~input_o\ $end
+$var wire 1 b$ \A[26]~input_o\ $end
+$var wire 1 c$ \SOMA|CarryOut[26]~1_combout\ $end
 $var wire 1 d$ \B[24]~input_o\ $end
-$var wire 1 e$ \SOMA|CarryOut[24]~2_combout\ $end
-$var wire 1 f$ \A[22]~input_o\ $end
+$var wire 1 e$ \A[24]~input_o\ $end
+$var wire 1 f$ \A[23]~input_o\ $end
 $var wire 1 g$ \B[22]~input_o\ $end
-$var wire 1 h$ \SOMA|CarryOut[22]~3_combout\ $end
+$var wire 1 h$ \A[22]~input_o\ $end
 $var wire 1 i$ \A[20]~input_o\ $end
 $var wire 1 j$ \B[20]~input_o\ $end
 $var wire 1 k$ \SOMA|CarryOut[20]~4_combout\ $end
-$var wire 1 l$ \A[18]~input_o\ $end
-$var wire 1 m$ \B[18]~input_o\ $end
-$var wire 1 n$ \SOMA|CarryOut[18]~5_combout\ $end
-$var wire 1 o$ \A[16]~input_o\ $end
-$var wire 1 p$ \B[16]~input_o\ $end
-$var wire 1 q$ \SOMA|CarryOut[16]~6_combout\ $end
-$var wire 1 r$ \A[14]~input_o\ $end
-$var wire 1 s$ \B[14]~input_o\ $end
-$var wire 1 t$ \SOMA|CarryOut[14]~7_combout\ $end
-$var wire 1 u$ \A[12]~input_o\ $end
-$var wire 1 v$ \B[12]~input_o\ $end
-$var wire 1 w$ \SOMA|CarryOut[12]~8_combout\ $end
-$var wire 1 x$ \A[10]~input_o\ $end
-$var wire 1 y$ \B[10]~input_o\ $end
-$var wire 1 z$ \SOMA|CarryOut[10]~9_combout\ $end
-$var wire 1 {$ \A[8]~input_o\ $end
-$var wire 1 |$ \B[8]~input_o\ $end
-$var wire 1 }$ \SOMA|CarryOut[8]~10_combout\ $end
-$var wire 1 ~$ \A[6]~input_o\ $end
-$var wire 1 !% \B[6]~input_o\ $end
-$var wire 1 "% \SOMA|CarryOut[6]~11_combout\ $end
-$var wire 1 #% \A[4]~input_o\ $end
-$var wire 1 $% \B[4]~input_o\ $end
-$var wire 1 %% \SOMA|CarryOut[4]~12_combout\ $end
-$var wire 1 &% \A[2]~input_o\ $end
+$var wire 1 l$ \B[21]~input_o\ $end
+$var wire 1 m$ \A[21]~input_o\ $end
+$var wire 1 n$ \B[19]~input_o\ $end
+$var wire 1 o$ \A[18]~input_o\ $end
+$var wire 1 p$ \B[18]~input_o\ $end
+$var wire 1 q$ \A[16]~input_o\ $end
+$var wire 1 r$ \B[16]~input_o\ $end
+$var wire 1 s$ \SOMA|CarryOut[16]~6_combout\ $end
+$var wire 1 t$ \B[17]~input_o\ $end
+$var wire 1 u$ \A[17]~input_o\ $end
+$var wire 1 v$ \A[15]~input_o\ $end
+$var wire 1 w$ \B[15]~input_o\ $end
+$var wire 1 x$ \A[13]~input_o\ $end
+$var wire 1 y$ \B[13]~input_o\ $end
+$var wire 1 z$ \B[12]~input_o\ $end
+$var wire 1 {$ \A[12]~input_o\ $end
+$var wire 1 |$ \B[10]~input_o\ $end
+$var wire 1 }$ \A[10]~input_o\ $end
+$var wire 1 ~$ \SOMA|CarryOut[10]~9_combout\ $end
+$var wire 1 !% \A[9]~input_o\ $end
+$var wire 1 "% \B[8]~input_o\ $end
+$var wire 1 #% \A[8]~input_o\ $end
+$var wire 1 $% \SOMA|CarryOut[8]~10_combout\ $end
+$var wire 1 %% \B[7]~input_o\ $end
+$var wire 1 &% \B[4]~input_o\ $end
 $var wire 1 '% \B[2]~input_o\ $end
-$var wire 1 (% \SOMA|CarryOut[2]~13_combout\ $end
-$var wire 1 )% \B[0]~input_o\ $end
-$var wire 1 *% \A[0]~input_o\ $end
-$var wire 1 +% \A[1]~input_o\ $end
-$var wire 1 ,% \B[1]~input_o\ $end
-$var wire 1 -% \SOMA|CarryOut[1]~14_combout\ $end
+$var wire 1 (% \B[0]~input_o\ $end
+$var wire 1 )% \B[1]~input_o\ $end
+$var wire 1 *% \A[1]~input_o\ $end
+$var wire 1 +% \A[0]~input_o\ $end
+$var wire 1 ,% \SOMA|CarryOut[1]~14_combout\ $end
+$var wire 1 -% \A[2]~input_o\ $end
 $var wire 1 .% \SOMA|CarryOut[2]~15_combout\ $end
-$var wire 1 /% \A[3]~input_o\ $end
+$var wire 1 /% \SOMA|CarryOut[2]~13_combout\ $end
 $var wire 1 0% \B[3]~input_o\ $end
-$var wire 1 1% \SOMA|CarryOut[3]~16_combout\ $end
-$var wire 1 2% \SOMA|CarryOut[4]~17_combout\ $end
-$var wire 1 3% \A[5]~input_o\ $end
-$var wire 1 4% \B[5]~input_o\ $end
-$var wire 1 5% \SOMA|CarryOut[5]~18_combout\ $end
-$var wire 1 6% \SOMA|CarryOut[6]~19_combout\ $end
-$var wire 1 7% \A[7]~input_o\ $end
-$var wire 1 8% \B[7]~input_o\ $end
-$var wire 1 9% \SOMA|CarryOut[7]~20_combout\ $end
-$var wire 1 :% \SOMA|CarryOut[8]~21_combout\ $end
-$var wire 1 ;% \A[9]~input_o\ $end
-$var wire 1 <% \B[9]~input_o\ $end
-$var wire 1 =% \SOMA|CarryOut[9]~22_combout\ $end
-$var wire 1 >% \SOMA|CarryOut[10]~23_combout\ $end
-$var wire 1 ?% \A[11]~input_o\ $end
-$var wire 1 @% \B[11]~input_o\ $end
-$var wire 1 A% \SOMA|CarryOut[11]~24_combout\ $end
-$var wire 1 B% \SOMA|CarryOut[12]~25_combout\ $end
-$var wire 1 C% \A[13]~input_o\ $end
-$var wire 1 D% \B[13]~input_o\ $end
-$var wire 1 E% \SOMA|CarryOut[13]~26_combout\ $end
-$var wire 1 F% \SOMA|CarryOut[14]~27_combout\ $end
-$var wire 1 G% \A[15]~input_o\ $end
-$var wire 1 H% \B[15]~input_o\ $end
-$var wire 1 I% \SOMA|CarryOut[15]~28_combout\ $end
-$var wire 1 J% \SOMA|CarryOut[16]~29_combout\ $end
-$var wire 1 K% \A[17]~input_o\ $end
-$var wire 1 L% \B[17]~input_o\ $end
-$var wire 1 M% \SOMA|CarryOut[17]~30_combout\ $end
-$var wire 1 N% \SOMA|CarryOut[18]~31_combout\ $end
-$var wire 1 O% \A[19]~input_o\ $end
-$var wire 1 P% \B[19]~input_o\ $end
-$var wire 1 Q% \SOMA|CarryOut[19]~32_combout\ $end
-$var wire 1 R% \SOMA|CarryOut[20]~33_combout\ $end
-$var wire 1 S% \A[21]~input_o\ $end
-$var wire 1 T% \B[21]~input_o\ $end
+$var wire 1 1% \A[3]~input_o\ $end
+$var wire 1 2% \SOMA|CarryOut[3]~16_combout\ $end
+$var wire 1 3% \A[4]~input_o\ $end
+$var wire 1 4% \SOMA|CarryOut[4]~17_combout\ $end
+$var wire 1 5% \SOMA|CarryOut[4]~12_combout\ $end
+$var wire 1 6% \B[5]~input_o\ $end
+$var wire 1 7% \A[5]~input_o\ $end
+$var wire 1 8% \SOMA|CarryOut[5]~18_combout\ $end
+$var wire 1 9% \A[6]~input_o\ $end
+$var wire 1 :% \B[6]~input_o\ $end
+$var wire 1 ;% \SOMA|CarryOut[6]~19_combout\ $end
+$var wire 1 <% \A[7]~input_o\ $end
+$var wire 1 =% \SOMA|CarryOut[6]~11_combout\ $end
+$var wire 1 >% \SOMA|CarryOut[7]~20_combout\ $end
+$var wire 1 ?% \SOMA|CarryOut[8]~21_combout\ $end
+$var wire 1 @% \B[9]~input_o\ $end
+$var wire 1 A% \SOMA|CarryOut[9]~22_combout\ $end
+$var wire 1 B% \SOMA|CarryOut[10]~23_combout\ $end
+$var wire 1 C% \A[11]~input_o\ $end
+$var wire 1 D% \B[11]~input_o\ $end
+$var wire 1 E% \SOMA|CarryOut[11]~24_combout\ $end
+$var wire 1 F% \SOMA|CarryOut[12]~25_combout\ $end
+$var wire 1 G% \SOMA|CarryOut[12]~8_combout\ $end
+$var wire 1 H% \SOMA|CarryOut[13]~26_combout\ $end
+$var wire 1 I% \A[14]~input_o\ $end
+$var wire 1 J% \B[14]~input_o\ $end
+$var wire 1 K% \SOMA|CarryOut[14]~27_combout\ $end
+$var wire 1 L% \SOMA|CarryOut[14]~7_combout\ $end
+$var wire 1 M% \SOMA|CarryOut[15]~28_combout\ $end
+$var wire 1 N% \SOMA|CarryOut[16]~29_combout\ $end
+$var wire 1 O% \SOMA|CarryOut[17]~30_combout\ $end
+$var wire 1 P% \SOMA|CarryOut[18]~31_combout\ $end
+$var wire 1 Q% \A[19]~input_o\ $end
+$var wire 1 R% \SOMA|CarryOut[18]~5_combout\ $end
+$var wire 1 S% \SOMA|CarryOut[19]~32_combout\ $end
+$var wire 1 T% \SOMA|CarryOut[20]~33_combout\ $end
 $var wire 1 U% \SOMA|CarryOut[21]~34_combout\ $end
 $var wire 1 V% \SOMA|CarryOut[22]~35_combout\ $end
-$var wire 1 W% \A[23]~input_o\ $end
-$var wire 1 X% \B[23]~input_o\ $end
+$var wire 1 W% \B[23]~input_o\ $end
+$var wire 1 X% \SOMA|CarryOut[22]~3_combout\ $end
 $var wire 1 Y% \SOMA|CarryOut[23]~36_combout\ $end
 $var wire 1 Z% \SOMA|CarryOut[24]~37_combout\ $end
-$var wire 1 [% \A[25]~input_o\ $end
-$var wire 1 \% \B[25]~input_o\ $end
-$var wire 1 ]% \SOMA|CarryOut[25]~38_combout\ $end
-$var wire 1 ^% \SOMA|CarryOut[26]~39_combout\ $end
-$var wire 1 _% \A[27]~input_o\ $end
+$var wire 1 [% \SOMA|CarryOut[24]~2_combout\ $end
+$var wire 1 \% \A[25]~input_o\ $end
+$var wire 1 ]% \B[25]~input_o\ $end
+$var wire 1 ^% \SOMA|CarryOut[25]~38_combout\ $end
+$var wire 1 _% \SOMA|CarryOut[26]~39_combout\ $end
 $var wire 1 `% \B[27]~input_o\ $end
 $var wire 1 a% \SOMA|CarryOut[27]~40_combout\ $end
 $var wire 1 b% \SOMA|CarryOut[28]~41_combout\ $end
-$var wire 1 c% \A[29]~input_o\ $end
-$var wire 1 d% \B[29]~input_o\ $end
-$var wire 1 e% \SOMA|CarryOut[29]~42_combout\ $end
-$var wire 1 f% \SOMA|CarryOut[31]~43_combout\ $end
+$var wire 1 c% \B[29]~input_o\ $end
+$var wire 1 d% \SOMA|CarryOut[29]~42_combout\ $end
+$var wire 1 e% \SOMA|CarryOut[31]~43_combout\ $end
+$var wire 1 f% \B[31]~input_o\ $end
 $var wire 1 g% \SOMA|CarryOut[31]~44_combout\ $end
-$var wire 1 h% \selector[0]~input_o\ $end
-$var wire 1 i% \selector[1]~input_o\ $end
+$var wire 1 h% \selector[1]~input_o\ $end
+$var wire 1 i% \selector[0]~input_o\ $end
 $var wire 1 j% \MUX|Mux31~0_combout\ $end
 $var wire 1 k% \MUX|Mux30~0_combout\ $end
 $var wire 1 l% \MUX|Mux30~1_combout\ $end
@@ -890,7 +890,7 @@ xh!
 0f%
 0g%
 0h%
-1i%
+0i%
 0j%
 0k%
 0l%
@@ -1064,7 +1064,7 @@ xh!
 0~
 0!!
 0"!
-1d!
+0d!
 0e!
 0o!
 0p!
@@ -1162,7 +1162,7 @@ xh!
 0n"
 0o"
 0p"
-1q"
+0q"
 0r"
 0t"
 0u"
@@ -1325,381 +1325,4 @@ xw&
 0b!
 0c!
 $end
-#100000
-1@
-1_
-10"
-1O"
-1,%
-1*%
-1j%
-1l%
-1x#
-1w#
-14#
-15#
-1c!
-1b!
-#200000
-0@
-0_
-1?
-1^
-00"
-1/"
-0O"
-1N"
-1'%
-0,%
-1+%
-0*%
-0j%
-1k%
-0l%
-1m%
-1n%
-1l%
-0x#
-0w#
-04#
-05#
-1x#
-1y#
-0c!
-0b!
-14#
-13#
-1b!
-1a!
-#300000
-1@
-1_
-10"
-1O"
-1,%
-1*%
-1j%
-1-%
-0l%
-1.%
-0m%
-1K&
-0n%
-1o%
-0x#
-1:$
-1w#
-1p%
-04#
-1T#
-15#
-1;$
-1c!
-0b!
-1A!
-1S#
-0y#
-1@!
-03#
-1z#
-0a!
-12#
-1`!
-#400000
-0@
-0_
-0?
-0^
-1>
-1]
-00"
-0/"
-1."
-0O"
-0N"
-1M"
-10%
-0'%
-0,%
-1&%
-0+%
-0*%
-0j%
-0k%
-1n%
-0-%
-1l%
-1m%
-11%
-0p%
-1q%
-0n%
-0.%
-0m%
-0K&
-0l%
-1n%
-01%
-0o%
-1r%
-0z#
-1<$
-1x#
-0:$
-1y#
-0w#
-1p%
-0q%
-02#
-1R#
-14#
-0T#
-13#
-05#
-0x#
-0;$
-0y#
-0c!
-1b!
-1a!
-0`!
-0A!
-1?!
-0r%
-04#
-0S#
-03#
-1{#
-0<$
-1y#
-0b!
-0a!
-0@!
-11#
-0R#
-13#
-1z#
-1a!
-1_!
-0?!
-12#
-0{#
-1`!
-01#
-0_!
-#500000
-1@
-1_
-10"
-1O"
-1,%
-1*%
-1j%
-1l%
-1x#
-1w#
-14#
-15#
-1c!
-1b!
-#600000
-0@
-0_
-1?
-1^
-00"
-1/"
-0O"
-1N"
-1'%
-0,%
-1+%
-0*%
-0j%
-1k%
-0l%
-1(%
-1m%
-1K&
-0n%
-11%
-1o%
-1l%
-0p%
-1q%
-1;$
-0x#
-0w#
-1r%
-1S#
-04#
-05#
-1x#
-1<$
-0y#
-1@!
-0c!
-0b!
-14#
-1R#
-03#
-0z#
-1b!
-0a!
-1?!
-02#
-1{#
-0`!
-11#
-1_!
-#700000
-1@
-1_
-10"
-1O"
-1,%
-1*%
-1j%
-1-%
-0l%
-1.%
-0m%
-1n%
-0x#
-1:$
-1w#
-04#
-1T#
-15#
-1c!
-0b!
-1A!
-1y#
-13#
-1a!
-#800000
-0@
-0_
-0?
-0^
-0>
-0]
-1=
-1\
-00"
-0/"
-0."
-1-"
-0O"
-0N"
-0M"
-1L"
-1$%
-00%
-0'%
-0,%
-1/%
-0&%
-0+%
-0*%
-0j%
-0k%
-0n%
-0o%
-0-%
-1l%
-0(%
-0.%
-1m%
-0K&
-1p%
-12%
-0q%
-1L&
-0r%
-1s%
-1n%
-01%
-1o%
-0m%
-0p%
-0l%
-0n%
-1p%
-02%
-1q%
-0L&
-1t%
-1=$
-1z#
-0;$
-1x#
-0:$
-0y#
-0w#
-1r%
-0s%
-1Q#
-12#
-0S#
-14#
-0T#
-03#
-05#
-0x#
-0z#
-0<$
-1y#
-0{#
-0A!
-0@!
-1>!
-0c!
-1b!
-0a!
-1`!
-0t%
-04#
-02#
-0R#
-13#
-01#
-1|#
-0=$
-1z#
-0y#
-0b!
-1a!
-0`!
-0_!
-0?!
-10#
-0Q#
-12#
-03#
-1{#
-0a!
-1`!
-1^!
-0>!
-11#
-0|#
-1_!
-00#
-0^!
-#900000
-1@
-1_
-10"
-1O"
-1,%
-1*%
-1j%
-1l%
-1x#
-1w#
-14#
-15#
-1c!
-1b!
 #1000000

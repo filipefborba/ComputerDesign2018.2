@@ -21,8 +21,8 @@ begin
 	process(sel)
 	begin
 		 case sel is
-			  when '0' => q <= A;
-			  when '1' => q <= B;
+			  when '0' => q <= A;
+			  when '1' => q <= B;
 		 end case;
 	end process;
 end architecture;
