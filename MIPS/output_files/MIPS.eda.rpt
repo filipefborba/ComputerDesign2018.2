@@ -1,6 +1,6 @@
 EDA Netlist Writer report for MIPS
-Thu Oct 18 14:23:03 2018
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Tue Oct 23 10:29:00 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -17,7 +17,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -36,9 +36,9 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Oct 18 14:23:03 2018 ;
+; EDA Netlist Writer Status ; Successful - Tue Oct 23 10:29:00 2018 ;
 ; Revision Name             ; MIPS                                  ;
-; Top-level Entity Name     ; ULA                                   ;
+; Top-level Entity Name     ; UCFD                                  ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------+
-; Simulation Generated Files                                                ;
-+---------------------------------------------------------------------------+
-; Generated Files                                                           ;
-+---------------------------------------------------------------------------+
-; /home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim//MIPS.vho ;
-+---------------------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Simulation Generated Files                                              ;
++-------------------------------------------------------------------------+
+; Generated Files                                                         ;
++-------------------------------------------------------------------------+
+; /home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim//MIPS.vho ;
++-------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -79,8 +79,8 @@ refer to the applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and its AMPP partner logic 
     Info: functions, and any output files from any of the foregoing 
@@ -93,13 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Oct 18 14:23:02 2018
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim/ MIPS -c MIPS
+    Info: Processing started: Tue Oct 23 10:28:59 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/ MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file MIPS.vho in folder "/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file MIPS.vho in folder "/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1047 megabytes
-    Info: Processing ended: Thu Oct 18 14:23:03 2018
+    Info: Peak virtual memory: 1055 megabytes
+    Info: Processing ended: Tue Oct 23 10:29:00 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 

@@ -7,6 +7,8 @@ use ieee.std_logic_1164.all;
 
 -- SIGNED and UNSIGNED types, and relevant functions
 use ieee.numeric_std.all;
+use ieee.std_logic_misc.all;
+
 
 entity ULA is
 	port
@@ -23,6 +25,7 @@ entity ULA is
 		overflow: out std_logic;
 		r		: out std_logic_vector(31 downto 0);
 		COut: out std_logic_vector(31 downto 0)
+		Z: out std_logic;
 	);
 	
 end entity;
@@ -55,4 +58,6 @@ begin
 	port map (A => OUT_AND, B => OUT_OR, C => SUM, D => zero, sel => selector, q => r);
    COut <= COut_Aux;
 	overflow <= CIn_Aux(31) XOR COut_Aux(31);
+	
+	Z <= (not or_reduce(r));
 end architecture;

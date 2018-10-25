@@ -9,14 +9,14 @@ z2
 cModel Technology
 d/home/borba/Documentos/ComputerDesign/ComputerDesign2018.2/MIPS/simulation/qsim
 Ehard_block
-Z0 w1539883383
+Z0 w1540315740
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
-Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 U]E`hi0:`oKa5cWiFZ>hl3
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z6 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
-Z7 d/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim
+Z6 DPx10 cycloneive 21 cycloneive_components 0 22 7:=`d=[QUY_aUcbj<lC000
+Z7 d/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim
 Z8 8MIPS.vho
 Z9 FMIPS.vho
 l0
@@ -25,9 +25,9 @@ VOgIg9T_BR7joedFDVM>H13
 !s100 A`ID_i56<Ua56=ZD=[EG=2
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1539883384
+Z11 !s110 1540315743
 !i10b 1
-Z12 !s108 1539883383.000000
+Z12 !s108 1540315742.000000
 Z13 !s90 -work|work|MIPS.vho|
 Z14 !s107 MIPS.vho|
 !i113 1
@@ -55,7 +55,93 @@ R14
 !i113 1
 R15
 R16
-Eula
+Euc
+Z17 w1539891096
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L34
+VX_TO7AWUd`K@K5`][?7RO0
+!s100 3RR7@fAZe@[PWMS`e52WS1
+R10
+32
+Z18 !s110 1539891096
+!i10b 1
+Z19 !s108 1539891096.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 2 uc 0 22 X_TO7AWUd`K@K5`][?7RO0
+l71
+L42
+VIj_R@3e@l>I?O2a]Si?oG2
+!s100 U4QA::0Y0PGU7Q;6ESjaF0
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Euc_vhd_vec_tst
+Z20 w1539891095
+R4
+R5
+R7
+Z21 8Waveform2.vwf.vht
+Z22 FWaveform2.vwf.vht
+l0
+L31
+Vf;ScY6Tn0IYFJE9ZR=]=A1
+!s100 ciJCLFQ;GUVJLTWIb60b`3
+R10
+32
+R18
+!i10b 1
+R19
+Z23 !s90 -work|work|Waveform2.vwf.vht|
+Z24 !s107 Waveform2.vwf.vht|
+!i113 1
+R15
+R16
+Auc_arch
+R4
+R5
+DEx4 work 14 uc_vhd_vec_tst 0 22 f;ScY6Tn0IYFJE9ZR=]=A1
+l46
+L33
+Ve[Z<moZVQP<KZ]OT^XCe;0
+!s100 `[B_ej>Tb4;f5PDg5hIif0
+R10
+32
+R18
+!i10b 1
+R19
+R23
+R24
+!i113 1
+R15
+R16
+Eucfd
 R0
 R1
 R2
@@ -68,8 +154,8 @@ R8
 R9
 l0
 L77
-VYV;2`T@=iIWB_3NCW>VG02
-!s100 N9PT_;:bebO=SCHlEdEZn1
+V@ZT=@OCW8bOa8z>^<k[kU2
+!s100 FimYQg0YLVd0f3UQV<R>:0
 R10
 32
 R11
@@ -87,11 +173,11 @@ R3
 R4
 R5
 R6
-DEx4 work 3 ula 0 22 YV;2`T@=iIWB_3NCW>VG02
-l588
-L259
-VFFk7jk2FQomC?;i1b>kU^1
-!s100 <TfAo@Uc:hmc^8GhM=@8G3
+DEx4 work 4 ucfd 0 22 @ZT=@OCW8bOa8z>^<k[kU2
+l161
+L111
+V?8=6H?>B5d0ACFnAl=_?g2
+!s100 kH82>elPElACP<PfDkli52
 R10
 32
 R11
@@ -102,42 +188,128 @@ R14
 !i113 1
 R15
 R16
-Eula_vhd_vec_tst
-Z17 w1539883382
+Eucfd_vhd_vec_tst
+Z25 w1540315739
 R4
 R5
 R7
-Z18 8Waveform1.vwf.vht
-Z19 FWaveform1.vwf.vht
+Z26 8Waveform3.vwf.vht
+Z27 FWaveform3.vwf.vht
+l0
+L31
+VA;]@]K6C:Ri2MV=JR3Hd83
+!s100 CHhDeQMAzBh7Zhg<lENj[1
+R10
+32
+R11
+!i10b 1
+Z28 !s108 1540315743.000000
+Z29 !s90 -work|work|Waveform3.vwf.vht|
+Z30 !s107 Waveform3.vwf.vht|
+!i113 1
+R15
+R16
+Aucfd_arch
+R4
+R5
+DEx4 work 16 ucfd_vhd_vec_tst 0 22 A;]@]K6C:Ri2MV=JR3Hd83
+l60
+L33
+VzWKzWoLJTJOT4jh?aFibo3
+!s100 :E>V^Jd3nTEDJbYY8Y5Ql3
+R10
+32
+R11
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R15
+R16
+Eula
+Z31 w1539883383
+R1
+Z32 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+R3
+R4
+R5
+Z33 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z34 d/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim
+R8
+R9
+l0
+L77
+VYV;2`T@=iIWB_3NCW>VG02
+!s100 N9PT_;:bebO=SCHlEdEZn1
+R10
+32
+Z35 !s110 1539883384
+!i10b 1
+Z36 !s108 1539883383.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R32
+R3
+R4
+R5
+R33
+DEx4 work 3 ula 0 22 YV;2`T@=iIWB_3NCW>VG02
+l588
+L259
+VFFk7jk2FQomC?;i1b>kU^1
+!s100 <TfAo@Uc:hmc^8GhM=@8G3
+R10
+32
+R35
+!i10b 1
+R36
+R13
+R14
+!i113 1
+R15
+R16
+Eula_vhd_vec_tst
+Z37 w1539883382
+R4
+R5
+R34
+Z38 8Waveform1.vwf.vht
+Z39 FWaveform1.vwf.vht
 l0
 L31
 V;AJ0Iea<UKi@1Wc^2kLO^0
 !s100 ]I6fbBl<B<WlH[ZEDmAGa1
 R10
 32
-R11
+R35
 !i10b 1
-Z20 !s108 1539883384.000000
-Z21 !s90 -work|work|Waveform1.vwf.vht|
-Z22 !s107 Waveform1.vwf.vht|
+Z40 !s108 1539883384.000000
+Z41 !s90 -work|work|Waveform1.vwf.vht|
+Z42 !s107 Waveform1.vwf.vht|
 !i113 1
 R15
 R16
 Aula_arch
 R4
 R5
-Z23 DEx4 work 15 ula_vhd_vec_tst 0 22 ;AJ0Iea<UKi@1Wc^2kLO^0
+DEx4 work 15 ula_vhd_vec_tst 0 22 ;AJ0Iea<UKi@1Wc^2kLO^0
 l58
 L33
 VI2mE0OEeWY]NhheNM4A]:0
 !s100 leW4ZN2CZ8KdXbChRER<f2
 R10
 32
-R11
+R35
 !i10b 1
-R20
-R21
-R22
+R40
+R41
+R42
 !i113 1
 R15
 R16
