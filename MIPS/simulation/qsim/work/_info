@@ -9,7 +9,7 @@ z2
 cModel Technology
 d/home/borba/Documentos/ComputerDesign/ComputerDesign2018.2/MIPS/simulation/qsim
 Ehard_block
-Z0 w1540315740
+Z0 w1540851843
 Z1 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 U]E`hi0:`oKa5cWiFZ>hl3
 Z3 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ VOgIg9T_BR7joedFDVM>H13
 !s100 A`ID_i56<Ua56=ZD=[EG=2
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1540315743
+Z11 !s110 1540851844
 !i10b 1
-Z12 !s108 1540315742.000000
+Z12 !s108 1540851844.000000
 Z13 !s90 -work|work|MIPS.vho|
 Z14 !s107 MIPS.vho|
 !i113 1
@@ -55,8 +55,184 @@ R14
 !i113 1
 R15
 R16
+Erom
+Z17 w1540850174
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+l0
+L34
+VKF^1UINNh=R=>zhDEJQIC1
+!s100 3GDCHmM8ffIX3oHk<7@PB2
+R10
+32
+Z18 !s110 1540850175
+!i10b 1
+Z19 !s108 1540850175.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R1
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 rom 0 22 KF^1UINNh=R=>zhDEJQIC1
+l194
+L42
+VlWFE824^VUChN1;:Ci?]b2
+!s100 ib^UhA`<N[E`^UZaEGF1D1
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Erom_vhd_vec_tst
+Z20 w1540850173
+R4
+R5
+R7
+Z21 8Waveform6.vwf.vht
+Z22 FWaveform6.vwf.vht
+l0
+L31
+V2`a69I:hRU>b4mIT7`R:D2
+!s100 T[5LjkgQL8NF6eXI95b:V3
+R10
+32
+R18
+!i10b 1
+R19
+Z23 !s90 -work|work|Waveform6.vwf.vht|
+Z24 !s107 Waveform6.vwf.vht|
+!i113 1
+R15
+R16
+Arom_arch
+R4
+R5
+DEx4 work 15 rom_vhd_vec_tst 0 22 2`a69I:hRU>b4mIT7`R:D2
+l46
+L33
+V7I8PR_W88a7jbcUo4>dV]1
+!s100 cIgU0EZI3Uz_XS=VKX5I=1
+R10
+32
+R18
+!i10b 1
+R19
+R23
+R24
+!i113 1
+R15
+R16
+Etop_level
+R0
+R2
+R6
+R1
+Z25 DPx6 altera 11 dffeas_pack 0 22 Dg`GWTC`^Q8GNSMPeo22;3
+R3
+R4
+R5
+Z26 DPx6 altera 28 altera_primitives_components 0 22 _LNC5n6B?5VN@W;M4Dg@k1
+R7
+R8
+R9
+l0
+L79
+VM8Wa04CH3oz@MgjHYCoe?1
+!s100 [MRM:?=GBeDSZ05aeDRna0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R6
+R1
+R25
+R3
+R4
+R5
+R26
+DEx4 work 9 top_level 0 22 M8Wa04CH3oz@MgjHYCoe?1
+l881
+L313
+Vd0<KMXB:J3QQl4^^WZmK62
+!s100 P=HTS?jcWl0o[PUCPXVkH0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Etop_level_vhd_vec_tst
+Z27 w1540851842
+R4
+R5
+R7
+Z28 8Waveform5.vwf.vht
+Z29 FWaveform5.vwf.vht
+l0
+L31
+VCnKcalP:F=O<E`bU7H3hA1
+!s100 iQGcISbOlcXc`eIVOEfE03
+R10
+32
+R11
+!i10b 1
+R12
+Z30 !s90 -work|work|Waveform5.vwf.vht|
+Z31 !s107 Waveform5.vwf.vht|
+!i113 1
+R15
+R16
+Atop_level_arch
+R4
+R5
+Z32 DEx4 work 21 top_level_vhd_vec_tst 0 22 CnKcalP:F=O<E`bU7H3hA1
+l74
+L33
+Z33 VK2Sif_a18dK[M6eWWWdjC1
+Z34 !s100 2I:F]WbWl@WchLe5MUPXP2
+R10
+32
+R11
+!i10b 1
+R12
+R30
+R31
+!i113 1
+R15
+R16
 Euc
-Z17 w1539891096
+Z35 w1539891096
 R1
 R2
 R3
@@ -72,9 +248,9 @@ VX_TO7AWUd`K@K5`][?7RO0
 !s100 3RR7@fAZe@[PWMS`e52WS1
 R10
 32
-Z18 !s110 1539891096
+Z36 !s110 1539891096
 !i10b 1
-Z19 !s108 1539891096.000000
+Z37 !s108 1539891096.000000
 R13
 R14
 !i113 1
@@ -94,32 +270,32 @@ VIj_R@3e@l>I?O2a]Si?oG2
 !s100 U4QA::0Y0PGU7Q;6ESjaF0
 R10
 32
-R18
+R36
 !i10b 1
-R19
+R37
 R13
 R14
 !i113 1
 R15
 R16
 Euc_vhd_vec_tst
-Z20 w1539891095
+Z38 w1539891095
 R4
 R5
 R7
-Z21 8Waveform2.vwf.vht
-Z22 FWaveform2.vwf.vht
+Z39 8Waveform2.vwf.vht
+Z40 FWaveform2.vwf.vht
 l0
 L31
 Vf;ScY6Tn0IYFJE9ZR=]=A1
 !s100 ciJCLFQ;GUVJLTWIb60b`3
 R10
 32
-R18
+R36
 !i10b 1
-R19
-Z23 !s90 -work|work|Waveform2.vwf.vht|
-Z24 !s107 Waveform2.vwf.vht|
+R37
+Z41 !s90 -work|work|Waveform2.vwf.vht|
+Z42 !s107 Waveform2.vwf.vht|
 !i113 1
 R15
 R16
@@ -133,16 +309,16 @@ Ve[Z<moZVQP<KZ]OT^XCe;0
 !s100 `[B_ej>Tb4;f5PDg5hIif0
 R10
 32
-R18
+R36
 !i10b 1
-R19
-R23
-R24
+R37
+R41
+R42
 !i113 1
 R15
 R16
 Eucfd
-R0
+Z43 w1540315740
 R1
 R2
 R3
@@ -158,9 +334,9 @@ V@ZT=@OCW8bOa8z>^<k[kU2
 !s100 FimYQg0YLVd0f3UQV<R>:0
 R10
 32
-R11
+Z44 !s110 1540315743
 !i10b 1
-R12
+Z45 !s108 1540315742.000000
 R13
 R14
 !i113 1
@@ -180,32 +356,32 @@ V?8=6H?>B5d0ACFnAl=_?g2
 !s100 kH82>elPElACP<PfDkli52
 R10
 32
-R11
+R44
 !i10b 1
-R12
+R45
 R13
 R14
 !i113 1
 R15
 R16
 Eucfd_vhd_vec_tst
-Z25 w1540315739
+Z46 w1540315739
 R4
 R5
 R7
-Z26 8Waveform3.vwf.vht
-Z27 FWaveform3.vwf.vht
+Z47 8Waveform3.vwf.vht
+Z48 FWaveform3.vwf.vht
 l0
 L31
 VA;]@]K6C:Ri2MV=JR3Hd83
 !s100 CHhDeQMAzBh7Zhg<lENj[1
 R10
 32
-R11
+R44
 !i10b 1
-Z28 !s108 1540315743.000000
-Z29 !s90 -work|work|Waveform3.vwf.vht|
-Z30 !s107 Waveform3.vwf.vht|
+Z49 !s108 1540315743.000000
+Z50 !s90 -work|work|Waveform3.vwf.vht|
+Z51 !s107 Waveform3.vwf.vht|
 !i113 1
 R15
 R16
@@ -219,23 +395,23 @@ VzWKzWoLJTJOT4jh?aFibo3
 !s100 :E>V^Jd3nTEDJbYY8Y5Ql3
 R10
 32
-R11
+R44
 !i10b 1
-R28
-R29
-R30
+R49
+R50
+R51
 !i113 1
 R15
 R16
 Eula
-Z31 w1539883383
+Z52 w1539883383
 R1
-Z32 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z53 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
 R3
 R4
 R5
-Z33 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
-Z34 d/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim
+Z54 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z55 d/home/guizg/Documents/ComputerDesign2018.2/MIPS/simulation/qsim
 R8
 R9
 l0
@@ -244,9 +420,9 @@ VYV;2`T@=iIWB_3NCW>VG02
 !s100 N9PT_;:bebO=SCHlEdEZn1
 R10
 32
-Z35 !s110 1539883384
+Z56 !s110 1539883384
 !i10b 1
-Z36 !s108 1539883383.000000
+Z57 !s108 1539883383.000000
 R13
 R14
 !i113 1
@@ -254,11 +430,11 @@ R15
 R16
 Astructure
 R1
-R32
+R53
 R3
 R4
 R5
-R33
+R54
 DEx4 work 3 ula 0 22 YV;2`T@=iIWB_3NCW>VG02
 l588
 L259
@@ -266,32 +442,32 @@ VFFk7jk2FQomC?;i1b>kU^1
 !s100 <TfAo@Uc:hmc^8GhM=@8G3
 R10
 32
-R35
+R56
 !i10b 1
-R36
+R57
 R13
 R14
 !i113 1
 R15
 R16
 Eula_vhd_vec_tst
-Z37 w1539883382
+Z58 w1539883382
 R4
 R5
-R34
-Z38 8Waveform1.vwf.vht
-Z39 FWaveform1.vwf.vht
+R55
+Z59 8Waveform1.vwf.vht
+Z60 FWaveform1.vwf.vht
 l0
 L31
 V;AJ0Iea<UKi@1Wc^2kLO^0
 !s100 ]I6fbBl<B<WlH[ZEDmAGa1
 R10
 32
-R35
+R56
 !i10b 1
-Z40 !s108 1539883384.000000
-Z41 !s90 -work|work|Waveform1.vwf.vht|
-Z42 !s107 Waveform1.vwf.vht|
+Z61 !s108 1539883384.000000
+Z62 !s90 -work|work|Waveform1.vwf.vht|
+Z63 !s107 Waveform1.vwf.vht|
 !i113 1
 R15
 R16
@@ -305,11 +481,11 @@ VI2mE0OEeWY]NhheNM4A]:0
 !s100 leW4ZN2CZ8KdXbChRER<f2
 R10
 32
-R35
+R56
 !i10b 1
-R40
-R41
-R42
+R61
+R62
+R63
 !i113 1
 R15
 R16

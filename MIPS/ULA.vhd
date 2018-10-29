@@ -16,16 +16,14 @@ entity ULA is
 		-- Input ports
 		A		: in  std_logic_vector(31 downto 0);
 		B		: in  std_logic_vector(31 downto 0);
-		invA: in  std_logic;
-		invB: in  std_logic;
 		CIn	: in  std_logic_vector(31 downto 0);
-    selector: in std_logic_vector(1 downto 0);
+    selector: in std_logic_vector(3 downto 0);
 
 		-- Output ports
 		overflow: out std_logic;
 		r		: out std_logic_vector(31 downto 0);
-		COut: out std_logic_vector(31 downto 0)
-		Z: out std_logic;
+		COut: out std_logic_vector(31 downto 0);
+		Z: out std_logic
 	);
 	
 end entity;
@@ -38,9 +36,17 @@ signal COut_Aux, CIn_Aux, zero : std_logic_vector(31 downto 0) := "0000000000000
 signal SUM : std_logic_vector(31 downto 0);
 signal ENTRADA_A: std_logic_vector(31 downto 0);
 signal ENTRADA_B: std_logic_vector(31 downto 0);
+signal saida_AUX_R: std_logic_vector(31 downto 0);
+signal invA: std_logic;
+signal invB: std_logic;
+signal aux_sel: std_logic_vector(1 downto 0);
 	-- Declarations (optional)
 
 begin
+	invA <= selector(3);
+	invB <= selector(2);
+	aux_sel <= selector(1 downto 0); 
+
 	INVERTE_A: entity work.mux2
 	port map(A => A, B => NOT A, sel => invA, q => ENTRADA_A);
 
@@ -55,9 +61,10 @@ begin
 	port map(A => ENTRADA_A, B => ENTRADA_B, CarryIn => CIn_Aux, SOMAOUT => SUM, CarryOut => COut_Aux);
 
 	MUX: entity work.mux
-	port map (A => OUT_AND, B => OUT_OR, C => SUM, D => zero, sel => selector, q => r);
+	port map (A => OUT_AND, B => OUT_OR, C => SUM, D => zero, sel => aux_sel, q => saida_AUX_R);
    COut <= COut_Aux;
 	overflow <= CIn_Aux(31) XOR COut_Aux(31);
 	
-	Z <= (not or_reduce(r));
+	r <= saida_AUX_R;
+	Z <= (not or_reduce(saida_AUX_R));
 end architecture;

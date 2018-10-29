@@ -1,7 +1,7 @@
 # do MIPS.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:29:02 on Oct 23,2018
+# Start time: 15:24:04 on Oct 29,2018
 # vcom -work work MIPS.vho 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -12,37 +12,49 @@
 # -- Loading package cycloneive_components
 # -- Compiling entity hard_block
 # -- Compiling architecture structure of hard_block
-# -- Compiling entity UCFD
-# -- Compiling architecture structure of UCFD
-# End time: 10:29:03 on Oct 23,2018, Elapsed time: 0:00:01
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity top_level
+# -- Compiling architecture structure of top_level
+# End time: 15:24:04 on Oct 29,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:29:03 on Oct 23,2018
-# vcom -work work Waveform3.vwf.vht 
+# Start time: 15:24:04 on Oct 29,2018
+# vcom -work work Waveform5.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity UCFD_vhd_vec_tst
-# -- Compiling architecture UCFD_arch of UCFD_vhd_vec_tst
-# End time: 10:29:03 on Oct 23,2018, Elapsed time: 0:00:00
+# -- Compiling entity top_level_vhd_vec_tst
+# -- Compiling architecture top_level_arch of top_level_vhd_vec_tst
+# End time: 15:24:04 on Oct 29,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.UCFD_vhd_vec_tst 
-# Start time: 10:29:03 on Oct 23,2018
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.top_level_vhd_vec_tst 
+# Start time: 15:24:04 on Oct 29,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.ucfd_vhd_vec_tst(ucfd_arch)
+# Loading work.top_level_vhd_vec_tst(top_level_arch)
 # Loading ieee.vital_timing(body)
 # Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
 # Loading cycloneive.cycloneive_atom_pack(body)
 # Loading cycloneive.cycloneive_components
-# Loading work.ucfd(structure)
+# Loading work.top_level(structure)
 # Loading work.hard_block(structure)
 # Loading ieee.std_logic_arith(body)
 # Loading cycloneive.cycloneive_io_obuf(arch)
 # Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
-# after#33
+# Loading altera.dffeas(vital_dffeas)
+# Loading cycloneive.cycloneive_ram_block(block_arch)
+# Loading cycloneive.cycloneive_ram_register(reg_arch)
+# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)
+# ** Warning: Design size of 59912 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#35
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# End time: 10:29:05 on Oct 23,2018, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 1
+# End time: 15:24:05 on Oct 29,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
