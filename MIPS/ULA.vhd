@@ -16,7 +16,6 @@ entity ULA is
 		-- Input ports
 		A		: in  std_logic_vector(31 downto 0);
 		B		: in  std_logic_vector(31 downto 0);
-		CIn	: in  std_logic_vector(31 downto 0);
     selector: in std_logic_vector(3 downto 0);
 
 		-- Output ports
@@ -46,6 +45,7 @@ begin
 	invA <= selector(3);
 	invB <= selector(2);
 	aux_sel <= selector(1 downto 0); 
+	CIn_Aux(0) <= invB;
 
 	INVERTE_A: entity work.mux2
 	port map(A => A, B => NOT A, sel => invA, q => ENTRADA_A);

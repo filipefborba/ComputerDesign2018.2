@@ -5,7 +5,9 @@ use ieee.numeric_std.all;
 entity top_level is
 	port
 	(
-      clk: in std_logic;
+      --clk: in std_logic;
+		 CLOCK_50 : in STD_LOGIC;
+		 KEY: in std_logic_vector(3 downto 0);
 		 op: out std_logic_vector(5 downto 0);
 		 ula_op: out std_logic_vector(1 downto 0);
 		 hab_esc_mem: out std_logic;
@@ -21,7 +23,12 @@ entity top_level is
 		 saidaRAM: out std_logic_vector(31 downto 0);
 		 saidaPC: out std_logic_vector(31 downto 0);
 		 saidaTeste1: out std_logic_vector(31 downto 0);
-		 saidaTeste2: out std_logic_vector(31 downto 0)
+		 saidaTeste2: out std_logic_vector(31 downto 0);
+		 saidaTeste3: out std_logic_vector(31 downto 0);
+		 saidaTeste4: out std_logic_vector(31 downto 0);
+		 saidaTeste5: out std_logic_vector(31 downto 0);
+		 saidaTeste6: out std_logic_vector(31 downto 0);
+		 saidaTeste7: out std_logic_vector(31 downto 0)
 	);
 end entity;
 
@@ -37,6 +44,7 @@ signal aux_sel_mux_rt_imm: std_logic;
 signal aux_sel_MUX_rt_rd: std_logic;
 signal aux_sel_mux_jump: std_logic;
 signal aux_hab_esc_reg: std_logic;
+signal clk: std_logic;
 
 
 begin
@@ -67,9 +75,14 @@ begin
 		sel_MUX_RT_RD => aux_sel_MUX_rt_rd,
 		sel_MUX_JUMP => aux_sel_mux_jump,
 		HAB_ESC_REG => aux_hab_esc_reg,
-		clk => clk,
-		outTest2 => saidaTeste2,
+		clk => CLOCK_50,
 		outTest1 => saidaTeste1,
+		outTest2 => saidaTeste2,
+		outTest3 => saidaTeste3,
+		outTest4 => saidaTeste4,
+		outTest5 => saidaTeste5,
+		outTest6 => saidaTeste6,
+		outTest7 => saidaTeste7,
 		outPC => saidaPC,
 		outROM => saidaROM,
 		outRAM => saidaRAM,
@@ -87,10 +100,15 @@ begin
 		sel_mux_jump <= aux_sel_mux_jump;
 		hab_esc_reg <= aux_hab_esc_reg;
 		
+--		
+--		process(all) 
+--		begin
+--			if(rising_edge(not KEY(0))) then
+--				clk <= '1';
+--			else
+--				clk <= '0';
+--			end if;
+--		end process;
+
+		
 end architecture;
-
-
-
-
-
-

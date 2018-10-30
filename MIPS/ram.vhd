@@ -37,10 +37,9 @@ BEGIN
 			IF (we = '1') THEN
 			    ram_block(write_address) <= data;
 			END IF;
-			
-			IF (re = '1') THEN
-				q <= ram_block(read_address);
-			END IF;
 		END IF;
 	END PROCESS;
+	
+	q <= ram_block(read_address) WHEN re = '1' ELSE "00000000000000000000000000000000"; 
+	 
 END rtl;

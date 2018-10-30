@@ -5,15 +5,20 @@ use ieee.numeric_std.all;
 entity fluxo_de_dados is
 	port
 	(
-      -- Input ports
 		OP : out  std_logic_vector(5 downto 0);
 		outTest1: out std_logic_vector(31 downto 0);
 		outTest2: out std_logic_vector(31 downto 0);
+		outTest3: out std_logic_vector(31 downto 0);
+		outTest4: out std_logic_vector(31 downto 0);
+		outTest5: out std_logic_vector(31 downto 0);
+		outTest6: out std_logic_vector(31 downto 0);
+		outTest7: out std_logic_vector(31 downto 0);
 		outPC: out std_logic_vector(31 downto 0);
 		outROM: out std_logic_vector(31 downto 0);
 		outRAM: out std_logic_vector(31 downto 0);
 		outULA: out std_logic_vector(31 downto 0);
-		-- Output ports
+		LEDR: out std_logic_vector(3 downto 0);
+		
 		ULA_OP : in std_logic_vector(1 downto 0);
 		HAB_ESC_MEM: in std_logic;
 		HAB_LE_MEM: in std_logic;
@@ -49,6 +54,9 @@ signal saida_RAM: std_logic_vector(31 downto 0);
 signal saida_MUX_ULA_MEM: std_logic_vector(31 downto 0);
 signal saida_SOMA_PC_IMM: std_logic_vector(31 downto 0);
 signal saida_CARRYOUT_SOMA_PC_IMM: std_logic_vector(31 downto 0);
+signal decoder_HAB_MEM: std_logic;
+signal hab_led0, hab_led1, hab_led2, hab_led3, hab_sw0, hab_sw1, hab_sw2, hab_sw3: std_logic;
+signal outLed0, outLed1, outLed2, outLed3: std_logic_vector(1 downto 0);
 
 begin
 
@@ -56,14 +64,15 @@ begin
 		port map(DIN => PROX_PC, DOUT=> saida_PC, ENABLE=> '1', CLK => clk, RST => '0');
 		
 	MEM_INST: entity work.rom
-		port map(clk => clk, addr => to_integer(unsigned(saida_PC)), q => saida_ROM);
+		port map(clk => clk, addr => to_integer(unsigned("00" & saida_PC(31 downto 2))), q => saida_ROM);
 		
 	SOMA_PC: entity work.soma
-		port map(A => "00000000000000000000000000000001", B => saida_PC, CarryIn => "00000000000000000000000000000000",
+		port map(A => "00000000000000000000000000000100", B => saida_PC, CarryIn => "00000000000000000000000000000000",
 		SOMAOUT => saida_SOMA_PC, CarryOut => saida_CARRYOUT_SOMA_PC);
 	
 	MUX_JUMP: entity work.mux2
 		port map(A => entrada0_MUX_JUMP, B => saida_SOMA_PC(31 downto 28) & saida_ROM(25 downto 0) & "00", 
+		--port map(A => entrada0_MUX_JUMP, B => saida_SOMA_PC(31 downto 28) & "00" & saida_ROM(25 downto 0) , 
 		sel => sel_MUX_JUMP, q => PROX_PC);
   
 	MUX_RT_RD: entity work.mux2
@@ -79,7 +88,9 @@ begin
 	BANCO_REG: entity work.banco_reg
 		port map(clk => clk, enderecoA => saida_ROM(25 downto 21), enderecoB => saida_ROM(20 downto 16),
 		enderecoC => saida_MUX_RT_RD, dadoEscritaC => saida_MUX_ULA_MEM, escreveC => HAB_ESC_REG,
-		saidaA => saida_REG1, saidaB => saida_REG2, saidaTeste1 => outTest1, saidaTeste2 => outTest2);
+		saidaA => saida_REG1, saidaB => saida_REG2, saidaTeste1 => outTest1, saidaTeste2 => outTest2,
+		saidaTeste3 => outTest3, saidaTeste4 => outTest4, saidaTeste5 => outTest5, saidaTeste6 => outTest6,
+		saidaTeste7 => outTest7);
 	
 	MUX_RT_IMM: entity work.mux2
 		port map(A => saida_REG2, B => saida_EXTENSOR, sel => sel_MUX_RT_IMM,
@@ -90,23 +101,72 @@ begin
 		
 	ULA: entity work.ULA
 		port map(A => saida_REG1, B => saida_MUX_RT_IMM,
-		selector => ula_control, CIn => "00000000000000000000000000000000", Z => saida_Z_ULA,
+		selector => ula_control, Z => saida_Z_ULA,
 		r => saida_ULA, COut =>saida_COUT_ULA, overflow => saida_OVERFLOW_ULA);
 		
 	MUX_ULA_MEM: entity work.mux2
 		port map(A => saida_ULA, B => saida_RAM, sel => sel_MUX_ULA_MEM, q => saida_MUX_ULA_MEM);
 		
 	RAM: entity work.ram
-		port map(clock => clk, data => saida_REG2, write_address => to_integer(unsigned(saida_ULA)),
-		read_address => to_integer(unsigned(saida_ULA)), we => HAB_ESC_MEM, re => HAB_LE_MEM, q => saida_RAM);
+		port map(clock => clk, data => saida_REG2, write_address => to_integer(unsigned("00" & saida_ULA(31 downto 2))),
+		read_address => to_integer(unsigned("00" & saida_ULA(31 downto 2))), we => HAB_ESC_MEM and decoder_HAB_MEM, re => HAB_LE_MEM and decoder_HAB_MEM, q => saida_RAM);
 		
 	SOMA_PC_IMM: entity work.soma
 		port map(A => saida_SOMA_PC, B => std_logic_vector(shift_left(unsigned(saida_EXTENSOR), 2)),
+		--port map(A => saida_SOMA_PC, B => saida_EXTENSOR,
 		CarryIn => "00000000000000000000000000000000", SOMAOUT => saida_SOMA_PC_IMM, CarryOut => saida_CARRYOUT_SOMA_PC_IMM);
 		
 	MUX_BEQ: entity work.mux2
 		port map(A => saida_SOMA_PC, B => saida_SOMA_PC_IMM, sel => (BEQ and saida_Z_ULA),
 		q => entrada0_MUX_JUMP);
+		
+	DECODER: entity work.decodificador
+		port map(clk => clk, endereco => saida_ULA, memoria => decoder_HAB_MEM, led0 => hab_led0,
+		led1 => hab_led1, led2 => hab_led2, led3 => hab_led3, sw0 => hab_sw0, sw1 => hab_sw1, sw2 => hab_sw2, sw3 => hab_sw3);
+	
+	reg_led0: entity work.registrador
+		generic map (larguraDados => 2)
+		port map (
+			DIN => "0" & saida_REG2(0),
+			DOUT => outLed0,
+			ENABLE => hab_led0,
+			CLK => clk, RST => '0'
+			);
+			
+		
+	reg_led1: entity work.registrador
+		generic map (larguraDados => 2)
+		port map (
+			DIN => "0" & saida_REG2(0),
+			DOUT => outLed1,
+			ENABLE => hab_led1,
+			CLK => clk, RST => '0'
+			);
+			
+	reg_led2: entity work.registrador
+		generic map (larguraDados => 2)
+		port map (
+			DIN => "0" & saida_REG2(0),
+			DOUT => outLed2,
+			ENABLE => hab_led2,
+			CLK => clk, RST => '0'
+			);
+			
+	reg_led3: entity work.registrador
+		generic map (larguraDados => 2)
+		port map (
+			DIN => "0" & saida_REG2(0),
+			DOUT => outLed3,
+			ENABLE => hab_led3,
+			CLK => clk, RST => '0'
+			);
+			
+			
+	LEDR(0) <= outLed0(0);
+	LEDR(1) <= outLed1(0);
+	LEDR(2) <= outLed2(0);
+	LEDR(3) <= outLed3(0);
+			
   outRAM <= saida_RAM;
   outPC <= saida_PC;
   outROM <= saida_ROM;

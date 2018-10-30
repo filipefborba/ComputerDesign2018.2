@@ -26,7 +26,12 @@ entity banco_reg is
         saidaA          : out std_logic_vector((larguraDados -1) downto 0);
         saidaB          : out std_logic_vector((larguraDados -1) downto 0);
 		  saidaTeste1     : out std_logic_vector((larguraDados -1) downto 0);
-		  saidaTeste2     : out std_logic_vector((larguraDados -1) downto 0)
+		  saidaTeste2     : out std_logic_vector((larguraDados -1) downto 0);
+		  saidaTeste3     : out std_logic_vector((larguraDados -1) downto 0);
+		  saidaTeste4     : out std_logic_vector((larguraDados -1) downto 0);
+		  saidaTeste5     : out std_logic_vector((larguraDados -1) downto 0);
+		  saidaTeste6     : out std_logic_vector((larguraDados -1) downto 0);
+		  saidaTeste7     : out std_logic_vector((larguraDados -1) downto 0)
     );
 end entity;
 
@@ -77,4 +82,9 @@ begin
 	  
 	  saidaTeste1 <= registrador(1);
 	  saidaTeste2 <= registrador(2);
+	  saidaTeste3 <= registrador(3);
+	  saidaTeste4 <= registrador(4);
+	  saidaTeste5 <= registrador(5);
+	  saidaTeste6 <= registrador(6);
+	  saidaTeste7 <= registrador(7);
 end architecture;

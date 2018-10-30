@@ -1,0 +1,40 @@
+Quartus Prime Archive log --	/home/gmore/Desktop/ComputerDesign2018.2/MIPS/MIPS.qarlog
+
+Archive:	/home/gmore/Desktop/ComputerDesign2018.2/MIPS/MIPS.qar
+Date:		Tue Oct 30 14:30:44 2018
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/MIPS.qpf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/MIPS.qsf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/MIPS_assignment_defaults.qdf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/MIPS_certo.qsf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/UC.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/UCFD.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/ULA.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform1.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform2.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform3.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform4.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform5.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform6.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform7.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/WaveformRom.vwf
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/banco_reg.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/decodificador.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/fluxo_de_dados.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/mux.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/mux2.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/ram.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/ram_t.mif
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/registrador.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/rom.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/rom_t.mif
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/sig_ext.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/soma.vhd
+/home/gmore/Desktop/ComputerDesign2018.2/MIPS/top_level.vhd
+	======= Total: 29 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

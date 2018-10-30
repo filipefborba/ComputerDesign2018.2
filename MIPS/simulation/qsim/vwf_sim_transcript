@@ -7,19 +7,18 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source="/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform5.vwf" --testbench_file="/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform5.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source="/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform7.vwf" --testbench_file="/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform7.vwf.vht"
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Mon Oct 29 15:24:02 2018Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform5.vwf --testbench_file=/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform5.vwf.vhtWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-aidaTeste1[20]" in vector source file when writing test bench files
-test bench files
-rnings    Info: Peak virtual memory: 1056 megabytes    Info: Processing ended: Mon Oct 29 15:24:02 2018    Info: Elapsed time: 00:00:00    Info: Total CPU time (on all processors): 00:00:00
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Tue Oct 30 11:21:09 2018Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off MIPS -c MIPS --vector_source=/home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform7.vwf --testbench_file=/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/Waveform7.vwf.vhtWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+iting test bench files
+ng output pin "saidaTeste7[10]" in vector source file when writing test bench files
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
 quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/" MIPS -c MIPS
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Mon Oct 29 15:24:03 2018Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/ MIPS -c MIPSWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file MIPS.vho in folder "/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1059 megabytes    Info: Processing ended: Mon Oct 29 15:24:03 2018    Info: Elapsed time: 00:00:00    Info: Total CPU time (on all processors): 00:00:01
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Tue Oct 30 11:21:10 2018Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/ MIPS -c MIPSWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file MIPS.vho in folder "/home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1064 megabytes    Info: Processing ended: Tue Oct 30 11:21:11 2018    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
@@ -34,37 +33,35 @@ Completed successfully.
 
 Reading pref.tcl
 # 10.5b
+
 # do MIPS.do
 # ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016# Start time: 11:21:11 on Oct 30,2018# vcom -work work MIPS.vho 
+# -- Loading package STANDARD# -- Loading package TEXTIO# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing# -- Loading package VITAL_Primitives# -- Loading package cycloneive_atom_pack# -- Loading package cycloneive_components# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block# -- Loading package dffeas_pack# -- Loading package altera_primitives_components# -- Compiling entity top_level# -- Compiling architecture structure of top_level
+# End time: 11:21:11 on Oct 30,2018, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:24:04 on Oct 29,2018# vcom -work work MIPS.vho # -- Loading package STANDARD
-# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives# -- Loading package cycloneive_atom_pack# -- Loading package cycloneive_components# -- Compiling entity hard_block# -- Compiling architecture structure of hard_block
-# -- Loading package dffeas_pack# -- Loading package altera_primitives_components# -- Compiling entity top_level
-# -- Compiling architecture structure of top_level
-# End time: 15:24:04 on Oct 29,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:24:04 on Oct 29,2018# vcom -work work Waveform5.vwf.vht 
-# -- Loading package STANDARD
+# Start time: 11:21:11 on Oct 30,2018# vcom -work work Waveform7.vwf.vht # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164# -- Compiling entity top_level_vhd_vec_tst# -- Compiling architecture top_level_arch of top_level_vhd_vec_tst
-# End time: 15:24:04 on Oct 29,2018, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.top_level_vhd_vec_tst # Start time: 15:24:04 on Oct 29,2018# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.top_level_vhd_vec_tst(top_level_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading cycloneive.cycloneive_atom_pack(body)# Loading cycloneive.cycloneive_components# Loading work.top_level(structure)# Loading work.hard_block(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneive.cycloneive_io_obuf(arch)# Loading cycloneive.cycloneive_io_ibuf(arch)# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)# Loading cycloneive.cycloneive_ena_reg(behave)# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)# Loading altera.dffeas(vital_dffeas)# Loading cycloneive.cycloneive_ram_block(block_arch)# Loading cycloneive.cycloneive_ram_register(reg_arch)# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)# ** Warning: Design size of 59912 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
+# End time: 11:21:12 on Oct 30,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.top_level_vhd_vec_tst # Start time: 11:21:12 on Oct 30,2018# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.top_level_vhd_vec_tst(top_level_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading altera.dffeas_pack# Loading altera.altera_primitives_components# Loading cycloneive.cycloneive_atom_pack(body)# Loading cycloneive.cycloneive_components# Loading work.top_level(structure)# Loading work.hard_block(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneive.cycloneive_io_obuf(arch)# Loading cycloneive.cycloneive_io_ibuf(arch)# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)# Loading cycloneive.cycloneive_ena_reg(behave)# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)# Loading altera.dffeas(vital_dffeas)# Loading cycloneive.cycloneive_ram_block(block_arch)# Loading cycloneive.cycloneive_ram_register(reg_arch)# Loading cycloneive.cycloneive_ram_pulse_generator(pgen_arch)# ** Warning: Design size of 147213 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.# Expect performance to be adversely affected.
 # after#35
 # ** Warning: (vsim-3116) Problem reading symbols from linux-gate.so.1 : can not open ELF file.
-# End time: 15:24:05 on Oct 29,2018, Elapsed time: 0:00:01# Errors: 0, Warnings: 2
+# End time: 11:21:12 on Oct 30,2018, Elapsed time: 0:00:00# Errors: 0, Warnings: 2
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading /home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform5.vwf...
+Reading /home/gmore/Desktop/ComputerDesign2018.2/MIPS/Waveform7.vwf...
 
 Reading /home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/MIPS.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to /home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/MIPS_20181029152405.sim.vwf
+Writing the resulting VWF to /home/gmore/Desktop/ComputerDesign2018.2/MIPS/simulation/qsim/MIPS_20181030112113.sim.vwf
 
 Finished VCD to VWF conversion.
 
