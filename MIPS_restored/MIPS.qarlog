@@ -1,0 +1,42 @@
+Quartus Prime Archive log --	C:/Users/tirta/Desktop/MIPS_restored/MIPS.qarlog
+
+Archive:	C:/Users/tirta/Desktop/MIPS_restored/MIPS.qar
+Date:		Wed Oct 31 18:52:10 2018
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/tirta/Desktop/MIPS_restored/MIPS.qpf
+C:/Users/tirta/Desktop/MIPS_restored/MIPS.qsf
+C:/Users/tirta/Desktop/MIPS_restored/MIPS_assignment_defaults.qdf
+C:/Users/tirta/Desktop/MIPS_restored/MIPS_certo.qsf
+C:/Users/tirta/Desktop/MIPS_restored/UC.vhd
+C:/Users/tirta/Desktop/MIPS_restored/UCFD.vhd
+C:/Users/tirta/Desktop/MIPS_restored/ULA.vhd
+C:/Users/tirta/Desktop/MIPS_restored/Waveform.vwf
+C:/Users/tirta/Desktop/MIPS_restored/Waveform1.vwf
+C:/Users/tirta/Desktop/MIPS_restored/Waveform2.vwf
+C:/Users/tirta/Desktop/MIPS_restored/Waveform3.vwf
+C:/Users/tirta/Desktop/MIPS_restored/Waveform4.vwf
+C:/Users/tirta/Desktop/MIPS_restored/Waveform5.vwf
+C:/Users/tirta/Desktop/MIPS_restored/Waveform6.vwf
+C:/Users/tirta/Desktop/MIPS_restored/Waveform7.vwf
+C:/Users/tirta/Desktop/MIPS_restored/WaveformRom.vwf
+C:/Users/tirta/Desktop/MIPS_restored/banco_reg.vhd
+C:/Users/tirta/Desktop/MIPS_restored/conversorHex7Seg.vhd
+C:/Users/tirta/Desktop/MIPS_restored/decodificador.vhd
+C:/Users/tirta/Desktop/MIPS_restored/edgeDetector.vhd
+C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd
+C:/Users/tirta/Desktop/MIPS_restored/mux.vhd
+C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd
+C:/Users/tirta/Desktop/MIPS_restored/ram.vhd
+C:/Users/tirta/Desktop/MIPS_restored/ram_t.mif
+C:/Users/tirta/Desktop/MIPS_restored/registrador.vhd
+C:/Users/tirta/Desktop/MIPS_restored/rom.vhd
+C:/Users/tirta/Desktop/MIPS_restored/rom_t.mif
+C:/Users/tirta/Desktop/MIPS_restored/sig_ext.vhd
+C:/Users/tirta/Desktop/MIPS_restored/soma.vhd
+C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd
+	======= Total: 31 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
