@@ -9,6 +9,7 @@ entity top_level is
 		 CLOCK_50 : in STD_LOGIC;
 		 KEY: in std_logic_vector(3 downto 0);
 		 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7 : OUT STD_LOGIC_VECTOR(6 downto 0);
+		 LEDR: out std_logic_vector(3 downto 0);
 		 op: out std_logic_vector(5 downto 0);
 		 ula_op: out std_logic_vector(1 downto 0);
 		 hab_esc_mem: out std_logic;
@@ -48,6 +49,7 @@ signal aux_hab_esc_reg: std_logic;
 signal CLK, but: std_logic;
 
 signal saidaReg1Banco, saidaReg2Banco, saidaReg3Banco, saidaReg4Banco: std_logic_vector(3 downto 0);
+signal led0, led1, led2, led3: std_logic;
 
 begin
 
@@ -89,6 +91,10 @@ begin
 		outReg2Banco => saidaReg2Banco,
 		outReg3Banco => saidaReg3Banco,
 		outReg4Banco => saidaReg4Banco,
+		outLedR0 => led0,
+		outLedR1 => led1,
+		outLedR2 => led2,
+		outLedR3 => led3,
 		outPC => saidaPC,
 		outROM => saidaROM,
 		outRAM => saidaRAM,
@@ -123,7 +129,11 @@ begin
 
 		but <= (not KEY(0));
 		
-		
+		LEDR(0) <= led0;
+		LEDR(1) <= led1;
+		LEDR(2) <= led2;
+		LEDR(3) <= led3;
+	
 		
 		
 end architecture;

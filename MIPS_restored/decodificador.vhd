@@ -29,7 +29,7 @@ begin
 
 	-- Botoes da Placa
 	--algumacoisa <= not(KEY(0)); --  Pressionando a tecla 0
-	process(all)
+	process(endereco, clk)
    begin
 --		
 --			case endereco is
@@ -54,7 +54,7 @@ begin
 --			end case;
 
 
-			IF (to_integer(unsigned(endereco)) < 512) THEN
+			IF (to_integer(unsigned(endereco)) <= 512) THEN
 				memoria <= '1';
 			ELSE
 				memoria <= '0';

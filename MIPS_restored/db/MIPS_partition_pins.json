@@ -116,6 +116,22 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
 					"name" : "op[0]",
 					"strict" : false
 				},
@@ -124,19 +140,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "op[2]",
-					"strict" : false
-				},
-				{
 					"name" : "op[3]",
 					"strict" : false
 				},
 				{
 					"name" : "op[5]",
-					"strict" : false
-				},
-				{
-					"name" : "ula_op[0]",
 					"strict" : false
 				},
 				{
@@ -149,10 +157,6 @@
 				},
 				{
 					"name" : "hab_le_mem",
-					"strict" : false
-				},
-				{
-					"name" : "beq",
 					"strict" : false
 				},
 				{
@@ -196,7 +200,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "saidaROM[8]",
+					"name" : "saidaROM[9]",
 					"strict" : false
 				},
 				{
@@ -220,10 +224,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "saidaROM[18]",
-					"strict" : false
-				},
-				{
 					"name" : "saidaROM[21]",
 					"strict" : false
 				},
@@ -232,19 +232,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "saidaROM[23]",
-					"strict" : false
-				},
-				{
 					"name" : "saidaROM[26]",
 					"strict" : false
 				},
 				{
 					"name" : "saidaROM[27]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaROM[28]",
 					"strict" : false
 				},
 				{
@@ -1141,262 +1133,6 @@
 				},
 				{
 					"name" : "saidaTeste4[31]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[0]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[1]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[2]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[3]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[4]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[5]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[6]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[7]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[8]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[9]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[10]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[11]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[12]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[13]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[14]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[15]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[16]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[17]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[18]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[19]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[20]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[21]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[22]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[23]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[24]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[25]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[26]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[27]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[28]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[29]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[30]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste5[31]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[0]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[1]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[2]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[3]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[4]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[5]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[6]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[7]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[8]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[9]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[10]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[11]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[12]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[13]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[14]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[15]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[16]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[17]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[18]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[19]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[20]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[21]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[22]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[23]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[24]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[25]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[26]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[27]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[28]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[29]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[30]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaTeste6[31]",
 					"strict" : false
 				},
 				{

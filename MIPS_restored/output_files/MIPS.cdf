@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/tirta/Desktop/MIPS_restored/output_files/") File("MIPS.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/output_files/") File("MIPS.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

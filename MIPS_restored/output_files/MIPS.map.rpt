@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Wed Oct 31 19:03:58 2018
+Wed Oct 31 22:17:13 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -65,10 +65,9 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  57. Port Connectivity Checks: "fluxo_de_dados:FD|mux2:MUX_JUMP"
  58. Port Connectivity Checks: "fluxo_de_dados:FD|soma:SOMA_PC"
  59. Port Connectivity Checks: "fluxo_de_dados:FD|registrador:PC"
- 60. Port Connectivity Checks: "fluxo_de_dados:FD"
- 61. Post-Synthesis Netlist Statistics for Top Partition
- 62. Elapsed Time Per Partition
- 63. Analysis & Synthesis Messages
+ 60. Post-Synthesis Netlist Statistics for Top Partition
+ 61. Elapsed Time Per Partition
+ 62. Analysis & Synthesis Messages
 
 
 
@@ -94,16 +93,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 31 19:03:58 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 31 22:17:12 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; MIPS                                        ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 29,195                                      ;
-;     Total combinational functions  ; 12,570                                      ;
-;     Dedicated logic registers      ; 16,748                                      ;
-; Total registers                    ; 16748                                       ;
-; Total pins                         ; 429                                         ;
+; Total logic elements               ; 28,588                                      ;
+;     Total combinational functions  ; 12,029                                      ;
+;     Dedicated logic registers      ; 16,685                                      ;
+; Total registers                    ; 16685                                       ;
+; Total pins                         ; 433                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 512                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -215,38 +214,38 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
-; mux2.vhd                         ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd                                ;         ;
-; ULA.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/ULA.vhd                                 ;         ;
-; soma.vhd                         ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/soma.vhd                                ;         ;
-; mux.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/mux.vhd                                 ;         ;
-; UC.vhd                           ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/UC.vhd                                  ;         ;
-; UCFD.vhd                         ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/UCFD.vhd                                ;         ;
-; registrador.vhd                  ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/registrador.vhd                         ;         ;
-; ram.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/ram.vhd                                 ;         ;
-; rom.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/rom.vhd                                 ;         ;
-; sig_ext.vhd                      ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/sig_ext.vhd                             ;         ;
-; fluxo_de_dados.vhd               ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd                      ;         ;
-; banco_reg.vhd                    ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/banco_reg.vhd                           ;         ;
-; top_level.vhd                    ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd                           ;         ;
-; decodificador.vhd                ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/decodificador.vhd                       ;         ;
-; edgeDetector.vhd                 ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/edgeDetector.vhd                        ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/MIPS_restored/conversorHex7Seg.vhd                    ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_esg1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/tirta/Desktop/MIPS_restored/db/altsyncram_esg1.tdf                  ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; mux2.vhd                         ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux2.vhd               ;         ;
+; ULA.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ULA.vhd                ;         ;
+; soma.vhd                         ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/soma.vhd               ;         ;
+; mux.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd                ;         ;
+; UC.vhd                           ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/UC.vhd                 ;         ;
+; UCFD.vhd                         ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/UCFD.vhd               ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/registrador.vhd        ;         ;
+; ram.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ram.vhd                ;         ;
+; rom.vhd                          ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/rom.vhd                ;         ;
+; sig_ext.vhd                      ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/sig_ext.vhd            ;         ;
+; fluxo_de_dados.vhd               ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd     ;         ;
+; banco_reg.vhd                    ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/banco_reg.vhd          ;         ;
+; top_level.vhd                    ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd          ;         ;
+; decodificador.vhd                ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/decodificador.vhd      ;         ;
+; edgeDetector.vhd                 ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/edgeDetector.vhd       ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File               ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/conversorHex7Seg.vhd   ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf            ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc     ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc               ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc            ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc            ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc             ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc              ;         ;
+; db/altsyncram_esg1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/db/altsyncram_esg1.tdf ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------+
@@ -254,31 +253,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------------------+
 ; Resource                                    ; Usage                           ;
 +---------------------------------------------+---------------------------------+
-; Estimated Total logic elements              ; 29,195                          ;
+; Estimated Total logic elements              ; 28,588                          ;
 ;                                             ;                                 ;
-; Total combinational functions               ; 12570                           ;
+; Total combinational functions               ; 12029                           ;
 ; Logic element usage by number of LUT inputs ;                                 ;
-;     -- 4 input functions                    ; 12418                           ;
-;     -- 3 input functions                    ; 115                             ;
-;     -- <=2 input functions                  ; 37                              ;
+;     -- 4 input functions                    ; 11816                           ;
+;     -- 3 input functions                    ; 186                             ;
+;     -- <=2 input functions                  ; 27                              ;
 ;                                             ;                                 ;
 ; Logic elements by mode                      ;                                 ;
-;     -- normal mode                          ; 12570                           ;
+;     -- normal mode                          ; 12029                           ;
 ;     -- arithmetic mode                      ; 0                               ;
 ;                                             ;                                 ;
-; Total registers                             ; 16748                           ;
-;     -- Dedicated logic registers            ; 16748                           ;
+; Total registers                             ; 16685                           ;
+;     -- Dedicated logic registers            ; 16685                           ;
 ;     -- I/O registers                        ; 0                               ;
 ;                                             ;                                 ;
-; I/O pins                                    ; 429                             ;
+; I/O pins                                    ; 433                             ;
 ; Total memory bits                           ; 512                             ;
 ;                                             ;                                 ;
 ; Embedded Multiplier 9-bit elements          ; 0                               ;
 ;                                             ;                                 ;
 ; Maximum fan-out node                        ; edgeDetector:detectorSub0|saida ;
-; Maximum fan-out                             ; 16811                           ;
-; Total fan-out                               ; 101599                          ;
-; Average fan-out                             ; 3.36                            ;
+; Maximum fan-out                             ; 16748                           ;
+; Total fan-out                               ; 99102                           ;
+; Average fan-out                             ; 3.34                            ;
 +---------------------------------------------+---------------------------------+
 
 
@@ -287,37 +286,41 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                          ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |top_level                                   ; 12570 (0)           ; 16748 (0)                 ; 512         ; 0            ; 0       ; 0         ; 429  ; 0            ; |top_level                                                                                                   ; top_level        ; work         ;
-;    |UCFD:UCFD|                               ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|UCFD:UCFD                                                                                         ; UCFD             ; work         ;
+; |top_level                                   ; 12029 (1)           ; 16685 (0)                 ; 512         ; 0            ; 0       ; 0         ; 433  ; 0            ; |top_level                                                                                                   ; top_level        ; work         ;
+;    |UCFD:UCFD|                               ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|UCFD:UCFD                                                                                         ; UCFD             ; work         ;
 ;    |conversorHex7Seg:display0|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display0                                                                         ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display1|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display1                                                                         ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display2|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display2                                                                         ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display3|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display3                                                                         ; conversorHex7Seg ; work         ;
 ;    |edgeDetector:detectorSub0|               ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|edgeDetector:detectorSub0                                                                         ; edgeDetector     ; work         ;
-;    |fluxo_de_dados:FD|                       ; 12535 (15)          ; 16747 (0)                 ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD                                                                                 ; fluxo_de_dados   ; work         ;
+;    |fluxo_de_dados:FD|                       ; 11994 (0)           ; 16684 (0)                 ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD                                                                                 ; fluxo_de_dados   ; work         ;
 ;       |UC:UC_ULA|                            ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|UC:UC_ULA                                                                       ; UC               ; work         ;
-;       |ULA:ULA|                              ; 139 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA                                                                         ; ULA              ; work         ;
-;          |mux2:INVERTE_B|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux2:INVERTE_B                                                          ; mux2             ; work         ;
-;          |mux:MUX|                           ; 107 (107)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX                                                                 ; mux              ; work         ;
-;          |soma:SOMA|                         ; 31 (31)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|soma:SOMA                                                               ; soma             ; work         ;
-;       |banco_reg:BANCO_REG|                  ; 84 (84)             ; 302 (302)                 ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG                                                             ; banco_reg        ; work         ;
+;       |ULA:ULA|                              ; 146 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA                                                                         ; ULA              ; work         ;
+;          |mux2:INVERTE_B|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux2:INVERTE_B                                                          ; mux2             ; work         ;
+;          |mux:MUX|                           ; 105 (105)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX                                                                 ; mux              ; work         ;
+;          |soma:SOMA|                         ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|soma:SOMA                                                               ; soma             ; work         ;
+;       |banco_reg:BANCO_REG|                  ; 84 (84)             ; 236 (236)                 ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG                                                             ; banco_reg        ; work         ;
 ;          |altsyncram:registrador_rtl_0|      ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_0                                ; altsyncram       ; work         ;
 ;             |altsyncram_esg1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_0|altsyncram_esg1:auto_generated ; altsyncram_esg1  ; work         ;
 ;          |altsyncram:registrador_rtl_1|      ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_1                                ; altsyncram       ; work         ;
 ;             |altsyncram_esg1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_1|altsyncram_esg1:auto_generated ; altsyncram_esg1  ; work         ;
-;       |mux2:MUX_JUMP|                        ; 48 (48)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_JUMP                                                                   ; mux2             ; work         ;
+;       |decodificador:DECODER|                ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|decodificador:DECODER                                                           ; decodificador    ; work         ;
+;       |mux2:MUX_JUMP|                        ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_JUMP                                                                   ; mux2             ; work         ;
 ;       |mux2:MUX_RT_IMM|                      ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_RT_IMM                                                                 ; mux2             ; work         ;
 ;       |mux2:MUX_RT_RD|                       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_RT_RD                                                                  ; mux2             ; work         ;
 ;       |mux2:MUX_ULA_MEM|                     ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_ULA_MEM                                                                ; mux2             ; work         ;
-;       |ram:RAM|                              ; 12008 (12008)       ; 16384 (16384)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ram:RAM                                                                         ; ram              ; work         ;
-;       |registrador:PC|                       ; 47 (47)             ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:PC                                                                  ; registrador      ; work         ;
+;       |ram:RAM|                              ; 11559 (11559)       ; 16384 (16384)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ram:RAM                                                                         ; ram              ; work         ;
+;       |registrador:PC|                       ; 4 (4)               ; 30 (30)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:PC                                                                  ; registrador      ; work         ;
 ;       |registrador:reg_hex1_reg1|            ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_hex1_reg1                                                       ; registrador      ; work         ;
 ;       |registrador:reg_hex2_reg2|            ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_hex2_reg2                                                       ; registrador      ; work         ;
 ;       |registrador:reg_hex3_reg3|            ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_hex3_reg3                                                       ; registrador      ; work         ;
 ;       |registrador:reg_hex4_reg4|            ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_hex4_reg4                                                       ; registrador      ; work         ;
-;       |rom:MEM_INST|                         ; 29 (29)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|rom:MEM_INST                                                                    ; rom              ; work         ;
-;       |soma:SOMA_PC_IMM|                     ; 36 (36)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|soma:SOMA_PC_IMM                                                                ; soma             ; work         ;
-;       |soma:SOMA_PC|                         ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|soma:SOMA_PC                                                                    ; soma             ; work         ;
+;       |registrador:reg_led0|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_led0                                                            ; registrador      ; work         ;
+;       |registrador:reg_led1|                 ; 3 (3)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_led1                                                            ; registrador      ; work         ;
+;       |registrador:reg_led2|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_led2                                                            ; registrador      ; work         ;
+;       |registrador:reg_led3|                 ; 3 (3)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_led3                                                            ; registrador      ; work         ;
+;       |rom:MEM_INST|                         ; 29 (29)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|rom:MEM_INST                                                                    ; rom              ; work         ;
+;       |soma:SOMA_PC|                         ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|soma:SOMA_PC                                                                    ; soma             ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -338,14 +341,77 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                                                         ; Reason for Removal                               ;
 +-----------------------------------------------------------------------+--------------------------------------------------+
 ; fluxo_de_dados:FD|registrador:PC|DOUT[0,1]                            ; Stuck at GND due to stuck port data_in           ;
-; fluxo_de_dados:FD|rom:MEM_INST|q[4,6,7,9,10,14,15,19,20,24,25,30]     ; Stuck at GND due to stuck port data_in           ;
-; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_0_bypass[7..10] ; Stuck at GND due to stuck port data_in           ;
-; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_1_bypass[7..10] ; Stuck at GND due to stuck port data_in           ;
+; fluxo_de_dados:FD|rom:MEM_INST|q[4,6..8,10,14,15,18..20,23..25,28,30] ; Stuck at GND due to stuck port data_in           ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_0_bypass[6..10] ; Stuck at GND due to stuck port data_in           ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_1_bypass[6..10] ; Stuck at GND due to stuck port data_in           ;
 ; fluxo_de_dados:FD|rom:MEM_INST|q[31]                                  ; Merged with fluxo_de_dados:FD|rom:MEM_INST|q[26] ;
-; fluxo_de_dados:FD|rom:MEM_INST|q[18,23]                               ; Merged with fluxo_de_dados:FD|rom:MEM_INST|q[28] ;
-; fluxo_de_dados:FD|rom:MEM_INST|q[8]                                   ; Merged with fluxo_de_dados:FD|rom:MEM_INST|q[29] ;
+; fluxo_de_dados:FD|rom:MEM_INST|q[9]                                   ; Merged with fluxo_de_dados:FD|rom:MEM_INST|q[29] ;
 ; fluxo_de_dados:FD|rom:MEM_INST|q[12]                                  ; Merged with fluxo_de_dados:FD|rom:MEM_INST|q[11] ;
-; Total Number of Removed Registers = 27                                ;                                                  ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][0]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][1]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][2]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][3]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][4]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][5]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][6]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][7]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][8]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][9]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][10]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][11]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][12]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][13]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][14]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][15]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][16]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][17]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][18]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][19]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][20]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][21]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][22]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][23]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][24]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][25]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][26]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][27]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][28]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][29]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][30]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][31]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][0]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][1]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][2]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][3]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][4]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][5]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][6]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][7]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][8]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][9]               ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][10]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][11]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][12]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][13]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][14]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][15]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][16]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][17]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][18]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][19]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][20]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][21]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][22]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][23]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][24]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][25]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][26]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][27]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][28]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][29]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][30]              ; Stuck at GND due to stuck port clock_enable      ;
+; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][31]              ; Stuck at GND due to stuck port clock_enable      ;
+; Total Number of Removed Registers = 94                                ;                                                  ;
 +-----------------------------------------------------------------------+--------------------------------------------------+
 
 
@@ -354,10 +420,74 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------+---------------------------+--------------------------------------------------------------------+
 ; Register name                        ; Reason for Removal        ; Registers Removed due to This Register                             ;
 +--------------------------------------+---------------------------+--------------------------------------------------------------------+
+; fluxo_de_dados:FD|rom:MEM_INST|q[28] ; Stuck at GND              ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_0_bypass[9], ;
+;                                      ; due to stuck port data_in ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_1_bypass[9], ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][0],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][1],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][2],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][3],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][4],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][5],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][6],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][7],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][8],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][9],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][10],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][11],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][12],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][13],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][14],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][15],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][16],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][17],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][18],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][19],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][20],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][21],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][22],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][23],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][24],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][25],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][26],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][27],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][28],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][29],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][30],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[5][31],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][0],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][1],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][2],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][3],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][4],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][5],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][6],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][7],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][8],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][9],           ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][10],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][11],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][12],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][13],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][14],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][15],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][16],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][17],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][18],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][19],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][20],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][21],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][22],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][23],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][24],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][25],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][26],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][27],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][28],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][29],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][30],          ;
+;                                      ;                           ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador[6][31]           ;
 ; fluxo_de_dados:FD|rom:MEM_INST|q[14] ; Stuck at GND              ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_0_bypass[7], ;
 ;                                      ; due to stuck port data_in ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_1_bypass[7]  ;
-; fluxo_de_dados:FD|rom:MEM_INST|q[15] ; Stuck at GND              ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_0_bypass[9], ;
-;                                      ; due to stuck port data_in ; fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_1_bypass[9]  ;
 +--------------------------------------+---------------------------+--------------------------------------------------------------------+
 
 
@@ -366,12 +496,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 16748 ;
+; Total registers                              ; 16685 ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16608 ;
+; Number of registers using Clock Enable       ; 16544 ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -484,11 +614,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |top_level|fluxo_de_dados:FD|registrador:PC|DOUT[12]        ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |top_level|fluxo_de_dados:FD|registrador:PC|DOUT[2]         ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX|Mux1           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaA[0]  ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaB[14] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX|Mux29          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaA[26] ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaB[19] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -1077,36 +1205,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "fluxo_de_dados:FD"                                                                  ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; ledr ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 429                         ;
-; cycloneiii_ff         ; 16748                       ;
-;     ENA               ; 16608                       ;
-;     SLD               ; 14                          ;
-;     plain             ; 126                         ;
-; cycloneiii_lcell_comb ; 12571                       ;
-;     normal            ; 12571                       ;
+; boundary_port         ; 433                         ;
+; cycloneiii_ff         ; 16685                       ;
+;     ENA               ; 16544                       ;
+;     plain             ; 141                         ;
+; cycloneiii_lcell_comb ; 12030                       ;
+;     normal            ; 12030                       ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 27                          ;
-;         3 data inputs ; 115                         ;
-;         4 data inputs ; 12418                       ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 186                         ;
+;         4 data inputs ; 11816                       ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 37.00                       ;
-; Average LUT depth     ; 13.35                       ;
+; Max LUT depth         ; 36.00                       ;
+; Average LUT depth     ; 12.41                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1115,7 +1233,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:45     ;
+; Top            ; 00:00:37     ;
 +----------------+--------------+
 
 
@@ -1125,107 +1243,107 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Oct 31 19:02:52 2018
+    Info: Processing started: Wed Oct 31 22:16:19 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
-    Info (12022): Found design unit 1: mux2-arch_mux2 File: C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd Line: 22
-    Info (12023): Found entity 1: mux2 File: C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd Line: 5
+    Info (12022): Found design unit 1: mux2-arch_mux2 File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux2.vhd Line: 22
+    Info (12023): Found entity 1: mux2 File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux2.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ULA-arch_ula File: C:/Users/tirta/Desktop/MIPS_restored/ULA.vhd Line: 32
-    Info (12023): Found entity 1: ULA File: C:/Users/tirta/Desktop/MIPS_restored/ULA.vhd Line: 13
+    Info (12022): Found design unit 1: ULA-arch_ula File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ULA.vhd Line: 32
+    Info (12023): Found entity 1: ULA File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ULA.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file soma.vhd
-    Info (12022): Found design unit 1: soma-arch_soma File: C:/Users/tirta/Desktop/MIPS_restored/soma.vhd Line: 20
-    Info (12023): Found entity 1: soma File: C:/Users/tirta/Desktop/MIPS_restored/soma.vhd Line: 5
-Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/tirta/Desktop/MIPS_restored/mux.vhd Line: 5
+    Info (12022): Found design unit 1: soma-arch_soma File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/soma.vhd Line: 20
+    Info (12023): Found entity 1: soma File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/soma.vhd Line: 5
+Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-rtl File: C:/Users/tirta/Desktop/MIPS_restored/mux.vhd Line: 21
-    Info (12023): Found entity 1: mux File: C:/Users/tirta/Desktop/MIPS_restored/mux.vhd Line: 5
+    Info (12022): Found design unit 1: mux-rtl File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 21
+    Info (12023): Found entity 1: mux File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file uc.vhd
-    Info (12022): Found design unit 1: UC-arch_UC File: C:/Users/tirta/Desktop/MIPS_restored/UC.vhd Line: 16
-    Info (12023): Found entity 1: UC File: C:/Users/tirta/Desktop/MIPS_restored/UC.vhd Line: 5
+    Info (12022): Found design unit 1: UC-arch_UC File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/UC.vhd Line: 16
+    Info (12023): Found entity 1: UC File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/UC.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ucfd.vhd
-    Info (12022): Found design unit 1: UCFD-arch_UC File: C:/Users/tirta/Desktop/MIPS_restored/UCFD.vhd Line: 23
-    Info (12023): Found entity 1: UCFD File: C:/Users/tirta/Desktop/MIPS_restored/UCFD.vhd Line: 5
+    Info (12022): Found design unit 1: UCFD-arch_UC File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/UCFD.vhd Line: 23
+    Info (12023): Found entity 1: UCFD File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/UCFD.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
-    Info (12022): Found design unit 1: registrador-comportamento File: C:/Users/tirta/Desktop/MIPS_restored/registrador.vhd Line: 14
-    Info (12023): Found entity 1: registrador File: C:/Users/tirta/Desktop/MIPS_restored/registrador.vhd Line: 4
+    Info (12022): Found design unit 1: registrador-comportamento File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/registrador.vhd Line: 14
+    Info (12023): Found entity 1: registrador File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/registrador.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
-    Info (12022): Found design unit 1: ram-rtl File: C:/Users/tirta/Desktop/MIPS_restored/ram.vhd Line: 25
-    Info (12023): Found entity 1: ram File: C:/Users/tirta/Desktop/MIPS_restored/ram.vhd Line: 5
+    Info (12022): Found design unit 1: ram-rtl File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ram.vhd Line: 25
+    Info (12023): Found entity 1: ram File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ram.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
-    Info (12022): Found design unit 1: rom-rtl File: C:/Users/tirta/Desktop/MIPS_restored/rom.vhd Line: 27
-    Info (12023): Found entity 1: rom File: C:/Users/tirta/Desktop/MIPS_restored/rom.vhd Line: 8
+    Info (12022): Found design unit 1: rom-rtl File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/rom.vhd Line: 27
+    Info (12023): Found entity 1: rom File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/rom.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file sig_ext.vhd
-    Info (12022): Found design unit 1: sig_ext-arch_mux2 File: C:/Users/tirta/Desktop/MIPS_restored/sig_ext.vhd Line: 20
-    Info (12023): Found entity 1: sig_ext File: C:/Users/tirta/Desktop/MIPS_restored/sig_ext.vhd Line: 5
+    Info (12022): Found design unit 1: sig_ext-arch_mux2 File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/sig_ext.vhd Line: 20
+    Info (12023): Found entity 1: sig_ext File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/sig_ext.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxo_de_dados.vhd
-    Info (12022): Found design unit 1: fluxo_de_dados-arch_UC File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 39
-    Info (12023): Found entity 1: fluxo_de_dados File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 5
+    Info (12022): Found design unit 1: fluxo_de_dados-arch_UC File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 42
+    Info (12023): Found entity 1: fluxo_de_dados File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file banco_reg.vhd
-    Info (12022): Found design unit 1: banco_reg-comportamento File: C:/Users/tirta/Desktop/MIPS_restored/banco_reg.vhd Line: 38
-    Info (12023): Found entity 1: banco_reg File: C:/Users/tirta/Desktop/MIPS_restored/banco_reg.vhd Line: 8
+    Info (12022): Found design unit 1: banco_reg-comportamento File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/banco_reg.vhd Line: 38
+    Info (12023): Found entity 1: banco_reg File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/banco_reg.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file top_level.vhd
-    Info (12022): Found design unit 1: top_level-arch_UC File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 36
-    Info (12023): Found entity 1: top_level File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 5
+    Info (12022): Found design unit 1: top_level-arch_UC File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 37
+    Info (12023): Found entity 1: top_level File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador.vhd
-    Info (12022): Found design unit 1: decodificador-arch File: C:/Users/tirta/Desktop/MIPS_restored/decodificador.vhd Line: 22
-    Info (12023): Found entity 1: decodificador File: C:/Users/tirta/Desktop/MIPS_restored/decodificador.vhd Line: 5
+    Info (12022): Found design unit 1: decodificador-arch File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/decodificador.vhd Line: 22
+    Info (12023): Found entity 1: decodificador File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/decodificador.vhd Line: 5
 Info (12021): Found 3 design units, including 1 entities, in source file edgedetector.vhd
-    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/tirta/Desktop/MIPS_restored/edgeDetector.vhd Line: 10
-    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/tirta/Desktop/MIPS_restored/edgeDetector.vhd Line: 23
-    Info (12023): Found entity 1: edgeDetector File: C:/Users/tirta/Desktop/MIPS_restored/edgeDetector.vhd Line: 4
+    Info (12022): Found design unit 1: edgeDetector-bordaSubida File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/edgeDetector.vhd Line: 10
+    Info (12022): Found design unit 2: edgeDetector-bordaDescida File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/edgeDetector.vhd Line: 23
+    Info (12023): Found entity 1: edgeDetector File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/edgeDetector.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/tirta/Desktop/MIPS_restored/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/tirta/Desktop/MIPS_restored/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/conversorHex7Seg.vhd Line: 4
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX6" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-Info (12128): Elaborating entity "UCFD" for hierarchy "UCFD:UCFD" File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 54
-Info (12128): Elaborating entity "fluxo_de_dados" for hierarchy "fluxo_de_dados:FD" File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 68
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(45): object "saida_CARRYOUT_SOMA_PC" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 45
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(55): object "saida_COUT_ULA" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 55
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(56): object "saida_OVERFLOW_ULA" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 56
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(60): object "saida_CARRYOUT_SOMA_PC_IMM" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 60
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(62): object "hab_sw0" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 62
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(62): object "hab_sw1" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 62
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(62): object "hab_sw2" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 62
-Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(62): object "hab_sw3" assigned a value but never read File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 62
-Info (12128): Elaborating entity "registrador" for hierarchy "fluxo_de_dados:FD|registrador:PC" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 68
-Info (12128): Elaborating entity "rom" for hierarchy "fluxo_de_dados:FD|rom:MEM_INST" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 71
-Warning (10541): VHDL Signal Declaration warning at rom.vhd(30): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/MIPS_restored/rom.vhd Line: 30
-Info (12128): Elaborating entity "soma" for hierarchy "fluxo_de_dados:FD|soma:SOMA_PC" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 74
-Info (12128): Elaborating entity "mux2" for hierarchy "fluxo_de_dados:FD|mux2:MUX_JUMP" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 78
-Warning (10492): VHDL Process Statement warning at mux2.vhd(27): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at mux2.vhd(28): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd Line: 28
-Info (12128): Elaborating entity "mux2" for hierarchy "fluxo_de_dados:FD|mux2:MUX_RT_RD" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 83
-Warning (10492): VHDL Process Statement warning at mux2.vhd(27): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at mux2.vhd(28): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux2.vhd Line: 28
-Info (12128): Elaborating entity "sig_ext" for hierarchy "fluxo_de_dados:FD|sig_ext:SIG_EXT" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 90
-Info (12128): Elaborating entity "banco_reg" for hierarchy "fluxo_de_dados:FD|banco_reg:BANCO_REG" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 93
-Info (12128): Elaborating entity "UC" for hierarchy "fluxo_de_dados:FD|UC:UC_ULA" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 104
-Info (12128): Elaborating entity "ULA" for hierarchy "fluxo_de_dados:FD|ULA:ULA" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 107
-Warning (10540): VHDL Signal Declaration warning at ULA.vhd(34): used explicit default value for signal "zero" because signal was never assigned a value File: C:/Users/tirta/Desktop/MIPS_restored/ULA.vhd Line: 34
-Info (12128): Elaborating entity "mux" for hierarchy "fluxo_de_dados:FD|ULA:ULA|mux:MUX" File: C:/Users/tirta/Desktop/MIPS_restored/ULA.vhd Line: 63
-Warning (10492): VHDL Process Statement warning at mux.vhd(26): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux.vhd Line: 26
-Warning (10492): VHDL Process Statement warning at mux.vhd(27): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at mux.vhd(28): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux.vhd Line: 28
-Warning (10492): VHDL Process Statement warning at mux.vhd(29): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/MIPS_restored/mux.vhd Line: 29
-Info (12128): Elaborating entity "ram" for hierarchy "fluxo_de_dados:FD|ram:RAM" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 115
-Info (12128): Elaborating entity "decodificador" for hierarchy "fluxo_de_dados:FD|decodificador:DECODER" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 131
-Info (12128): Elaborating entity "registrador" for hierarchy "fluxo_de_dados:FD|registrador:reg_led0" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 135
-Info (12128): Elaborating entity "registrador" for hierarchy "fluxo_de_dados:FD|registrador:reg_hex1_reg1" File: C:/Users/tirta/Desktop/MIPS_restored/fluxo_de_dados.vhd Line: 172
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 98
-Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 121
+Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX6" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+Warning (10541): VHDL Signal Declaration warning at top_level.vhd(11): used implicit default value for signal "HEX7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+Info (12128): Elaborating entity "UCFD" for hierarchy "UCFD:UCFD" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 56
+Info (12128): Elaborating entity "fluxo_de_dados" for hierarchy "fluxo_de_dados:FD" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 70
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(48): object "saida_CARRYOUT_SOMA_PC" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 48
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(58): object "saida_COUT_ULA" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 58
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(59): object "saida_OVERFLOW_ULA" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 59
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(63): object "saida_CARRYOUT_SOMA_PC_IMM" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 63
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(65): object "hab_sw0" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 65
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(65): object "hab_sw1" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 65
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(65): object "hab_sw2" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 65
+Warning (10036): Verilog HDL or VHDL warning at fluxo_de_dados.vhd(65): object "hab_sw3" assigned a value but never read File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 65
+Info (12128): Elaborating entity "registrador" for hierarchy "fluxo_de_dados:FD|registrador:PC" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 71
+Info (12128): Elaborating entity "rom" for hierarchy "fluxo_de_dados:FD|rom:MEM_INST" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 74
+Warning (10541): VHDL Signal Declaration warning at rom.vhd(30): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/rom.vhd Line: 30
+Info (12128): Elaborating entity "soma" for hierarchy "fluxo_de_dados:FD|soma:SOMA_PC" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 77
+Info (12128): Elaborating entity "mux2" for hierarchy "fluxo_de_dados:FD|mux2:MUX_JUMP" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 81
+Warning (10492): VHDL Process Statement warning at mux2.vhd(27): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux2.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at mux2.vhd(28): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux2.vhd Line: 28
+Info (12128): Elaborating entity "mux2" for hierarchy "fluxo_de_dados:FD|mux2:MUX_RT_RD" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 86
+Warning (10492): VHDL Process Statement warning at mux2.vhd(27): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux2.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at mux2.vhd(28): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux2.vhd Line: 28
+Info (12128): Elaborating entity "sig_ext" for hierarchy "fluxo_de_dados:FD|sig_ext:SIG_EXT" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 93
+Info (12128): Elaborating entity "banco_reg" for hierarchy "fluxo_de_dados:FD|banco_reg:BANCO_REG" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 96
+Info (12128): Elaborating entity "UC" for hierarchy "fluxo_de_dados:FD|UC:UC_ULA" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 107
+Info (12128): Elaborating entity "ULA" for hierarchy "fluxo_de_dados:FD|ULA:ULA" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 110
+Warning (10540): VHDL Signal Declaration warning at ULA.vhd(34): used explicit default value for signal "zero" because signal was never assigned a value File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ULA.vhd Line: 34
+Info (12128): Elaborating entity "mux" for hierarchy "fluxo_de_dados:FD|ULA:ULA|mux:MUX" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ULA.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at mux.vhd(26): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at mux.vhd(27): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at mux.vhd(28): signal "C" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at mux.vhd(29): signal "D" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 29
+Info (12128): Elaborating entity "ram" for hierarchy "fluxo_de_dados:FD|ram:RAM" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 118
+Info (12128): Elaborating entity "decodificador" for hierarchy "fluxo_de_dados:FD|decodificador:DECODER" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 134
+Info (12128): Elaborating entity "registrador" for hierarchy "fluxo_de_dados:FD|registrador:reg_led0" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 138
+Info (12128): Elaborating entity "registrador" for hierarchy "fluxo_de_dados:FD|registrador:reg_hex1_reg1" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 175
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 104
+Info (12129): Elaborating entity "edgeDetector" using architecture "A:bordasubida" for hierarchy "edgeDetector:detectorSub0" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 127
 Warning (276020): Inferred RAM node "fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Warning (276020): Inferred RAM node "fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_1" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "fluxo_de_dados:FD|ram:RAM|ram_block" is uninferred due to asynchronous read logic File: C:/Users/tirta/Desktop/MIPS_restored/ram.vhd Line: 28
-    Info (276007): RAM logic "fluxo_de_dados:FD|rom:MEM_INST|content" is uninferred due to asynchronous read logic File: C:/Users/tirta/Desktop/MIPS_restored/rom.vhd Line: 30
-Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (256) in the Memory Initialization File "C:/Users/tirta/Desktop/MIPS_restored/rom_t.mif" -- setting initial value for remaining addresses to 0
+    Info (276007): RAM logic "fluxo_de_dados:FD|ram:RAM|ram_block" is uninferred due to asynchronous read logic File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ram.vhd Line: 28
+    Info (276007): RAM logic "fluxo_de_dados:FD|rom:MEM_INST|content" is uninferred due to asynchronous read logic File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/rom.vhd Line: 30
+Critical Warning (127005): Memory depth (512) in the design file differs from memory depth (256) in the Memory Initialization File "C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/rom_t.mif" -- setting initial value for remaining addresses to 0
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "fluxo_de_dados:FD|banco_reg:BANCO_REG|registrador_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1277,54 +1395,124 @@ Info (12133): Instantiated megafunction "fluxo_de_dados:FD|banco_reg:BANCO_REG|a
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_esg1.tdf
-    Info (12023): Found entity 1: altsyncram_esg1 File: C:/Users/tirta/Desktop/MIPS_restored/db/altsyncram_esg1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_esg1 File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/db/altsyncram_esg1.tdf Line: 27
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX6[0]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX6[1]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX6[2]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX6[3]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX6[4]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX6[5]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX6[6]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX7[0]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX7[1]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX7[2]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX7[3]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX7[4]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX7[5]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "HEX7[6]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 11
-    Warning (13410): Pin "op[4]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 12
-    Warning (13410): Pin "saidaROM[4]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[6]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[7]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[9]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[10]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[14]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[15]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[19]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[20]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[24]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[25]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaROM[30]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 22
-    Warning (13410): Pin "saidaPC[0]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 25
-    Warning (13410): Pin "saidaPC[1]" is stuck at GND File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 25
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX6[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX6[1]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX6[2]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX6[3]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX6[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX6[5]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX6[6]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX7[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX7[1]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX7[2]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX7[3]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX7[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX7[5]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "HEX7[6]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 11
+    Warning (13410): Pin "op[2]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 13
+    Warning (13410): Pin "op[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 13
+    Warning (13410): Pin "ula_op[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 14
+    Warning (13410): Pin "beq" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 17
+    Warning (13410): Pin "saidaROM[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[6]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[7]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[8]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[10]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[14]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[15]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[18]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[19]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[20]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[23]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[24]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[25]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[28]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaROM[30]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 23
+    Warning (13410): Pin "saidaPC[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 26
+    Warning (13410): Pin "saidaPC[1]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 26
+    Warning (13410): Pin "saidaTeste5[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[1]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[2]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[3]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[5]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[6]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[7]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[8]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[9]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[10]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[11]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[12]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[13]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[14]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[15]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[16]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[17]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[18]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[19]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[20]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[21]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[22]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[23]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[24]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[25]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[26]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[27]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[28]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[29]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[30]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste5[31]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 31
+    Warning (13410): Pin "saidaTeste6[0]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[1]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[2]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[3]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[4]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[5]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[6]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[7]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[8]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[9]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[10]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[11]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[12]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[13]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[14]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[15]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[16]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[17]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[18]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[19]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[20]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[21]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[22]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[23]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[24]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[25]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[26]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[27]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[28]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[29]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[30]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
+    Warning (13410): Pin "saidaTeste6[31]" is stuck at GND File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 32
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_0|altsyncram_esg1:auto_generated|ALTSYNCRAM" File: C:/Users/tirta/Desktop/MIPS_restored/db/altsyncram_esg1.tdf Line: 37
-Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_1|altsyncram_esg1:auto_generated|ALTSYNCRAM" File: C:/Users/tirta/Desktop/MIPS_restored/db/altsyncram_esg1.tdf Line: 37
+Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_0|altsyncram_esg1:auto_generated|ALTSYNCRAM" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/db/altsyncram_esg1.tdf Line: 37
+Info (17036): Removed 2 MSB VCC or GND address nodes from RAM block "fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_1|altsyncram_esg1:auto_generated|ALTSYNCRAM" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/db/altsyncram_esg1.tdf Line: 37
 Warning (20013): Ignored 24 assignments for entity "MIPS" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity MIPS -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity MIPS -section_id Top was ignored
@@ -1378,18 +1566,18 @@ Warning (20013): Ignored 24 assignments for entity "relogio_forba" -- entity doe
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 10
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 10
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/tirta/Desktop/MIPS_restored/top_level.vhd Line: 10
-Info (21057): Implemented 29761 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 10
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 10
+Info (21057): Implemented 29157 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 424 output pins
-    Info (21061): Implemented 29268 logic cells
+    Info (21059): Implemented 428 output pins
+    Info (21061): Implemented 28660 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 125 warnings
-    Info: Peak virtual memory: 4923 megabytes
-    Info: Processing ended: Wed Oct 31 19:03:58 2018
-    Info: Elapsed time: 00:01:06
-    Info: Total CPU time (on all processors): 00:01:22
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 195 warnings
+    Info: Peak virtual memory: 4942 megabytes
+    Info: Processing ended: Wed Oct 31 22:17:13 2018
+    Info: Elapsed time: 00:00:54
+    Info: Total CPU time (on all processors): 00:01:09
 
 

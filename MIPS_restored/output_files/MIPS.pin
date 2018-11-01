@@ -69,44 +69,44 @@ CHIP  "MIPS"  ASSIGNED TO AN: EP4CE115F29C7
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
-saidaRAM[18]                 : A3        : output : 2.5 V             :         : 8         : N              
-saidaTeste5[13]              : A4        : output : 2.5 V             :         : 8         : N              
+sel_MUX_rt_rd                : A3        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
 VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
-saidaTeste4[20]              : A6        : output : 2.5 V             :         : 8         : N              
-saidaTeste6[14]              : A7        : output : 2.5 V             :         : 8         : N              
-saidaTeste6[5]               : A8        : output : 2.5 V             :         : 8         : N              
+saidaULA[30]                 : A6        : output : 2.5 V             :         : 8         : N              
+saidaTeste6[27]              : A7        : output : 2.5 V             :         : 8         : N              
+saidaTeste5[30]              : A8        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
-saidaTeste3[22]              : A10       : output : 2.5 V             :         : 8         : N              
-saidaTeste5[23]              : A11       : output : 2.5 V             :         : 8         : N              
-saidaTeste2[18]              : A12       : output : 2.5 V             :         : 8         : N              
+saidaRAM[0]                  : A10       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[3]               : A11       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[12]              : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-saidaTeste4[14]              : A17       : output : 2.5 V             :         : 7         : N              
-saidaTeste5[28]              : A18       : output : 2.5 V             :         : 7         : N              
-saidaTeste5[25]              : A19       : output : 2.5 V             :         : 7         : N              
+saidaULA[29]                 : A17       : output : 2.5 V             :         : 7         : N              
+saidaTeste7[21]              : A18       : output : 2.5 V             :         : 7         : N              
+ula_op[0]                    : A19       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-saidaTeste3[29]              : A21       : output : 2.5 V             :         : 7         : N              
-saidaTeste6[22]              : A22       : output : 2.5 V             :         : 7         : N              
-saidaTeste4[5]               : A23       : output : 2.5 V             :         : 7         : N              
+saidaTeste5[18]              : A21       : output : 2.5 V             :         : 7         : N              
+saidaROM[14]                 : A22       : output : 2.5 V             :         : 7         : N              
+saidaTeste7[26]              : A23       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   :         : 7         :                
+saidaTeste6[18]              : A26       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA5       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 2         :                
-saidaRAM[2]                  : AA7       : output : 2.5 V             :         : 2         : N              
-saidaTeste6[30]              : AA8       : output : 2.5 V             :         : 3         : N              
+saidaTeste2[4]               : AA3       : output : 2.5 V             :         : 2         : N              
+saidaTeste3[31]              : AA4       : output : 2.5 V             :         : 2         : N              
+saidaTeste6[2]               : AA5       : output : 2.5 V             :         : 2         : N              
+saidaTeste6[30]              : AA6       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 2         :                
+saidaRAM[25]                 : AA8       : output : 2.5 V             :         : 3         : N              
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-saidaTeste4[28]              : AA10      : output : 2.5 V             :         : 3         : N              
+saidaTeste7[6]               : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-saidaTeste1[7]               : AA12      : output : 2.5 V             :         : 3         : N              
-saidaTeste2[12]              : AA13      : output : 2.5 V             :         : 3         : N              
+saidaTeste2[19]              : AA12      : output : 2.5 V             :         : 3         : N              
+saidaTeste1[8]               : AA13      : output : 2.5 V             :         : 3         : N              
 HEX7[6]                      : AA14      : output : 2.5 V             :         : 3         : Y              
 HEX6[5]                      : AA15      : output : 2.5 V             :         : 4         : Y              
 HEX6[2]                      : AA16      : output : 2.5 V             :         : 4         : Y              
@@ -115,165 +115,165 @@ VCCIO4                       : AA18      : power  :                   : 2.5V    
 HEX4[1]                      : AA19      : output : 2.5 V             :         : 4         : Y              
 GNDA4                        : AA20      : gnd    :                   :         :           :                
 HEX3[3]                      : AA21      : output : 2.5 V             :         : 4         : Y              
-saidaPC[2]                   : AA22      : output : 2.5 V             :         : 5         : N              
+saidaULA[8]                  : AA22      : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
-saidaULA[4]                  : AA24      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
 HEX2[0]                      : AA25      : output : 2.5 V             :         : 5         : Y              
 HEX2[1]                      : AA26      : output : 2.5 V             :         : 5         : Y              
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
-saidaTeste6[12]              : AB1       : output : 2.5 V             :         : 2         : N              
-saidaTeste5[1]               : AB2       : output : 2.5 V             :         : 2         : N              
-op[4]                        : AB3       : output : 2.5 V             :         : 2         : N              
-saidaROM[20]                 : AB4       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
-saidaULA[5]                  : AB7       : output : 2.5 V             :         : 3         : N              
-saidaTeste5[12]              : AB8       : output : 2.5 V             :         : 3         : N              
-saidaTeste2[9]               : AB9       : output : 2.5 V             :         : 3         : N              
-saidaPC[7]                   : AB10      : output : 2.5 V             :         : 3         : N              
-saidaPC[28]                  : AB11      : output : 2.5 V             :         : 3         : N              
-saidaPC[20]                  : AB12      : output : 2.5 V             :         : 3         : N              
-saidaPC[24]                  : AB13      : output : 2.5 V             :         : 3         : N              
-saidaTeste2[31]              : AB14      : output : 2.5 V             :         : 3         : N              
+saidaPC[12]                  : AB1       : output : 2.5 V             :         : 2         : N              
+saidaTeste1[4]               : AB2       : output : 2.5 V             :         : 2         : N              
+saidaPC[19]                  : AB3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
+saidaULA[4]                  : AB5       : output : 2.5 V             :         : 2         : N              
+saidaTeste6[15]              : AB6       : output : 2.5 V             :         : 2         : N              
+saidaRAM[18]                 : AB7       : output : 2.5 V             :         : 3         : N              
+saidaRAM[31]                 : AB8       : output : 2.5 V             :         : 3         : N              
+saidaTeste4[21]              : AB9       : output : 2.5 V             :         : 3         : N              
+saidaTeste3[20]              : AB10      : output : 2.5 V             :         : 3         : N              
+saidaTeste4[27]              : AB11      : output : 2.5 V             :         : 3         : N              
+saidaRAM[19]                 : AB12      : output : 2.5 V             :         : 3         : N              
+saidaTeste3[29]              : AB13      : output : 2.5 V             :         : 3         : N              
+saidaTeste3[13]              : AB14      : output : 2.5 V             :         : 3         : N              
 HEX6[4]                      : AB15      : output : 2.5 V             :         : 4         : Y              
 HEX6[1]                      : AB16      : output : 2.5 V             :         : 4         : Y              
 HEX6[3]                      : AB17      : output : 2.5 V             :         : 4         : Y              
 HEX5[2]                      : AB18      : output : 2.5 V             :         : 4         : Y              
 HEX4[0]                      : AB19      : output : 2.5 V             :         : 4         : Y              
 HEX3[2]                      : AB20      : output : 2.5 V             :         : 4         : Y              
-saidaULA[10]                 : AB21      : output : 2.5 V             :         : 4         : N              
-saidaTeste5[10]              : AB22      : output : 2.5 V             :         : 4         : N              
-saidaULA[12]                 : AB23      : output : 2.5 V             :         : 5         : N              
-saidaTeste3[2]               : AB24      : output : 2.5 V             :         : 5         : N              
+saidaTeste6[6]               : AB21      : output : 2.5 V             :         : 4         : N              
+saidaTeste3[3]               : AB22      : output : 2.5 V             :         : 4         : N              
+saidaULA[6]                  : AB23      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5         :                
-saidaTeste2[21]              : AB27      : output : 2.5 V             :         : 5         : N              
-saidaROM[13]                 : AB28      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   :         : 2         :                
-saidaTeste3[9]               : AC2       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC3       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
+saidaTeste5[0]               : AB26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
+saidaTeste4[2]               : AC1       : output : 2.5 V             :         : 2         : N              
+saidaPC[13]                  : AC2       : output : 2.5 V             :         : 2         : N              
+hab_esc_reg                  : AC3       : output : 2.5 V             :         : 2         : N              
+saidaTeste5[24]              : AC4       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
 GND                          : AC6       : gnd    :                   :         :           :                
-saidaTeste5[22]              : AC7       : output : 2.5 V             :         : 3         : N              
-saidaRAM[15]                 : AC8       : output : 2.5 V             :         : 3         : N              
+saidaTeste4[15]              : AC7       : output : 2.5 V             :         : 3         : N              
+saidaRAM[1]                  : AC8       : output : 2.5 V             :         : 3         : N              
 GND                          : AC9       : gnd    :                   :         :           :                
-saidaPC[19]                  : AC10      : output : 2.5 V             :         : 3         : N              
-saidaPC[12]                  : AC11      : output : 2.5 V             :         : 3         : N              
-saidaPC[14]                  : AC12      : output : 2.5 V             :         : 3         : N              
+saidaTeste7[28]              : AC10      : output : 2.5 V             :         : 3         : N              
+saidaTeste4[7]               : AC11      : output : 2.5 V             :         : 3         : N              
+saidaTeste3[7]               : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-saidaTeste1[13]              : AC14      : output : 2.5 V             :         : 3         : N              
-saidaTeste1[31]              : AC15      : output : 2.5 V             :         : 4         : N              
+saidaTeste7[29]              : AC14      : output : 2.5 V             :         : 3         : N              
+saidaTeste2[27]              : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
 HEX6[6]                      : AC17      : output : 2.5 V             :         : 4         : Y              
 HEX5[1]                      : AC18      : output : 2.5 V             :         : 4         : Y              
-sel_MUX_rt_rd                : AC19      : output : 2.5 V             :         : 4         : N              
+saidaROM[23]                 : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
-saidaPC[3]                   : AC21      : output : 2.5 V             :         : 4         : N              
-saidaPC[5]                   : AC22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC21      :        :                   :         : 4         :                
+saidaTeste5[6]               : AC22      : output : 2.5 V             :         : 4         : N              
 GND                          : AC23      : gnd    :                   :         :           :                
-saidaROM[0]                  : AC24      : output : 2.5 V             :         : 5         : N              
+saidaTeste6[22]              : AC24      : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC27      :        :                   :         : 5         :                
-saidaTeste3[16]              : AC28      : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD1       :        :                   :         : 2         :                
-saidaRAM[9]                  : AD2       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   :         : 2         :                
-op[2]                        : AD4       : output : 2.5 V             :         : 3         : N              
-saidaPC[1]                   : AD5       : output : 2.5 V             :         : 3         : N              
+saidaTeste5[23]              : AC28      : output : 2.5 V             :         : 5         : N              
+saidaPC[11]                  : AD1       : output : 2.5 V             :         : 2         : N              
+saidaPC[21]                  : AD2       : output : 2.5 V             :         : 2         : N              
+saidaTeste4[25]              : AD3       : output : 2.5 V             :         : 2         : N              
+saidaTeste6[3]               : AD4       : output : 2.5 V             :         : 3         : N              
+saidaROM[18]                 : AD5       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD7       :        :                   :         : 3         :                
-saidaTeste6[0]               : AD8       : output : 2.5 V             :         : 3         : N              
+saidaTeste7[22]              : AD8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-saidaTeste5[2]               : AD10      : output : 2.5 V             :         : 3         : N              
-saidaPC[13]                  : AD11      : output : 2.5 V             :         : 3         : N              
-saidaPC[17]                  : AD12      : output : 2.5 V             :         : 3         : N              
+saidaTeste4[18]              : AD10      : output : 2.5 V             :         : 3         : N              
+saidaTeste4[16]              : AD11      : output : 2.5 V             :         : 3         : N              
+saidaTeste1[27]              : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-saidaTeste2[30]              : AD14      : output : 2.5 V             :         : 3         : N              
-saidaROM[17]                 : AD15      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[29]              : AD14      : output : 2.5 V             :         : 3         : N              
+saidaTeste2[20]              : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
 HEX7[0]                      : AD17      : output : 2.5 V             :         : 4         : Y              
 HEX5[0]                      : AD18      : output : 2.5 V             :         : 4         : Y              
-ula_op[1]                    : AD19      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD19      :        :                   :         : 4         :                
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
-saidaTeste3[21]              : AD21      : output : 2.5 V             :         : 4         : N              
-saidaTeste2[3]               : AD22      : output : 2.5 V             :         : 4         : N              
+saidaULA[20]                 : AD21      : output : 2.5 V             :         : 4         : N              
+saidaTeste3[0]               : AD22      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
 HEX3[4]                      : AD24      : output : 2.5 V             :         : 4         : Y              
-saidaPC[8]                   : AD25      : output : 2.5 V             :         : 4         : N              
-saidaROM[16]                 : AD26      : output : 2.5 V             :         : 5         : N              
-saidaTeste2[1]               : AD27      : output : 2.5 V             :         : 5         : N              
-saidaTeste2[2]               : AD28      : output : 2.5 V             :         : 5         : N              
-saidaTeste1[5]               : AE1       : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
-saidaROM[23]                 : AE4       : output : 2.5 V             :         : 3         : N              
-saidaULA[19]                 : AE5       : output : 2.5 V             :         : 3         : N              
-saidaROM[27]                 : AE6       : output : 2.5 V             :         : 3         : N              
-saidaROM[30]                 : AE7       : output : 2.5 V             :         : 3         : N              
-saidaRAM[17]                 : AE8       : output : 2.5 V             :         : 3         : N              
-saidaTeste4[8]               : AE9       : output : 2.5 V             :         : 3         : N              
-saidaTeste3[8]               : AE10      : output : 2.5 V             :         : 3         : N              
-saidaPC[6]                   : AE11      : output : 2.5 V             :         : 3         : N              
-saidaTeste4[13]              : AE12      : output : 2.5 V             :         : 3         : N              
-saidaPC[23]                  : AE13      : output : 2.5 V             :         : 3         : N              
-saidaTeste1[10]              : AE14      : output : 2.5 V             :         : 3         : N              
-saidaROM[3]                  : AE15      : output : 2.5 V             :         : 4         : N              
-saidaRAM[5]                  : AE16      : output : 2.5 V             :         : 4         : N              
+saidaULA[7]                  : AD25      : output : 2.5 V             :         : 4         : N              
+saidaTeste6[0]               : AD26      : output : 2.5 V             :         : 5         : N              
+saidaTeste5[12]              : AD27      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
+saidaULA[21]                 : AE1       : output : 2.5 V             :         : 2         : N              
+saidaTeste5[22]              : AE2       : output : 2.5 V             :         : 2         : N              
+saidaTeste2[28]              : AE3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3         :                
+saidaTeste6[5]               : AE5       : output : 2.5 V             :         : 3         : N              
+saidaTeste6[12]              : AE6       : output : 2.5 V             :         : 3         : N              
+saidaTeste7[25]              : AE7       : output : 2.5 V             :         : 3         : N              
+saidaRAM[28]                 : AE8       : output : 2.5 V             :         : 3         : N              
+saidaTeste1[28]              : AE9       : output : 2.5 V             :         : 3         : N              
+saidaTeste1[7]               : AE10      : output : 2.5 V             :         : 3         : N              
+saidaTeste1[5]               : AE11      : output : 2.5 V             :         : 3         : N              
+saidaTeste1[15]              : AE12      : output : 2.5 V             :         : 3         : N              
+sel_mux_rt_imm               : AE13      : output : 2.5 V             :         : 3         : N              
+saidaTeste4[1]               : AE14      : output : 2.5 V             :         : 3         : N              
+saidaTeste1[22]              : AE15      : output : 2.5 V             :         : 4         : N              
+saidaTeste3[22]              : AE16      : output : 2.5 V             :         : 4         : N              
 HEX7[1]                      : AE17      : output : 2.5 V             :         : 4         : Y              
 HEX4[6]                      : AE18      : output : 2.5 V             :         : 4         : Y              
 HEX4[4]                      : AE19      : output : 2.5 V             :         : 4         : Y              
-saidaTeste6[6]               : AE20      : output : 2.5 V             :         : 4         : N              
-saidaPC[29]                  : AE21      : output : 2.5 V             :         : 4         : N              
-saidaTeste6[2]               : AE22      : output : 2.5 V             :         : 4         : N              
-saidaTeste5[30]              : AE23      : output : 2.5 V             :         : 4         : N              
-sel_mux_rt_imm               : AE24      : output : 2.5 V             :         : 4         : N              
-saidaPC[22]                  : AE25      : output : 2.5 V             :         : 4         : N              
-saidaTeste1[12]              : AE26      : output : 2.5 V             :         : 5         : N              
-saidaROM[5]                  : AE27      : output : 2.5 V             :         : 5         : N              
+saidaTeste2[23]              : AE20      : output : 2.5 V             :         : 4         : N              
+saidaTeste3[24]              : AE21      : output : 2.5 V             :         : 4         : N              
+saidaTeste3[1]               : AE22      : output : 2.5 V             :         : 4         : N              
+saidaTeste3[2]               : AE23      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE24      :        :                   :         : 4         :                
+saidaTeste3[26]              : AE25      : output : 2.5 V             :         : 4         : N              
+saidaROM[10]                 : AE26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5         :                
 GND                          : AF1       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 2         :                
-op[1]                        : AF3       : output : 2.5 V             :         : 3         : N              
-saidaULA[3]                  : AF4       : output : 2.5 V             :         : 3         : N              
-saidaTeste7[16]              : AF5       : output : 2.5 V             :         : 3         : N              
-saidaTeste4[18]              : AF6       : output : 2.5 V             :         : 3         : N              
-saidaTeste7[7]               : AF7       : output : 2.5 V             :         : 3         : N              
-saidaTeste4[7]               : AF8       : output : 2.5 V             :         : 3         : N              
-hab_le_mem                   : AF9       : output : 2.5 V             :         : 3         : N              
-saidaTeste7[6]               : AF10      : output : 2.5 V             :         : 3         : N              
-saidaRAM[0]                  : AF11      : output : 2.5 V             :         : 3         : N              
-saidaPC[21]                  : AF12      : output : 2.5 V             :         : 3         : N              
-saidaPC[11]                  : AF13      : output : 2.5 V             :         : 3         : N              
-saidaPC[25]                  : AF14      : output : 2.5 V             :         : 3         : N              
-sel_mux_jump                 : AF15      : output : 2.5 V             :         : 4         : N              
-saidaPC[10]                  : AF16      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[18]              : AF2       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 3         :                
+saidaTeste6[17]              : AF4       : output : 2.5 V             :         : 3         : N              
+saidaTeste5[13]              : AF5       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF6       :        :                   :         : 3         :                
+saidaTeste2[5]               : AF7       : output : 2.5 V             :         : 3         : N              
+saidaTeste1[6]               : AF8       : output : 2.5 V             :         : 3         : N              
+saidaTeste3[6]               : AF9       : output : 2.5 V             :         : 3         : N              
+saidaTeste3[28]              : AF10      : output : 2.5 V             :         : 3         : N              
+saidaRAM[23]                 : AF11      : output : 2.5 V             :         : 3         : N              
+saidaRAM[4]                  : AF12      : output : 2.5 V             :         : 3         : N              
+saidaTeste2[16]              : AF13      : output : 2.5 V             :         : 3         : N              
+saidaTeste2[18]              : AF14      : output : 2.5 V             :         : 3         : N              
+saidaTeste2[24]              : AF15      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[13]              : AF16      : output : 2.5 V             :         : 4         : N              
 HEX7[4]                      : AF17      : output : 2.5 V             :         : 4         : Y              
 HEX5[5]                      : AF18      : output : 2.5 V             :         : 4         : Y              
 HEX4[5]                      : AF19      : output : 2.5 V             :         : 4         : Y              
-saidaTeste5[31]              : AF20      : output : 2.5 V             :         : 4         : N              
-saidaTeste6[19]              : AF21      : output : 2.5 V             :         : 4         : N              
-saidaTeste4[12]              : AF22      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[21]              : AF20      : output : 2.5 V             :         : 4         : N              
+saidaRAM[8]                  : AF21      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[10]              : AF22      : output : 2.5 V             :         : 4         : N              
 HEX3[5]                      : AF23      : output : 2.5 V             :         : 4         : Y              
-saidaTeste1[4]               : AF24      : output : 2.5 V             :         : 4         : N              
-saidaTeste5[6]               : AF25      : output : 2.5 V             :         : 4         : N              
-saidaTeste4[31]              : AF26      : output : 2.5 V             :         : 4         : N              
+saidaTeste2[29]              : AF24      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[11]              : AF25      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[24]              : AF26      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
-saidaROM[25]                 : AG3       : output : 2.5 V             :         : 3         : N              
-saidaULA[20]                 : AG4       : output : 2.5 V             :         : 3         : N              
+saidaTeste6[13]              : AG3       : output : 2.5 V             :         : 3         : N              
+saidaTeste2[7]               : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
-saidaTeste1[17]              : AG6       : output : 2.5 V             :         : 3         : N              
-saidaTeste4[10]              : AG7       : output : 2.5 V             :         : 3         : N              
-saidaTeste5[16]              : AG8       : output : 2.5 V             :         : 3         : N              
+saidaTeste1[20]              : AG6       : output : 2.5 V             :         : 3         : N              
+saidaTeste2[15]              : AG7       : output : 2.5 V             :         : 3         : N              
+saidaRAM[6]                  : AG8       : output : 2.5 V             :         : 3         : N              
 GND                          : AG9       : gnd    :                   :         :           :                
-saidaTeste3[11]              : AG10      : output : 2.5 V             :         : 3         : N              
-saidaPC[18]                  : AG11      : output : 2.5 V             :         : 3         : N              
-saidaTeste4[9]               : AG12      : output : 2.5 V             :         : 3         : N              
+saidaRAM[17]                 : AG10      : output : 2.5 V             :         : 3         : N              
+saidaTeste3[21]              : AG11      : output : 2.5 V             :         : 3         : N              
+saidaTeste7[23]              : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
@@ -283,24 +283,24 @@ HEX7[5]                      : AG18      : output : 2.5 V             :         
 HEX5[4]                      : AG19      : output : 2.5 V             :         : 4         : Y              
 GND                          : AG20      : gnd    :                   :         :           :                
 HEX4[2]                      : AG21      : output : 2.5 V             :         : 4         : Y              
-saidaRAM[14]                 : AG22      : output : 2.5 V             :         : 4         : N              
-saidaPC[15]                  : AG23      : output : 2.5 V             :         : 4         : N              
+saidaTeste1[19]              : AG22      : output : 2.5 V             :         : 4         : N              
+saidaTeste4[28]              : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-saidaPC[16]                  : AG25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
+saidaRAM[11]                 : AG25      : output : 2.5 V             :         : 4         : N              
+saidaTeste2[1]               : AG26      : output : 2.5 V             :         : 4         : N              
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
-saidaTeste5[20]              : AH3       : output : 2.5 V             :         : 3         : N              
-saidaTeste5[11]              : AH4       : output : 2.5 V             :         : 3         : N              
+saidaTeste4[31]              : AH3       : output : 2.5 V             :         : 3         : N              
+saidaTeste4[6]               : AH4       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-saidaTeste7[4]               : AH6       : output : 2.5 V             :         : 3         : N              
-saidaPC[27]                  : AH7       : output : 2.5 V             :         : 3         : N              
-saidaTeste3[13]              : AH8       : output : 2.5 V             :         : 3         : N              
+saidaRAM[7]                  : AH6       : output : 2.5 V             :         : 3         : N              
+saidaTeste7[7]               : AH7       : output : 2.5 V             :         : 3         : N              
+saidaRAM[5]                  : AH8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-saidaTeste5[4]               : AH10      : output : 2.5 V             :         : 3         : N              
-saidaPC[26]                  : AH11      : output : 2.5 V             :         : 3         : N              
-saidaTeste6[4]               : AH12      : output : 2.5 V             :         : 3         : N              
+saidaTeste7[1]               : AH10      : output : 2.5 V             :         : 3         : N              
+saidaTeste3[15]              : AH11      : output : 2.5 V             :         : 3         : N              
+saidaTeste3[27]              : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
@@ -310,244 +310,244 @@ HEX5[6]                      : AH18      : output : 2.5 V             :         
 HEX5[3]                      : AH19      : output : 2.5 V             :         : 4         : Y              
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
 HEX4[3]                      : AH21      : output : 2.5 V             :         : 4         : Y              
-saidaPC[9]                   : AH22      : output : 2.5 V             :         : 4         : N              
-saidaTeste6[13]              : AH23      : output : 2.5 V             :         : 4         : N              
+saidaTeste2[21]              : AH22      : output : 2.5 V             :         : 4         : N              
+saidaTeste3[18]              : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-saidaRAM[29]                 : AH25      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+saidaTeste1[26]              : AH25      : output : 2.5 V             :         : 4         : N              
+saidaTeste2[3]               : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
+saidaTeste5[29]              : B3        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
 GND                          : B5        : gnd    :                   :         :           :                
-saidaRAM[4]                  : B6        : output : 2.5 V             :         : 8         : N              
-saidaTeste4[16]              : B7        : output : 2.5 V             :         : 8         : N              
-saidaTeste4[21]              : B8        : output : 2.5 V             :         : 8         : N              
+saidaTeste3[5]               : B6        : output : 2.5 V             :         : 8         : N              
+saidaROM[24]                 : B7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 8         :                
 GND                          : B9        : gnd    :                   :         :           :                
-saidaTeste7[22]              : B10       : output : 2.5 V             :         : 8         : N              
-saidaTeste3[25]              : B11       : output : 2.5 V             :         : 8         : N              
+saidaRAM[30]                 : B10       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[9]               : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-saidaRAM[7]                  : B17       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[29]              : B18       : output : 2.5 V             :         : 7         : N              
-saidaTeste7[24]              : B19       : output : 2.5 V             :         : 7         : N              
+saidaULA[31]                 : B17       : output : 2.5 V             :         : 7         : N              
+saidaULA[17]                 : B18       : output : 2.5 V             :         : 7         : N              
+saidaTeste6[21]              : B19       : output : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-saidaULA[13]                 : B21       : output : 2.5 V             :         : 7         : N              
-saidaTeste6[29]              : B22       : output : 2.5 V             :         : 7         : N              
-saidaTeste1[3]               : B23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 7         :                
+saidaTeste1[0]               : B23       : output : 2.5 V             :         : 7         : N              
 GND                          : B24       : gnd    :                   :         :           :                
-saidaTeste4[26]              : B25       : output : 2.5 V             :         : 7         : N              
+saidaPC[0]                   : B25       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : B26       :        :                   :         : 7         :                
 GND                          : B27       : gnd    :                   :         :           :                
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
-saidaULA[30]                 : C2        : output : 2.5 V             :         : 1         : N              
+saidaTeste2[14]              : C2        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
-saidaTeste1[30]              : C6        : output : 2.5 V             :         : 8         : N              
-saidaRAM[13]                 : C7        : output : 2.5 V             :         : 8         : N              
-saidaTeste7[11]              : C8        : output : 2.5 V             :         : 8         : N              
-saidaRAM[20]                 : C9        : output : 2.5 V             :         : 8         : N              
-saidaTeste2[20]              : C10       : output : 2.5 V             :         : 8         : N              
-saidaTeste3[6]               : C11       : output : 2.5 V             :         : 8         : N              
-saidaRAM[25]                 : C12       : output : 2.5 V             :         : 8         : N              
-saidaTeste7[20]              : C13       : output : 2.5 V             :         : 8         : N              
-saidaTeste4[23]              : C14       : output : 2.5 V             :         : 8         : N              
-saidaTeste5[21]              : C15       : output : 2.5 V             :         : 7         : N              
-saidaTeste5[27]              : C16       : output : 2.5 V             :         : 7         : N              
-saidaTeste1[26]              : C17       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[28]              : C18       : output : 2.5 V             :         : 7         : N              
-saidaTeste7[8]               : C19       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[23]              : C20       : output : 2.5 V             :         : 7         : N              
-saidaTeste6[25]              : C21       : output : 2.5 V             :         : 7         : N              
-saidaTeste4[4]               : C22       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7         :                
-saidaULA[7]                  : C24       : output : 2.5 V             :         : 7         : N              
-saidaULA[6]                  : C25       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[16]              : C26       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 6         :                
+saidaROM[27]                 : C4        : output : 2.5 V             :         : 8         : N              
+saidaTeste5[19]              : C5        : output : 2.5 V             :         : 8         : N              
+saidaTeste4[0]               : C6        : output : 2.5 V             :         : 8         : N              
+saidaTeste7[18]              : C7        : output : 2.5 V             :         : 8         : N              
+op[1]                        : C8        : output : 2.5 V             :         : 8         : N              
+saidaPC[5]                   : C9        : output : 2.5 V             :         : 8         : N              
+saidaRAM[9]                  : C10       : output : 2.5 V             :         : 8         : N              
+saidaPC[3]                   : C11       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[27]              : C12       : output : 2.5 V             :         : 8         : N              
+saidaTeste3[10]              : C13       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[16]              : C14       : output : 2.5 V             :         : 8         : N              
+saidaULA[28]                 : C15       : output : 2.5 V             :         : 7         : N              
+saidaTeste4[10]              : C16       : output : 2.5 V             :         : 7         : N              
+saidaULA[10]                 : C17       : output : 2.5 V             :         : 7         : N              
+saidaTeste6[16]              : C18       : output : 2.5 V             :         : 7         : N              
+saidaULA[14]                 : C19       : output : 2.5 V             :         : 7         : N              
+saidaTeste5[11]              : C20       : output : 2.5 V             :         : 7         : N              
+saidaTeste5[31]              : C21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 7         :                
+saidaULA[16]                 : C23       : output : 2.5 V             :         : 7         : N              
+saidaULA[24]                 : C24       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C25       :        :                   :         : 7         :                
+saidaTeste6[8]               : C26       : output : 2.5 V             :         : 7         : N              
+saidaULA[19]                 : C27       : output : 2.5 V             :         : 6         : N              
 GND                          : C28       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
+saidaULA[0]                  : D2        : output : 2.5 V             :         : 1         : N              
 GND                          : D3        : gnd    :                   :         :           :                
-saidaROM[4]                  : D4        : output : 2.5 V             :         : 8         : N              
-saidaULA[1]                  : D5        : output : 2.5 V             :         : 8         : N              
-saidaTeste5[14]              : D6        : output : 2.5 V             :         : 8         : N              
-saidaULA[22]                 : D7        : output : 2.5 V             :         : 8         : N              
-saidaTeste4[19]              : D8        : output : 2.5 V             :         : 8         : N              
-saidaTeste1[19]              : D9        : output : 2.5 V             :         : 8         : N              
-saidaTeste6[17]              : D10       : output : 2.5 V             :         : 8         : N              
-saidaTeste7[9]               : D11       : output : 2.5 V             :         : 8         : N              
-saidaTeste7[19]              : D12       : output : 2.5 V             :         : 8         : N              
-saidaTeste1[22]              : D13       : output : 2.5 V             :         : 8         : N              
-saidaRAM[16]                 : D14       : output : 2.5 V             :         : 8         : N              
-saidaTeste4[29]              : D15       : output : 2.5 V             :         : 7         : N              
-saidaTeste3[17]              : D16       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[27]              : D17       : output : 2.5 V             :         : 7         : N              
-saidaTeste7[28]              : D18       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[22]              : D19       : output : 2.5 V             :         : 7         : N              
-saidaTeste6[20]              : D20       : output : 2.5 V             :         : 7         : N              
-saidaROM[10]                 : D21       : output : 2.5 V             :         : 7         : N              
-saidaROM[26]                 : D22       : output : 2.5 V             :         : 7         : N              
-saidaTeste1[27]              : D23       : output : 2.5 V             :         : 7         : N              
-saidaTeste3[14]              : D24       : output : 2.5 V             :         : 7         : N              
-saidaROM[15]                 : D25       : output : 2.5 V             :         : 7         : N              
-saidaTeste1[1]               : D26       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
+saidaROM[30]                 : D4        : output : 2.5 V             :         : 8         : N              
+saidaTeste6[31]              : D5        : output : 2.5 V             :         : 8         : N              
+saidaTeste4[23]              : D6        : output : 2.5 V             :         : 8         : N              
+saidaTeste6[20]              : D7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
+saidaTeste5[26]              : D9        : output : 2.5 V             :         : 8         : N              
+saidaTeste3[14]              : D10       : output : 2.5 V             :         : 8         : N              
+saidaULA[5]                  : D11       : output : 2.5 V             :         : 8         : N              
+saidaRAM[14]                 : D12       : output : 2.5 V             :         : 8         : N              
+saidaTeste3[11]              : D13       : output : 2.5 V             :         : 8         : N              
+saidaTeste4[22]              : D14       : output : 2.5 V             :         : 8         : N              
+saidaULA[23]                 : D15       : output : 2.5 V             :         : 7         : N              
+saidaTeste4[14]              : D16       : output : 2.5 V             :         : 7         : N              
+saidaTeste1[14]              : D17       : output : 2.5 V             :         : 7         : N              
+saidaRAM[29]                 : D18       : output : 2.5 V             :         : 7         : N              
+saidaTeste4[30]              : D19       : output : 2.5 V             :         : 7         : N              
+saidaTeste2[10]              : D20       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7         :                
+saidaTeste1[3]               : D23       : output : 2.5 V             :         : 7         : N              
+op[4]                        : D24       : output : 2.5 V             :         : 7         : N              
+saidaULA[3]                  : D25       : output : 2.5 V             :         : 7         : N              
+saidaTeste5[3]               : D26       : output : 2.5 V             :         : 6         : N              
+saidaTeste5[7]               : D27       : output : 2.5 V             :         : 6         : N              
+saidaTeste6[24]              : D28       : output : 2.5 V             :         : 6         : N              
+op[5]                        : E1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
-saidaTeste5[15]              : E3        : output : 2.5 V             :         : 1         : N              
-saidaROM[6]                  : E4        : output : 2.5 V             :         : 8         : N              
-saidaROM[24]                 : E5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
+ula_op[1]                    : E4        : output : 2.5 V             :         : 8         : N              
+saidaROM[11]                 : E5        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
-saidaTeste7[15]              : E7        : output : 2.5 V             :         : 8         : N              
-saidaTeste4[6]               : E8        : output : 2.5 V             :         : 8         : N              
+saidaTeste5[21]              : E7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
 VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
-saidaULA[25]                 : E10       : output : 2.5 V             :         : 8         : N              
-saidaTeste6[16]              : E11       : output : 2.5 V             :         : 8         : N              
-saidaTeste2[15]              : E12       : output : 2.5 V             :         : 8         : N              
+saidaTeste6[23]              : E10       : output : 2.5 V             :         : 8         : N              
+saidaTeste2[9]               : E11       : output : 2.5 V             :         : 8         : N              
+saidaRAM[22]                 : E12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-saidaTeste3[23]              : E14       : output : 2.5 V             :         : 8         : N              
-saidaTeste7[17]              : E15       : output : 2.5 V             :         : 7         : N              
+saidaTeste7[14]              : E14       : output : 2.5 V             :         : 8         : N              
+saidaRAM[15]                 : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
 HEX0[2]                      : E17       : output : 2.5 V             :         : 7         : Y              
-saidaTeste4[27]              : E18       : output : 2.5 V             :         : 7         : N              
-saidaTeste3[1]               : E19       : output : 2.5 V             :         : 7         : N              
+beq                          : E18       : output : 2.5 V             :         : 7         : N              
+LEDR[2]                      : E19       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
-op[0]                        : E21       : output : 2.5 V             :         : 7         : N              
-saidaTeste6[27]              : E22       : output : 2.5 V             :         : 7         : N              
+saidaROM[25]                 : E21       : output : 2.5 V             :         : 7         : N              
+saidaTeste6[14]              : E22       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-saidaTeste3[24]              : E24       : output : 2.5 V             :         : 7         : N              
-saidaTeste6[24]              : E25       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 6         :                
-saidaTeste1[0]               : E27       : output : 2.5 V             :         : 6         : N              
-saidaULA[31]                 : E28       : output : 2.5 V             :         : 6         : N              
+saidaTeste1[9]               : E24       : output : 2.5 V             :         : 7         : N              
+saidaTeste2[12]              : E25       : output : 2.5 V             :         : 7         : N              
+saidaTeste5[10]              : E26       : output : 2.5 V             :         : 6         : N              
+saidaROM[3]                  : E27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F1        :        :                   :         : 1         :                
-saidaTeste6[23]              : F2        : output : 2.5 V             :         : 1         : N              
+saidaROM[26]                 : F2        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
 GND                          : F6        : gnd    :                   :         :           :                
-saidaULA[16]                 : F7        : output : 2.5 V             :         : 8         : N              
-saidaTeste3[30]              : F8        : output : 2.5 V             :         : 8         : N              
+saidaTeste6[7]               : F7        : output : 2.5 V             :         : 8         : N              
+saidaTeste5[14]              : F8        : output : 2.5 V             :         : 8         : N              
 GND                          : F9        : gnd    :                   :         :           :                
-saidaULA[18]                 : F10       : output : 2.5 V             :         : 8         : N              
-saidaTeste6[26]              : F11       : output : 2.5 V             :         : 8         : N              
-saidaTeste3[20]              : F12       : output : 2.5 V             :         : 8         : N              
+saidaTeste5[16]              : F10       : output : 2.5 V             :         : 8         : N              
+saidaTeste4[13]              : F11       : output : 2.5 V             :         : 8         : N              
+saidaTeste1[17]              : F12       : output : 2.5 V             :         : 8         : N              
 GND                          : F13       : gnd    :                   :         :           :                
-saidaTeste3[27]              : F14       : output : 2.5 V             :         : 8         : N              
-saidaRAM[19]                 : F15       : output : 2.5 V             :         : 7         : N              
+saidaTeste4[24]              : F14       : output : 2.5 V             :         : 8         : N              
+saidaTeste4[8]               : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
-saidaTeste1[23]              : F17       : output : 2.5 V             :         : 7         : N              
-saidaTeste6[18]              : F18       : output : 2.5 V             :         : 7         : N              
-saidaTeste1[29]              : F19       : output : 2.5 V             :         : 7         : N              
+saidaTeste4[12]              : F17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 7         :                
+LEDR[1]                      : F19       : output : 2.5 V             :         : 7         : Y              
 GND                          : F20       : gnd    :                   :         :           :                
-saidaROM[19]                 : F21       : output : 2.5 V             :         : 7         : N              
+LEDR[3]                      : F21       : output : 2.5 V             :         : 7         : Y              
 HEX0[1]                      : F22       : output : 2.5 V             :         : 7         : Y              
 GND                          : F23       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 6         :                
+saidaROM[19]                 : F24       : output : 2.5 V             :         : 6         : N              
+saidaTeste5[15]              : F25       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
-saidaTeste7[21]              : F28       : output : 2.5 V             :         : 6         : N              
-saidaROM[28]                 : G1        : output : 2.5 V             :         : 1         : N              
-saidaROM[14]                 : G2        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
-saidaTeste2[4]               : G4        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
-saidaTeste7[18]              : G6        : output : 2.5 V             :         : 1         : N              
-saidaTeste2[7]               : G7        : output : 2.5 V             :         : 8         : N              
-saidaTeste3[10]              : G8        : output : 2.5 V             :         : 8         : N              
-saidaTeste1[15]              : G9        : output : 2.5 V             :         : 8         : N              
-saidaULA[17]                 : G10       : output : 2.5 V             :         : 8         : N              
-saidaTeste1[14]              : G11       : output : 2.5 V             :         : 8         : N              
-saidaTeste1[21]              : G12       : output : 2.5 V             :         : 8         : N              
-saidaTeste7[23]              : G13       : output : 2.5 V             :         : 8         : N              
-saidaRAM[28]                 : G14       : output : 2.5 V             :         : 8         : N              
-saidaRAM[27]                 : G15       : output : 2.5 V             :         : 7         : N              
-saidaTeste7[26]              : G16       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[26]              : G17       : output : 2.5 V             :         : 7         : N              
+saidaROM[28]                 : F27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
+saidaROM[13]                 : G1        : output : 2.5 V             :         : 1         : N              
+sel_mux_jump                 : G2        : output : 2.5 V             :         : 1         : N              
+saidaULA[1]                  : G3        : output : 2.5 V             :         : 1         : N              
+saidaULA[15]                 : G4        : output : 2.5 V             :         : 1         : N              
+hab_esc_mem                  : G5        : output : 2.5 V             :         : 1         : N              
+saidaROM[9]                  : G6        : output : 2.5 V             :         : 1         : N              
+saidaTeste7[10]              : G7        : output : 2.5 V             :         : 8         : N              
+saidaROM[12]                 : G8        : output : 2.5 V             :         : 8         : N              
+saidaTeste5[28]              : G9        : output : 2.5 V             :         : 8         : N              
+saidaTeste7[11]              : G10       : output : 2.5 V             :         : 8         : N              
+saidaPC[4]                   : G11       : output : 2.5 V             :         : 8         : N              
+saidaTeste3[23]              : G12       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[15]              : G13       : output : 2.5 V             :         : 8         : N              
+saidaTeste1[23]              : G14       : output : 2.5 V             :         : 8         : N              
+saidaTeste4[9]               : G15       : output : 2.5 V             :         : 7         : N              
+saidaRAM[26]                 : G16       : output : 2.5 V             :         : 7         : N              
+saidaTeste4[11]              : G17       : output : 2.5 V             :         : 7         : N              
 HEX0[0]                      : G18       : output : 2.5 V             :         : 7         : Y              
-saidaRAM[23]                 : G19       : output : 2.5 V             :         : 7         : N              
-saidaTeste5[29]              : G20       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[24]              : G21       : output : 2.5 V             :         : 7         : N              
-saidaTeste2[25]              : G22       : output : 2.5 V             :         : 7         : N              
-saidaROM[31]                 : G23       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 6         :                
-saidaPC[0]                   : G25       : output : 2.5 V             :         : 6         : N              
-op[5]                        : G26       : output : 2.5 V             :         : 6         : N              
-saidaTeste2[14]              : G27       : output : 2.5 V             :         : 6         : N              
+LEDR[0]                      : G19       : output : 2.5 V             :         : 7         : Y              
+saidaTeste3[17]              : G20       : output : 2.5 V             :         : 7         : N              
+saidaTeste1[12]              : G21       : output : 2.5 V             :         : 7         : N              
+saidaRAM[21]                 : G22       : output : 2.5 V             :         : 7         : N              
+saidaULA[2]                  : G23       : output : 2.5 V             :         : 6         : N              
+saidaTeste5[2]               : G24       : output : 2.5 V             :         : 6         : N              
+saidaTeste1[2]               : G25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G28       :        :                   :         : 6         :                
 VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
 GND                          : H2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
-saidaULA[14]                 : H6        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
-saidaRAM[30]                 : H8        : output : 2.5 V             :         : 8         : N              
+saidaROM[17]                 : H3        : output : 2.5 V             :         : 1         : N              
+saidaULA[12]                 : H4        : output : 2.5 V             :         : 1         : N              
+saidaROM[22]                 : H5        : output : 2.5 V             :         : 1         : N              
+saidaROM[29]                 : H6        : output : 2.5 V             :         : 1         : N              
+op[2]                        : H7        : output : 2.5 V             :         : 1         : N              
+saidaPC[1]                   : H8        : output : 2.5 V             :         : 8         : N              
 GNDA3                        : H9        : gnd    :                   :         :           :                
-saidaROM[9]                  : H10       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :         : 8         :                
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
-saidaTeste5[18]              : H12       : output : 2.5 V             :         : 8         : N              
-saidaRAM[22]                 : H13       : output : 2.5 V             :         : 8         : N              
-saidaRAM[3]                  : H14       : output : 2.5 V             :         : 8         : N              
-saidaTeste3[15]              : H15       : output : 2.5 V             :         : 7         : N              
-hab_esc_reg                  : H16       : output : 2.5 V             :         : 7         : N              
-saidaTeste4[15]              : H17       : output : 2.5 V             :         : 7         : N              
+saidaRAM[16]                 : H12       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[2]               : H13       : output : 2.5 V             :         : 8         : N              
+saidaRAM[2]                  : H14       : output : 2.5 V             :         : 8         : N              
+saidaRAM[20]                 : H15       : output : 2.5 V             :         : 7         : N              
+saidaTeste3[12]              : H16       : output : 2.5 V             :         : 7         : N              
+saidaRAM[13]                 : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
-saidaRAM[26]                 : H19       : output : 2.5 V             :         : 7         : N              
+saidaTeste2[8]               : H19       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : H20       : gnd    :                   :         :           :                
-saidaRAM[1]                  : H21       : output : 2.5 V             :         : 7         : N              
+saidaTeste3[16]              : H21       : output : 2.5 V             :         : 7         : N              
 HEX0[6]                      : H22       : output : 2.5 V             :         : 6         : Y              
-saidaTeste3[19]              : H23       : output : 2.5 V             :         : 6         : N              
-saidaULA[2]                  : H24       : output : 2.5 V             :         : 6         : N              
-saidaULA[26]                 : H25       : output : 2.5 V             :         : 6         : N              
-saidaTeste7[25]              : H26       : output : 2.5 V             :         : 6         : N              
+saidaRAM[10]                 : H23       : output : 2.5 V             :         : 6         : N              
+saidaTeste5[17]              : H24       : output : 2.5 V             :         : 6         : N              
+saidaTeste6[19]              : H25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H26       :        :                   :         : 6         :                
 GND                          : H27       : gnd    :                   :         :           :                
 VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
 GND+                         : J1        :        :                   :         : 1         :                
 GND                          : J2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J3        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J4        :        :                   :         : 1         :                
-saidaULA[9]                  : J5        : output : 2.5 V             :         : 1         : N              
-saidaULA[8]                  : J6        : output : 2.5 V             :         : 1         : N              
-saidaTeste2[8]               : J7        : output : 2.5 V             :         : 1         : N              
+saidaTeste5[5]               : J3        : output : 2.5 V             :         : 1         : N              
+saidaTeste1[31]              : J4        : output : 2.5 V             :         : 1         : N              
+saidaTeste6[10]              : J5        : output : 2.5 V             :         : 1         : N              
+saidaTeste5[9]               : J6        : output : 2.5 V             :         : 1         : N              
+saidaPC[27]                  : J7        : output : 2.5 V             :         : 1         : N              
 VCCA3                        : J8        : power  :                   : 2.5V    :           :                
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
-saidaULA[23]                 : J10       : output : 2.5 V             :         : 8         : N              
+saidaTeste5[8]               : J10       : output : 2.5 V             :         : 8         : N              
 GND                          : J11       : gnd    :                   :         :           :                
-saidaTeste2[17]              : J12       : output : 2.5 V             :         : 8         : N              
-saidaTeste4[24]              : J13       : output : 2.5 V             :         : 8         : N              
-saidaTeste4[25]              : J14       : output : 2.5 V             :         : 8         : N              
-saidaRAM[6]                  : J15       : output : 2.5 V             :         : 7         : N              
-saidaTeste5[26]              : J16       : output : 2.5 V             :         : 7         : N              
-saidaTeste7[27]              : J17       : output : 2.5 V             :         : 7         : N              
+saidaULA[11]                 : J12       : output : 2.5 V             :         : 8         : N              
+saidaTeste7[17]              : J13       : output : 2.5 V             :         : 8         : N              
+saidaTeste2[30]              : J14       : output : 2.5 V             :         : 8         : N              
+saidaULA[18]                 : J15       : output : 2.5 V             :         : 7         : N              
+saidaTeste2[13]              : J16       : output : 2.5 V             :         : 7         : N              
+saidaTeste3[9]               : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
-saidaTeste5[24]              : J19       : output : 2.5 V             :         : 7         : N              
+saidaTeste1[16]              : J19       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
 VCCA2                        : J21       : power  :                   : 2.5V    :           :                
 HEX0[5]                      : J22       : output : 2.5 V             :         : 6         : Y              
-saidaULA[11]                 : J23       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J23       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J24       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 6         :                
+saidaTeste6[26]              : J25       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : J26       :        :                   :         : 6         :                
 GND+                         : J27       :        :                   :         : 6         :                
 GND+                         : J28       :        :                   :         : 6         :                
-ula_op[0]                    : K1        : output : 2.5 V             :         : 1         : N              
-saidaULA[27]                 : K2        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : K3        :        :                   :         : 1         :                
-beq                          : K4        : output : 2.5 V             :         : 1         : N              
+saidaTeste7[30]              : K1        : output : 2.5 V             :         : 1         : N              
+saidaULA[13]                 : K2        : output : 2.5 V             :         : 1         : N              
+saidaROM[31]                 : K3        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K4        :        :                   :         : 1         :                
 VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
 GND                          : K6        : gnd    :                   :         :           :                
-saidaTeste5[7]               : K7        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : K8        :        :                   :         : 1         :                
+saidaPC[29]                  : K7        : output : 2.5 V             :         : 1         : N              
+saidaPC[24]                  : K8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : K9        : power  :                   : 1.2V    :           :                
 GND                          : K10       : gnd    :                   :         :           :                
 VCCINT                       : K11       : power  :                   : 1.2V    :           :                
@@ -560,22 +560,22 @@ VCCINT                       : K17       : power  :                   : 1.2V    
 GND                          : K18       : gnd    :                   :         :           :                
 VCCINT                       : K19       : power  :                   : 1.2V    :           :                
 GND                          : K20       : gnd    :                   :         :           :                
-saidaTeste4[22]              : K21       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 6         :                
+saidaROM[8]                  : K21       : output : 2.5 V             :         : 6         : N              
+saidaTeste1[1]               : K22       : output : 2.5 V             :         : 6         : N              
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
-saidaTeste4[3]               : K26       : output : 2.5 V             :         : 6         : N              
-saidaTeste7[5]               : K27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K28       :        :                   :         : 6         :                
-saidaTeste1[18]              : L1        : output : 2.5 V             :         : 1         : N              
-saidaTeste1[24]              : L2        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 1         :                
-hab_esc_mem                  : L6        : output : 2.5 V             :         : 1         : N              
-saidaULA[28]                 : L7        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 1         :                
+saidaTeste7[19]              : L1        : output : 2.5 V             :         : 1         : N              
+saidaROM[21]                 : L2        : output : 2.5 V             :         : 1         : N              
+saidaTeste7[0]               : L3        : output : 2.5 V             :         : 1         : N              
+saidaROM[0]                  : L4        : output : 2.5 V             :         : 1         : N              
+op[3]                        : L5        : output : 2.5 V             :         : 1         : N              
+saidaPC[23]                  : L6        : output : 2.5 V             :         : 1         : N              
+saidaPC[30]                  : L7        : output : 2.5 V             :         : 1         : N              
+saidaPC[31]                  : L8        : output : 2.5 V             :         : 1         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -588,22 +588,22 @@ GND                          : L17       : gnd    :                   :         
 VCCINT                       : L18       : power  :                   : 1.2V    :           :                
 GND                          : L19       : gnd    :                   :         :           :                
 VCCINT                       : L20       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L21       :        :                   :         : 6         :                
-saidaTeste1[2]               : L22       : output : 2.5 V             :         : 6         : N              
-saidaTeste3[0]               : L23       : output : 2.5 V             :         : 6         : N              
-saidaTeste6[8]               : L24       : output : 2.5 V             :         : 6         : N              
+saidaROM[2]                  : L21       : output : 2.5 V             :         : 6         : N              
+saidaTeste5[20]              : L22       : output : 2.5 V             :         : 6         : N              
+saidaTeste6[28]              : L23       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L24       :        :                   :         : 6         :                
 HEX0[4]                      : L25       : output : 2.5 V             :         : 6         : Y              
 HEX0[3]                      : L26       : output : 2.5 V             :         : 6         : Y              
-saidaTeste7[13]              : L27       : output : 2.5 V             :         : 6         : N              
-saidaTeste6[21]              : L28       : output : 2.5 V             :         : 6         : N              
-saidaTeste1[25]              : M1        : output : 2.5 V             :         : 1         : N              
-saidaTeste1[20]              : M2        : output : 2.5 V             :         : 1         : N              
-saidaULA[24]                 : M3        : output : 2.5 V             :         : 1         : N              
+saidaTeste5[25]              : L27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6         :                
+saidaPC[14]                  : M1        : output : 2.5 V             :         : 1         : N              
+saidaRAM[27]                 : M2        : output : 2.5 V             :         : 1         : N              
+op[0]                        : M3        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : M5        :        :                   :         : 1         :                
+saidaPC[20]                  : M5        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : M6        :        :                   :         : 1         :                
-saidaTeste4[17]              : M7        : output : 2.5 V             :         : 1         : N              
-saidaTeste7[0]               : M8        : output : 2.5 V             :         : 1         : N              
+saidaPC[28]                  : M7        : output : 2.5 V             :         : 1         : N              
+saidaPC[25]                  : M8        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
@@ -620,18 +620,18 @@ KEY[1]                       : M21       : input  : 2.5 V             :         
 MSEL2                        : M22       :        :                   :         : 6         :                
 KEY[0]                       : M23       : input  : 2.5 V             :         : 6         : Y              
 HEX1[0]                      : M24       : output : 2.5 V             :         : 6         : Y              
-saidaRAM[24]                 : M25       : output : 2.5 V             :         : 6         : N              
-saidaTeste3[5]               : M26       : output : 2.5 V             :         : 6         : N              
-saidaTeste4[0]               : M27       : output : 2.5 V             :         : 6         : N              
-saidaTeste3[3]               : M28       : output : 2.5 V             :         : 6         : N              
+saidaTeste6[9]               : M25       : output : 2.5 V             :         : 6         : N              
+saidaTeste4[5]               : M26       : output : 2.5 V             :         : 6         : N              
+saidaTeste5[27]              : M27       : output : 2.5 V             :         : 6         : N              
+saidaROM[4]                  : M28       : output : 2.5 V             :         : 6         : N              
 VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
 GND                          : N2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 1         :                
-saidaTeste5[0]               : N4        : output : 2.5 V             :         : 1         : N              
+saidaPC[26]                  : N3        : output : 2.5 V             :         : 1         : N              
+saidaPC[22]                  : N4        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
 GND                          : N6        : gnd    :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
-saidaULA[15]                 : N8        : output : 2.5 V             :         : 1         : N              
+saidaPC[8]                   : N8        : output : 2.5 V             :         : 1         : N              
 GND                          : N9        : gnd    :                   :         :           :                
 VCCINT                       : N10       : power  :                   : 1.2V    :           :                
 GND                          : N11       : gnd    :                   :         :           :                
@@ -648,12 +648,12 @@ KEY[2]                       : N21       : input  : 2.5 V             :         
 MSEL0                        : N22       :        :                   :         : 6         :                
 GND                          : N23       : gnd    :                   :         :           :                
 VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
-saidaTeste3[28]              : N25       : output : 2.5 V             :         : 6         : N              
-saidaTeste2[13]              : N26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : N25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N26       :        :                   :         : 6         :                
 GND                          : N27       : gnd    :                   :         :           :                
 VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
-saidaTeste1[16]              : P1        : output : 2.5 V             :         : 1         : N              
-saidaTeste5[17]              : P2        : output : 2.5 V             :         : 1         : N              
+saidaPC[9]                   : P1        : output : 2.5 V             :         : 1         : N              
+saidaPC[7]                   : P2        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
 nCONFIG                      : P4        :        :                   :         : 1         :                
 TCK                          : P5        : input  :                   :         : 1         :                
@@ -672,21 +672,21 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-saidaRAM[21]                 : P21       : output : 2.5 V             :         : 5         : N              
+saidaULA[27]                 : P21       : output : 2.5 V             :         : 5         : N              
 MSEL3                        : P22       :        :                   :         : 6         :                
 MSEL1                        : P23       :        :                   :         : 6         :                
 CONF_DONE                    : P24       :        :                   :         : 6         :                
-saidaTeste4[1]               : P25       : output : 2.5 V             :         : 6         : N              
-saidaTeste6[28]              : P26       : output : 2.5 V             :         : 6         : N              
-saidaTeste1[28]              : P27       : output : 2.5 V             :         : 6         : N              
+saidaROM[7]                  : P25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 6         :                
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-saidaRAM[11]                 : R1        : output : 2.5 V             :         : 2         : N              
-saidaTeste7[10]              : R2        : output : 2.5 V             :         : 2         : N              
-saidaTeste3[12]              : R3        : output : 2.5 V             :         : 2         : N              
-saidaTeste5[8]               : R4        : output : 2.5 V             :         : 2         : N              
-saidaTeste1[11]              : R5        : output : 2.5 V             :         : 2         : N              
-saidaTeste7[1]               : R6        : output : 2.5 V             :         : 2         : N              
-saidaTeste5[19]              : R7        : output : 2.5 V             :         : 2         : N              
+saidaROM[5]                  : R1        : output : 2.5 V             :         : 2         : N              
+saidaPC[2]                   : R2        : output : 2.5 V             :         : 2         : N              
+saidaTeste1[30]              : R3        : output : 2.5 V             :         : 2         : N              
+saidaRAM[12]                 : R4        : output : 2.5 V             :         : 2         : N              
+saidaROM[16]                 : R5        : output : 2.5 V             :         : 2         : N              
+saidaRAM[3]                  : R6        : output : 2.5 V             :         : 2         : N              
+saidaPC[10]                  : R7        : output : 2.5 V             :         : 2         : N              
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -700,21 +700,21 @@ GND                          : R17       : gnd    :                   :         
 VCCINT                       : R18       : power  :                   : 1.2V    :           :                
 GND                          : R19       : gnd    :                   :         :           :                
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
-saidaTeste7[14]              : R21       : output : 2.5 V             :         : 5         : N              
-saidaTeste3[18]              : R22       : output : 2.5 V             :         : 5         : N              
-saidaTeste7[29]              : R23       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R21       :        :                   :         : 5         :                
+saidaTeste7[20]              : R22       : output : 2.5 V             :         : 5         : N              
+saidaTeste2[2]               : R23       : output : 2.5 V             :         : 5         : N              
 KEY[3]                       : R24       : input  : 2.5 V             :         : 5         : Y              
-saidaTeste5[9]               : R25       : output : 2.5 V             :         : 5         : N              
-saidaTeste7[3]               : R26       : output : 2.5 V             :         : 5         : N              
-saidaTeste3[26]              : R27       : output : 2.5 V             :         : 5         : N              
-saidaTeste3[4]               : R28       : output : 2.5 V             :         : 5         : N              
+saidaTeste7[13]              : R25       : output : 2.5 V             :         : 5         : N              
+saidaTeste7[24]              : R26       : output : 2.5 V             :         : 5         : N              
+saidaULA[9]                  : R27       : output : 2.5 V             :         : 5         : N              
+saidaTeste7[31]              : R28       : output : 2.5 V             :         : 5         : N              
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
-saidaTeste6[10]              : T3        : output : 2.5 V             :         : 2         : N              
-saidaULA[29]                 : T4        : output : 2.5 V             :         : 2         : N              
+saidaPC[6]                   : T3        : output : 2.5 V             :         : 2         : N              
+saidaROM[1]                  : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
-saidaTeste6[1]               : T7        : output : 2.5 V             :         : 2         : N              
+saidaTeste4[3]               : T7        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 2         :                
 VCCINT                       : T9        : power  :                   : 1.2V    :           :                
 GND                          : T10       : gnd    :                   :         :           :                
@@ -728,22 +728,22 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-saidaTeste2[0]               : T21       : output : 2.5 V             :         : 5         : N              
-saidaTeste1[6]               : T22       : output : 2.5 V             :         : 5         : N              
+saidaTeste4[29]              : T21       : output : 2.5 V             :         : 5         : N              
+saidaULA[26]                 : T22       : output : 2.5 V             :         : 5         : N              
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-saidaTeste3[31]              : T25       : output : 2.5 V             :         : 5         : N              
-saidaTeste4[2]               : T26       : output : 2.5 V             :         : 5         : N              
+saidaULA[25]                 : T25       : output : 2.5 V             :         : 5         : N              
+saidaTeste4[20]              : T26       : output : 2.5 V             :         : 5         : N              
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
-saidaRAM[8]                  : U1        : output : 2.5 V             :         : 2         : N              
-saidaTeste7[31]              : U2        : output : 2.5 V             :         : 2         : N              
-saidaTeste7[12]              : U3        : output : 2.5 V             :         : 2         : N              
-saidaTeste7[30]              : U4        : output : 2.5 V             :         : 2         : N              
-saidaTeste6[9]               : U5        : output : 2.5 V             :         : 2         : N              
-saidaTeste4[30]              : U6        : output : 2.5 V             :         : 2         : N              
-saidaROM[8]                  : U7        : output : 2.5 V             :         : 2         : N              
-saidaTeste3[7]               : U8        : output : 2.5 V             :         : 2         : N              
+saidaTeste2[31]              : U1        : output : 2.5 V             :         : 2         : N              
+saidaTeste3[4]               : U2        : output : 2.5 V             :         : 2         : N              
+saidaTeste7[8]               : U3        : output : 2.5 V             :         : 2         : N              
+saidaTeste2[11]              : U4        : output : 2.5 V             :         : 2         : N              
+saidaTeste4[26]              : U5        : output : 2.5 V             :         : 2         : N              
+saidaTeste4[4]               : U6        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 2         :                
 GND                          : U9        : gnd    :                   :         :           :                
 VCCINT                       : U10       : power  :                   : 1.2V    :           :                
 GND                          : U11       : gnd    :                   :         :           :                
@@ -757,21 +757,21 @@ VCCINT                       : U18       : power  :                   : 1.2V    
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
 HEX3[1]                      : U21       : output : 2.5 V             :         : 5         : Y              
-saidaRAM[31]                 : U22       : output : 2.5 V             :         : 5         : N              
+saidaROM[20]                 : U22       : output : 2.5 V             :         : 5         : N              
 HEX1[5]                      : U23       : output : 2.5 V             :         : 5         : Y              
 HEX1[6]                      : U24       : output : 2.5 V             :         : 5         : Y              
-saidaROM[11]                 : U25       : output : 2.5 V             :         : 5         : N              
-saidaROM[12]                 : U26       : output : 2.5 V             :         : 5         : N              
-saidaTeste2[10]              : U27       : output : 2.5 V             :         : 5         : N              
-saidaTeste5[5]               : U28       : output : 2.5 V             :         : 5         : N              
-saidaTeste1[8]               : V1        : output : 2.5 V             :         : 2         : N              
-saidaTeste6[11]              : V2        : output : 2.5 V             :         : 2         : N              
-saidaTeste6[15]              : V3        : output : 2.5 V             :         : 2         : N              
-saidaTeste4[11]              : V4        : output : 2.5 V             :         : 2         : N              
-saidaROM[7]                  : V5        : output : 2.5 V             :         : 2         : N              
-saidaRAM[12]                 : V6        : output : 2.5 V             :         : 2         : N              
-saidaTeste2[5]               : V7        : output : 2.5 V             :         : 2         : N              
-saidaROM[22]                 : V8        : output : 2.5 V             :         : 2         : N              
+saidaTeste7[4]               : U25       : output : 2.5 V             :         : 5         : N              
+saidaTeste2[26]              : U26       : output : 2.5 V             :         : 5         : N              
+saidaTeste3[19]              : U27       : output : 2.5 V             :         : 5         : N              
+saidaTeste2[17]              : U28       : output : 2.5 V             :         : 5         : N              
+saidaPC[15]                  : V1        : output : 2.5 V             :         : 2         : N              
+saidaTeste7[5]               : V2        : output : 2.5 V             :         : 2         : N              
+saidaTeste2[6]               : V3        : output : 2.5 V             :         : 2         : N              
+saidaTeste3[25]              : V4        : output : 2.5 V             :         : 2         : N              
+saidaTeste6[29]              : V5        : output : 2.5 V             :         : 2         : N              
+saidaTeste6[4]               : V6        : output : 2.5 V             :         : 2         : N              
+sel_mux_ula_mem              : V7        : output : 2.5 V             :         : 2         : N              
+saidaRAM[24]                 : V8        : output : 2.5 V             :         : 2         : N              
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
 GND                          : V10       : gnd    :                   :         :           :                
 VCCINT                       : V11       : power  :                   : 1.2V    :           :                
@@ -785,21 +785,21 @@ GND                          : V18       : gnd    :                   :         
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
 HEX3[0]                      : V21       : output : 2.5 V             :         : 5         : Y              
-saidaPC[31]                  : V22       : output : 2.5 V             :         : 5         : N              
+saidaTeste2[0]               : V22       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V23       :        :                   :         : 5         :                
-saidaTeste7[2]               : V24       : output : 2.5 V             :         : 5         : N              
-saidaPC[4]                   : V25       : output : 2.5 V             :         : 5         : N              
-saidaTeste6[31]              : V26       : output : 2.5 V             :         : 5         : N              
+saidaROM[15]                 : V24       : output : 2.5 V             :         : 5         : N              
+saidaTeste4[19]              : V25       : output : 2.5 V             :         : 5         : N              
+saidaTeste5[1]               : V26       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V27       :        :                   :         : 5         :                
-saidaROM[2]                  : V28       : output : 2.5 V             :         : 5         : N              
-saidaTeste2[6]               : W1        : output : 2.5 V             :         : 2         : N              
-saidaRAM[10]                 : W2        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : W3        :        :                   :         : 2         :                
-saidaROM[21]                 : W4        : output : 2.5 V             :         : 2         : N              
+saidaTeste2[25]              : V28       : output : 2.5 V             :         : 5         : N              
+saidaPC[17]                  : W1        : output : 2.5 V             :         : 2         : N              
+saidaTeste3[30]              : W2        : output : 2.5 V             :         : 2         : N              
+saidaTeste2[22]              : W3        : output : 2.5 V             :         : 2         : N              
+hab_le_mem                   : W4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
-saidaTeste1[9]               : W7        : output : 2.5 V             :         : 2         : N              
-op[3]                        : W8        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :         : 2         :                
 GND                          : W9        : gnd    :                   :         :           :                
 VCCINT                       : W10       : power  :                   : 1.2V    :           :                
 GND                          : W11       : gnd    :                   :         :           :                
@@ -822,28 +822,28 @@ HEX2[5]                      : W27       : output : 2.5 V             :         
 HEX2[6]                      : W28       : output : 2.5 V             :         : 5         : Y              
 GND+                         : Y1        :        :                   :         : 2         :                
 CLOCK_50                     : Y2        : input  : 2.5 V             :         : 2         : Y              
-saidaTeste2[11]              : Y3        : output : 2.5 V             :         : 2         : N              
-saidaTeste6[3]               : Y4        : output : 2.5 V             :         : 2         : N              
-saidaULA[0]                  : Y5        : output : 2.5 V             :         : 2         : N              
-saidaROM[18]                 : Y6        : output : 2.5 V             :         : 2         : N              
-saidaROM[29]                 : Y7        : output : 2.5 V             :         : 2         : N              
+saidaPC[16]                  : Y3        : output : 2.5 V             :         : 2         : N              
+saidaPC[18]                  : Y4        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   :         : 2         :                
 VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
-sel_mux_ula_mem              : Y10       : output : 2.5 V             :         : 3         : N              
+saidaTeste6[25]              : Y10       : output : 2.5 V             :         : 3         : N              
 GND                          : Y11       : gnd    :                   :         :           :                
-saidaTeste6[7]               : Y12       : output : 2.5 V             :         : 3         : N              
-saidaTeste5[3]               : Y13       : output : 2.5 V             :         : 3         : N              
-saidaROM[1]                  : Y14       : output : 2.5 V             :         : 3         : N              
-saidaULA[21]                 : Y15       : output : 2.5 V             :         : 3         : N              
-saidaTeste2[19]              : Y16       : output : 2.5 V             :         : 4         : N              
-saidaPC[30]                  : Y17       : output : 2.5 V             :         : 4         : N              
+saidaTeste1[25]              : Y12       : output : 2.5 V             :         : 3         : N              
+saidaTeste3[8]               : Y13       : output : 2.5 V             :         : 3         : N              
+saidaTeste4[17]              : Y14       : output : 2.5 V             :         : 3         : N              
+saidaULA[22]                 : Y15       : output : 2.5 V             :         : 3         : N              
+saidaTeste5[4]               : Y16       : output : 2.5 V             :         : 4         : N              
+saidaROM[6]                  : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
 HEX3[6]                      : Y19       : output : 2.5 V             :         : 4         : Y              
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
 HEX1[1]                      : Y22       : output : 2.5 V             :         : 5         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5         :                
+saidaTeste6[1]               : Y23       : output : 2.5 V             :         : 5         : N              
+saidaTeste6[11]              : Y24       : output : 2.5 V             :         : 5         : N              
 HEX2[2]                      : Y25       : output : 2.5 V             :         : 5         : Y              
 HEX2[4]                      : Y26       : output : 2.5 V             :         : 5         : Y              
 GND+                         : Y27       :        :                   :         : 5         :                

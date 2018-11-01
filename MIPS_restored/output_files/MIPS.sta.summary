@@ -3,72 +3,72 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'KEY[0]'
-Slack : -22.273
-TNS   : -345495.891
+Slack : -22.727
+TNS   : -343128.179
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -0.313
-TNS   : -0.313
+Slack : -0.011
+TNS   : -0.011
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.066
-TNS   : 0.000
+Slack : -0.300
+TNS   : -0.300
 
 Type  : Slow 1200mV 85C Model Hold 'KEY[0]'
-Slack : 0.388
+Slack : 0.387
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[0]'
 Slack : -3.000
-TNS   : -21544.439
+TNS   : -21463.484
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
 TNS   : -4.285
 
 Type  : Slow 1200mV 0C Model Setup 'KEY[0]'
-Slack : -20.491
-TNS   : -317071.095
+Slack : -20.868
+TNS   : -315491.906
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.167
-TNS   : -0.167
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.129
+Slack : 0.080
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : -0.171
+TNS   : -0.171
+
 Type  : Slow 1200mV 0C Model Hold 'KEY[0]'
-Slack : 0.339
+Slack : 0.338
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
 Slack : -3.000
-TNS   : -21544.087
+TNS   : -21463.132
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
 TNS   : -4.285
 
 Type  : Fast 1200mV 0C Model Setup 'KEY[0]'
-Slack : -10.401
-TNS   : -158579.904
+Slack : -10.686
+TNS   : -157195.674
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -0.208
-TNS   : -0.208
+Slack : -0.073
+TNS   : -0.073
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.251
-TNS   : -0.251
+Slack : -0.372
+TNS   : -0.372
 
 Type  : Fast 1200mV 0C Model Hold 'KEY[0]'
-Slack : 0.175
+Slack : 0.174
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
 Slack : -3.000
-TNS   : -17724.410
+TNS   : -18393.453
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000

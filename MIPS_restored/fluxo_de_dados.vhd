@@ -21,7 +21,10 @@ entity fluxo_de_dados is
 		outROM: out std_logic_vector(31 downto 0);
 		outRAM: out std_logic_vector(31 downto 0);
 		outULA: out std_logic_vector(31 downto 0);
-		LEDR: out std_logic_vector(3 downto 0);
+		outLedR0: out std_logic;
+		outLedR1: out std_logic;
+		outLedR2: out std_logic;
+		outLedR3: out std_logic;
 		
 		ULA_OP : in std_logic_vector(1 downto 0);
 		HAB_ESC_MEM: in std_logic;
@@ -209,10 +212,10 @@ begin
 	aux_outTest2 <= outTest2(3 downto 0);
 	aux_outTest3 <= outTest3(3 downto 0);
 	aux_outTest4 <= outTest4(3 downto 0);
-	LEDR(0) <= outLed0(0);
-	LEDR(1) <= outLed1(0);
-	LEDR(2) <= outLed2(0);
-	LEDR(3) <= outLed3(0);
+	outLedR0 <= outLed0(0);
+	outLedR1 <= outLed1(0);
+	outLedR2 <= outLed2(0);
+	outLedR3 <= outLed3(0);
 			
   outRAM <= saida_RAM;
   outPC <= saida_PC;
