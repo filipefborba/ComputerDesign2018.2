@@ -118,7 +118,7 @@ begin
 	RAM: entity work.ram
 --		port map(clock => clk, data => saida_REG2, write_address => to_integer(unsigned(("00" & saida_ULA(31 downto 2)))),
 --		read_address => to_integer(unsigned(("00" & saida_ULA(31 downto 2)))), we => HAB_ESC_MEM and decoder_HAB_MEM, re => HAB_LE_MEM and decoder_HAB_MEM, q => saida_RAM);
---		
+--			
 		port map(clock => clk, data => saida_REG2, write_address => to_integer(unsigned((saida_ULA))),
 		read_address => to_integer(unsigned((saida_ULA))), we => HAB_ESC_MEM and decoder_HAB_MEM, re => HAB_LE_MEM and decoder_HAB_MEM, q => saida_RAM);
 		
@@ -172,46 +172,48 @@ begin
 			CLK => clk, RST => '0'
 			);
 			
-	reg_hex1_reg1: entity work.registrador
-		generic map (larguraDados => 4)
-		port map (
-			DIN => aux_outTest1,
-			DOUT => outReg1Banco,
-			ENABLE => '1',
-			CLK => clk, RST => '0'
-			);
+--	reg_hex1_reg1: entity work.registrador
+--		generic map (larguraDados => 4)
+--		port map (
+--			DIN => aux_outTest1,
+--			DOUT => outReg1Banco,
+--			ENABLE => '1',
+--			CLK => clk, RST => '0'
+--			);
+--			
+--	reg_hex2_reg2: entity work.registrador
+--		generic map (larguraDados => 4)
+--		port map (
+--			DIN => aux_outTest2,
+--			DOUT => outReg2Banco,
+--			ENABLE => '1',
+--			CLK => clk, RST => '0'
+--			);
+--			
+--	reg_hex3_reg3: entity work.registrador
+--		generic map (larguraDados => 4)
+--		port map (
+--			DIN => aux_outTest3,
+--			DOUT => outReg3Banco,
+--			ENABLE => '1',
+--			CLK => clk, RST => '0'
+--			);
+--			
+--	reg_hex4_reg4: entity work.registrador
+--		generic map (larguraDados => 4)
+--		port map (
+--			DIN => aux_outTest4,
+--			DOUT => outReg4Banco,
+--			ENABLE => '1',
+--			CLK => clk, RST => '0'
+--			);
+	
 			
-	reg_hex2_reg2: entity work.registrador
-		generic map (larguraDados => 4)
-		port map (
-			DIN => aux_outTest2,
-			DOUT => outReg2Banco,
-			ENABLE => '1',
-			CLK => clk, RST => '0'
-			);
-			
-	reg_hex3_reg3: entity work.registrador
-		generic map (larguraDados => 4)
-		port map (
-			DIN => aux_outTest3,
-			DOUT => outReg3Banco,
-			ENABLE => '1',
-			CLK => clk, RST => '0'
-			);
-			
-	reg_hex4_reg4: entity work.registrador
-		generic map (larguraDados => 4)
-		port map (
-			DIN => aux_outTest4,
-			DOUT => outReg4Banco,
-			ENABLE => '1',
-			CLK => clk, RST => '0'
-			);
 				
-	aux_outTest1 <= outTest1(3 downto 0);
-	aux_outTest2 <= outTest2(3 downto 0);
-	aux_outTest3 <= outTest3(3 downto 0);
-	aux_outTest4 <= outTest4(3 downto 0);
+--	aux_outTest1 <= outTest1(3 downto 0);
+--	aux_outTest2 <= outTest2(3 downto 0);
+--	aux_outTest3 <= outTest3(3 downto 0);
+--	aux_outTest4 <= outTest4(3 downto 0);
 	outLedR0 <= outLed0(0);
 	outLedR1 <= outLed1(0);
 	outLedR2 <= outLed2(0);

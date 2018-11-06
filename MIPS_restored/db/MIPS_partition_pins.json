@@ -116,6 +116,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX4[6]",
+					"strict" : false
+				},
+				{
 					"name" : "LEDR[0]",
 					"strict" : false
 				},
@@ -169,10 +197,6 @@
 				},
 				{
 					"name" : "sel_MUX_rt_rd",
-					"strict" : false
-				},
-				{
-					"name" : "sel_mux_jump",
 					"strict" : false
 				},
 				{
@@ -501,126 +525,6 @@
 				},
 				{
 					"name" : "saidaRAM[31]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[2]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[3]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[4]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[5]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[6]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[7]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[8]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[9]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[10]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[11]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[12]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[13]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[14]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[15]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[16]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[17]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[18]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[19]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[20]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[21]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[22]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[23]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[24]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[25]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[26]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[27]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[28]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[29]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[30]",
-					"strict" : false
-				},
-				{
-					"name" : "saidaPC[31]",
 					"strict" : false
 				},
 				{

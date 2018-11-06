@@ -10,7 +10,7 @@ entity rom is
 	generic 
 	(
 		DATA_WIDTH : natural := 32;
-		ADDR_WIDTH : natural := 512
+		ADDR_WIDTH : natural := 64
 	);
 
 	port 
@@ -26,7 +26,7 @@ end entity;
 
 architecture rtl of rom is
 
-	type memory_t is array (511 downto 0) of std_logic_vector (31 downto 0);
+	type memory_t is array ((ADDR_WIDTH-1) downto 0) of std_logic_vector ((DATA_WIDTH-1) downto 0);
 	signal content: memory_t;
 	attribute ram_init_file : string;
 	attribute ram_init_file of content:

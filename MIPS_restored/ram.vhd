@@ -5,7 +5,7 @@ USE ieee.numeric_std.ALL;
 ENTITY ram IS
 	GENERIC
 	(
-		ADDRESS_WIDTH	: integer := 512;
+		ADDRESS_WIDTH	: integer := 64;
 		DATA_WIDTH	: integer := 32
 	);
 	PORT

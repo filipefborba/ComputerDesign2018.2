@@ -23,7 +23,7 @@ entity top_level is
 		 saidaROM: out std_logic_vector(31 downto 0);
 		 saidaULA: out std_logic_vector(31 downto 0);
 		 saidaRAM: out std_logic_vector(31 downto 0);
-		 saidaPC: out std_logic_vector(31 downto 0);
+		 --saidaPC: out std_logic_vector(31 downto 0);
 		 saidaTeste1: out std_logic_vector(31 downto 0);
 		 saidaTeste2: out std_logic_vector(31 downto 0);
 		 saidaTeste3: out std_logic_vector(31 downto 0);
@@ -47,9 +47,12 @@ signal aux_sel_MUX_rt_rd: std_logic;
 signal aux_sel_mux_jump: std_logic;
 signal aux_hab_esc_reg: std_logic;
 signal CLK, but: std_logic;
+signal saidaPC: std_logic_vector(31 downto 0);
 
 signal saidaReg1Banco, saidaReg2Banco, saidaReg3Banco, saidaReg4Banco: std_logic_vector(3 downto 0);
 signal led0, led1, led2, led3: std_logic;
+
+signal aux_saidaTeste1, aux_saidaTeste2, aux_saidaTeste3, aux_saidaTeste4: std_logic_vector(31 downto 0);
 
 begin
 
@@ -80,17 +83,13 @@ begin
 		sel_MUX_JUMP => aux_sel_mux_jump,
 		HAB_ESC_REG => aux_hab_esc_reg,
 		clk => CLK,
-		outTest1 => saidaTeste1,
-		outTest2 => saidaTeste2,
-		outTest3 => saidaTeste3,
-		outTest4 => saidaTeste4,
+		outTest1 => aux_saidaTeste1,
+		outTest2 => aux_saidaTeste2,
+		outTest3 => aux_saidaTeste3,
+		outTest4 => aux_saidaTeste4,
 		outTest5 => saidaTeste5,
 		outTest6 => saidaTeste6,
 		outTest7 => saidaTeste7,
-		outReg1Banco => saidaReg1Banco,
-		outReg2Banco => saidaReg2Banco,
-		outReg3Banco => saidaReg3Banco,
-		outReg4Banco => saidaReg4Banco,
 		outLedR0 => led0,
 		outLedR1 => led1,
 		outLedR2 => led2,
@@ -102,16 +101,23 @@ begin
 		);
 		
 		display0 : entity work.conversorHex7seg
-		Port map (saida7seg => HEX0, dadoHex => saidaReg1Banco);
+		--Port map (saida7seg => HEX0, dadoHex => saidaReg1Banco);
+		Port map (saida7seg => HEX0, dadoHex => aux_saidaTeste1(3 downto 0));
 		
 		display1 : entity work.conversorHex7seg
-		Port map (saida7seg => HEX1, dadoHex => saidaReg2Banco);
+		--Port map (saida7seg => HEX1, dadoHex => saidaReg2Banco);
+		Port map (saida7seg => HEX1, dadoHex => aux_saidaTeste2(3 downto 0));
 		
 		display2 : entity work.conversorHex7seg
-		Port map (saida7seg => HEX2, dadoHex => saidaReg3Banco);
+--		Port map (saida7seg => HEX2, dadoHex => saidaReg3Banco);
+		Port map (saida7seg => HEX2, dadoHex => aux_saidaTeste3(3 downto 0));
 		
 		display3 : entity work.conversorHex7seg
-		Port map (saida7seg => HEX3, dadoHex => saidaReg4Banco);
+--		Port map (saida7seg => HEX3, dadoHex => saidaReg4Banco);
+		Port map (saida7seg => HEX3, dadoHex => aux_saidaTeste4(3 downto 0));
+		
+		display4 : entity work.conversorHex7seg
+		Port map (saida7seg => HEX4, dadoHex => saidaPC(5 downto 2));
 		
 		op <= aux_op;
 		ula_op <= aux_ula_op;
@@ -133,6 +139,11 @@ begin
 		LEDR(1) <= led1;
 		LEDR(2) <= led2;
 		LEDR(3) <= led3;
+		
+		saidaTeste1 <= aux_saidaTeste1;
+		saidaTeste2 <= aux_saidaTeste2;
+		saidaTeste3 <= aux_saidaTeste3;
+		saidaTeste4 <= aux_saidaTeste4;
 	
 		
 		
