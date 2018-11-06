@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Tue Nov 06 19:22:08 2018
+Tue Nov 06 20:38:04 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -87,13 +87,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 06 19:22:08 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 06 20:38:04 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; MIPS                                        ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4,071                                       ;
-;     Total combinational functions  ; 1,864                                       ;
+; Total logic elements               ; 4,014                                       ;
+;     Total combinational functions  ; 1,807                                       ;
 ;     Dedicated logic registers      ; 2,307                                       ;
 ; Total registers                    ; 2307                                        ;
 ; Total pins                         ; 401                                         ;
@@ -247,16 +247,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------------------+
 ; Resource                                    ; Usage                           ;
 +---------------------------------------------+---------------------------------+
-; Estimated Total logic elements              ; 4,071                           ;
+; Estimated Total logic elements              ; 4,014                           ;
 ;                                             ;                                 ;
-; Total combinational functions               ; 1864                            ;
+; Total combinational functions               ; 1807                            ;
 ; Logic element usage by number of LUT inputs ;                                 ;
-;     -- 4 input functions                    ; 1755                            ;
-;     -- 3 input functions                    ; 44                              ;
-;     -- <=2 input functions                  ; 65                              ;
+;     -- 4 input functions                    ; 1713                            ;
+;     -- 3 input functions                    ; 35                              ;
+;     -- <=2 input functions                  ; 59                              ;
 ;                                             ;                                 ;
 ; Logic elements by mode                      ;                                 ;
-;     -- normal mode                          ; 1864                            ;
+;     -- normal mode                          ; 1807                            ;
 ;     -- arithmetic mode                      ; 0                               ;
 ;                                             ;                                 ;
 ; Total registers                             ; 2307                            ;
@@ -270,8 +270,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                 ;
 ; Maximum fan-out node                        ; edgeDetector:detectorSub0|saida ;
 ; Maximum fan-out                             ; 2370                            ;
-; Total fan-out                               ; 15359                           ;
-; Average fan-out                             ; 3.05                            ;
+; Total fan-out                               ; 15152                           ;
+; Average fan-out                             ; 3.04                            ;
 +---------------------------------------------+---------------------------------+
 
 
@@ -280,7 +280,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                          ; Entity Name      ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+------------------+--------------+
-; |top_level                                   ; 1864 (1)            ; 2307 (0)                  ; 512         ; 0            ; 0       ; 0         ; 401  ; 0            ; |top_level                                                                                                   ; top_level        ; work         ;
+; |top_level                                   ; 1807 (1)            ; 2307 (0)                  ; 512         ; 0            ; 0       ; 0         ; 401  ; 0            ; |top_level                                                                                                   ; top_level        ; work         ;
 ;    |UCFD:UCFD|                               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|UCFD:UCFD                                                                                         ; UCFD             ; work         ;
 ;    |conversorHex7Seg:display0|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display0                                                                         ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display1|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display1                                                                         ; conversorHex7Seg ; work         ;
@@ -288,22 +288,22 @@ refer to the applicable agreement for further details.
 ;    |conversorHex7Seg:display3|               ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display3                                                                         ; conversorHex7Seg ; work         ;
 ;    |conversorHex7Seg:display4|               ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|conversorHex7Seg:display4                                                                         ; conversorHex7Seg ; work         ;
 ;    |edgeDetector:detectorSub0|               ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|edgeDetector:detectorSub0                                                                         ; edgeDetector     ; work         ;
-;    |fluxo_de_dados:FD|                       ; 1823 (1)            ; 2306 (0)                  ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD                                                                                 ; fluxo_de_dados   ; work         ;
+;    |fluxo_de_dados:FD|                       ; 1766 (2)            ; 2306 (0)                  ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD                                                                                 ; fluxo_de_dados   ; work         ;
 ;       |UC:UC_ULA|                            ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|UC:UC_ULA                                                                       ; UC               ; work         ;
-;       |ULA:ULA|                              ; 134 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA                                                                         ; ULA              ; work         ;
-;          |mux2:INVERTE_B|                    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux2:INVERTE_B                                                          ; mux2             ; work         ;
-;          |mux:MUX|                           ; 75 (75)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX                                                                 ; mux              ; work         ;
-;          |soma:SOMA|                         ; 57 (57)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|soma:SOMA                                                               ; soma             ; work         ;
-;       |banco_reg:BANCO_REG|                  ; 83 (83)             ; 236 (236)                 ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG                                                             ; banco_reg        ; work         ;
+;       |ULA:ULA|                              ; 98 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA                                                                         ; ULA              ; work         ;
+;          |mux2:INVERTE_B|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux2:INVERTE_B                                                          ; mux2             ; work         ;
+;          |mux:MUX|                           ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX                                                                 ; mux              ; work         ;
+;          |soma:SOMA|                         ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ULA:ULA|soma:SOMA                                                               ; soma             ; work         ;
+;       |banco_reg:BANCO_REG|                  ; 82 (82)             ; 236 (236)                 ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG                                                             ; banco_reg        ; work         ;
 ;          |altsyncram:registrador_rtl_0|      ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_0                                ; altsyncram       ; work         ;
 ;             |altsyncram_esg1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_0|altsyncram_esg1:auto_generated ; altsyncram_esg1  ; work         ;
 ;          |altsyncram:registrador_rtl_1|      ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_1                                ; altsyncram       ; work         ;
 ;             |altsyncram_esg1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 256         ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|altsyncram:registrador_rtl_1|altsyncram_esg1:auto_generated ; altsyncram_esg1  ; work         ;
-;       |decodificador:DECODER|                ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|decodificador:DECODER                                                           ; decodificador    ; work         ;
+;       |decodificador:DECODER|                ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|decodificador:DECODER                                                           ; decodificador    ; work         ;
 ;       |mux2:MUX_RT_IMM|                      ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_RT_IMM                                                                 ; mux2             ; work         ;
 ;       |mux2:MUX_RT_RD|                       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_RT_RD                                                                  ; mux2             ; work         ;
 ;       |mux2:MUX_ULA_MEM|                     ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|mux2:MUX_ULA_MEM                                                                ; mux2             ; work         ;
-;       |ram:RAM|                              ; 1483 (1483)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ram:RAM                                                                         ; ram              ; work         ;
+;       |ram:RAM|                              ; 1465 (1465)         ; 2048 (2048)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|ram:RAM                                                                         ; ram              ; work         ;
 ;       |registrador:PC|                       ; 5 (5)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:PC                                                                  ; registrador      ; work         ;
 ;       |registrador:reg_led0|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_led0                                                            ; registrador      ; work         ;
 ;       |registrador:reg_led1|                 ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_level|fluxo_de_dados:FD|registrador:reg_led1                                                            ; registrador      ; work         ;
@@ -605,9 +605,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX|Mux8           ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaA[7]  ;
-; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaB[13] ;
+; 4:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|ULA:ULA|mux:MUX|Mux12          ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaA[11] ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 62 LEs               ; 0 LEs                  ; No         ; |top_level|fluxo_de_dados:FD|banco_reg:BANCO_REG|saidaB[31] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -1069,11 +1069,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +---------------------------------------------------------------+
 ; Port Connectivity Checks: "fluxo_de_dados:FD|ULA:ULA|mux:MUX" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; d    ; Input ; Info     ; Stuck at GND                        ;
-+------+-------+----------+-------------------------------------+
++----------+-------+----------+---------------------------------+
+; Port     ; Type  ; Severity ; Details                         ;
++----------+-------+----------+---------------------------------+
+; d[31..1] ; Input ; Info     ; Stuck at GND                    ;
++----------+-------+----------+---------------------------------+
 
 
 +-----------------------------------------------------------------+
@@ -1150,17 +1150,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 2307                        ;
 ;     ENA               ; 2208                        ;
 ;     plain             ; 99                          ;
-; cycloneiii_lcell_comb ; 1869                        ;
-;     normal            ; 1869                        ;
+; cycloneiii_lcell_comb ; 1812                        ;
+;     normal            ; 1812                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 16                          ;
-;         2 data inputs ; 53                          ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 1755                        ;
+;         2 data inputs ; 47                          ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 1713                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 37.00                       ;
-; Average LUT depth     ; 10.57                       ;
+; Max LUT depth         ; 43.00                       ;
+; Average LUT depth     ; 15.56                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1169,7 +1169,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -1179,7 +1179,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Nov 06 19:21:48 2018
+    Info: Processing started: Tue Nov 06 20:37:44 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1265,7 +1265,6 @@ Info (12128): Elaborating entity "sig_ext" for hierarchy "fluxo_de_dados:FD|sig_
 Info (12128): Elaborating entity "banco_reg" for hierarchy "fluxo_de_dados:FD|banco_reg:BANCO_REG" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 96
 Info (12128): Elaborating entity "UC" for hierarchy "fluxo_de_dados:FD|UC:UC_ULA" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 107
 Info (12128): Elaborating entity "ULA" for hierarchy "fluxo_de_dados:FD|ULA:ULA" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd Line: 110
-Warning (10540): VHDL Signal Declaration warning at ULA.vhd(34): used explicit default value for signal "zero" because signal was never assigned a value File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ULA.vhd Line: 34
 Info (12128): Elaborating entity "mux" for hierarchy "fluxo_de_dados:FD|ULA:ULA|mux:MUX" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/ULA.vhd Line: 63
 Warning (10492): VHDL Process Statement warning at mux.vhd(26): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 26
 Warning (10492): VHDL Process Statement warning at mux.vhd(27): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd Line: 27
@@ -1499,14 +1498,14 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 10
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 10
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd Line: 10
-Info (21057): Implemented 4608 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4551 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 396 output pins
-    Info (21061): Implemented 4143 logic cells
+    Info (21061): Implemented 4086 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 189 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 188 warnings
     Info: Peak virtual memory: 4845 megabytes
-    Info: Processing ended: Tue Nov 06 19:22:08 2018
+    Info: Processing ended: Tue Nov 06 20:38:04 2018
     Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:36
 

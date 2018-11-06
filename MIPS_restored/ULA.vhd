@@ -61,8 +61,9 @@ begin
 	port map(A => ENTRADA_A, B => ENTRADA_B, CarryIn => CIn_Aux, SOMAOUT => SUM, CarryOut => COut_Aux);
 
 	MUX: entity work.mux
-	port map (A => OUT_AND, B => OUT_OR, C => SUM, D => zero, sel => aux_sel, q => saida_AUX_R);
+	port map (A => OUT_AND, B => OUT_OR, C => SUM, D => "0000000000000000000000000000000" & (SUM(31) xor overflow), sel => aux_sel, q => saida_AUX_R);
    COut <= COut_Aux;
+	
 	overflow <= CIn_Aux(31) XOR COut_Aux(31);
 	
 	r <= saida_AUX_R;
