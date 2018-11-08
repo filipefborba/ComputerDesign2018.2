@@ -168,11 +168,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "op[2]",
+					"strict" : false
+				},
+				{
 					"name" : "op[3]",
 					"strict" : false
 				},
 				{
 					"name" : "op[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ula_op[0]",
 					"strict" : false
 				},
 				{
@@ -188,6 +196,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "beq",
+					"strict" : false
+				},
+				{
 					"name" : "sel_mux_ula_mem",
 					"strict" : false
 				},
@@ -197,6 +209,10 @@
 				},
 				{
 					"name" : "sel_MUX_rt_rd",
+					"strict" : false
+				},
+				{
+					"name" : "sel_mux_jump",
 					"strict" : false
 				},
 				{
@@ -261,6 +277,10 @@
 				},
 				{
 					"name" : "saidaROM[27]",
+					"strict" : false
+				},
+				{
+					"name" : "saidaROM[28]",
 					"strict" : false
 				},
 				{
@@ -1165,10 +1185,6 @@
 				},
 				{
 					"name" : "saidaTeste7[31]",
-					"strict" : false
-				},
-				{
-					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{

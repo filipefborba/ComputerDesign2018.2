@@ -130,9 +130,11 @@ begin
 		sel_mux_jump <= aux_sel_mux_jump;
 		hab_esc_reg <= aux_hab_esc_reg;
 		
-		detectorSub0: entity work.edgeDetector(bordaSubida) 
-		port map (clk => CLOCK_50, entrada => but, saida => CLK);
+		--detectorSub0: entity work.edgeDetector(bordaSubida) 
+		--port map (clk => CLOCK_50, entrada => but, saida => CLK);
 
+		divisor1: entity work.divisorGenerico
+		port map (clk => CLOCK_50, saida_clk => CLK);
 		but <= (not KEY(0));
 		
 		LEDR(0) <= led0;
