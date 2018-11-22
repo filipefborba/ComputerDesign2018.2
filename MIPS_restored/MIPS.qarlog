@@ -1,7 +1,7 @@
 Quartus Prime Archive log --	C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/MIPS.qarlog
 
 Archive:	C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/MIPS.qar
-Date:		Thu Nov 08 15:43:40 2018
+Date:		Tue Nov 06 20:09:30 2018
 Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 	=========== Files Selected: ===========
@@ -25,7 +25,6 @@ C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/WaveformRom.vwf
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/banco_reg.vhd
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/conversorHex7Seg.vhd
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/decodificador.vhd
-C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/divGenerico.vhdl
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/edgeDetector.vhd
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/fluxo_de_dados.vhd
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/mux.vhd
@@ -38,7 +37,7 @@ C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/rom_t.mif
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/sig_ext.vhd
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/soma.vhd
 C:/Users/tirta/Desktop/ComputerDesign2018.2/MIPS_restored/top_level.vhd
-	======= Total: 33 files to archive =======
+	======= Total: 32 files to archive =======
 
 	================ Status: ===============
 All files archived successfully.
