@@ -59,10 +59,10 @@ instruções lw e sw.
 
 A figura 2 a seguir foi a arquitetura implementada numa primeira iteração do projeto, o MIPS Single Cycle. Numa segunda iteração, foi implementado o MIPS com pipeline como demonstra a figura 3, porém, a instrução de Jump foi implementada utilizando o Single Cycle como referência.
 
-![MIPS Single Cycle](https://i.imgur.com/9HCA2XT.png)
+![MIPS Single Cycle](https://i.imgur.com/9HCA2XT.png)  
 Figura 2 - MIPS Single Cycle com Fluxo de Dados Completo (Tipo R, LW, SW, BEQ, J).
 
-![MIPS Pipeline](https://i.imgur.com/s9xcZqp.png)
+![MIPS Pipeline](https://i.imgur.com/s9xcZqp.png)  
 Figura 3 - MIPS com Pipeline com Fluxo de Dados faltando a instrução J (Tipo R, LW, SW, BEQ).
 
 A principal diferença entre o MIPS Single Cycle e o Pipeline é o tempo de execução das instruções. O primeiro fica limitado ao tempo que a instrução mais demorada leva para ser executada, enquanto que no pipeline, a execução das instruções é sobreposta no tempo. Com isso, o tempo total de execução (latência) de cada instrução não se altera. Mas, depois que o pipeline estiver cheio com instruções, a taxa com que as instruções são iniciadas e terminadas (vazão ou throughput) é muito maior e, idealmente, teríamos um aumento na vazão equivalente ao número de etapas do pipeline.
@@ -95,6 +95,6 @@ Debugar
 Pipeline
 
 ## Referências
-[1] - https://pt.wikipedia.org/wiki/Arquitetura_MIPS
-[2] - Slides de Aula no Blackboard
+[1] - https://pt.wikipedia.org/wiki/Arquitetura_MIPS  
+[2] - Slides de Aula no Blackboard  
 
