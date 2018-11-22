@@ -13,7 +13,7 @@ Design de Computadores
   * [Requisitos](#requisitos)
   * [Fluxo de Dados](#fluxo-de-dados)
   * [Unidade de Controle](#unidade-de-controle)
-  * [Top-Level](#Top-Level)
+  * [Top-Level](#top-level)
 * [Dificuldades do Projeto](#dificuldades-do-projeto)
 * [Referências](#referências)
 
@@ -83,11 +83,35 @@ Este projeto será a implementação de um processador RISC de 32 bits. Ele deve
 * Salto incondicional (jump: j).
 
 ### Fluxo de Dados
+O Fluxo de Dados do projeto é responsável por todas as operações aritméticas e execução das instruções.
+
+Os pipelines foram implementados utilizando registradores genéricos. Eles possuem o seguinte tamanho, em ordem: 64 bits, 147 bits, 107 bits e 71 bits. Os dados, portanto, formam uma entrada grande concatenada, sendo necessário retirar apenas os bits necessários utilizando a ideia de (x downto y) do Quartus. Com isso, foi possível implementar o pipeline. No código, cada entrada de pipeline tem os comentários que indicam o que significa cada sinal.
+
+![Fluxo de Dados](https://i.imgur.com/S1v5bW5.png)
+
+Figura 4 - RTL Viewer do Fluxo de Dados do projeto do MIPS Pipeline.
 
 ### Unidade de Controle
+A unidade de controle receberá o Opcode da instrução e retornará a palavra de controle do MIPS, controlando os enables e seletores. As saídas da UC são as seguintes:
+* Seletor Mux para dado da RAM ou resultado da ULA.
+* Enable do Banco de Registradores
+* Sinal de BEQ
+* Enable de Escrita na RAM
+* Enable de Leitura na RAM
+* Seletor Mux instrução Rt ou Rd
+* Código operação da ULA Principal, ligado à Unidade de Controle da ULA
+* Seletor Mux Reg2 ou Imediato para ULA Principal
+
+![Unidade de Controle](https://i.imgur.com/UoiEfrN.png)
+Figura 5 - RTL Viewer da Unidade de Controle do projeto do MIPS Pipeline.
 
 ### Top-Level
 O Top-Level é responsável por juntar tanto o fluxo de dados quanto a unidade de controle, porém com o adicional de controlar os botões da placa e os displays de 7 segmentos. Além disso, é nele que são estabelecidos os sinais para a simulação no Waveform. É necessário criar novas entradas no fluxo de dados e passá-las para o Top-Level a fim de verificar as saídas na simulação.
+
+![Top-level](https://i.imgur.com/PJkvqcT.png)
+Figura 6 - RTL Viewer do Top-Level do projeto do MIPS Pipeline.
+
+Figura 7 - Diagrama de Blocos do Projeto.
 
 
 ## Dificuldades do Projeto
@@ -97,4 +121,3 @@ Pipeline
 ## Referências
 [1] - https://pt.wikipedia.org/wiki/Arquitetura_MIPS  
 [2] - Slides de Aula no Blackboard  
-
