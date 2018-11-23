@@ -111,12 +111,8 @@ O Top-Level é responsável por juntar tanto o fluxo de dados quanto a unidade d
 ![Top-level](https://i.imgur.com/PJkvqcT.png)
 Figura 6 - RTL Viewer do Top-Level do projeto do MIPS Pipeline.
 
-Figura 7 - Diagrama de Blocos do Projeto.
-
-
 ## Dificuldades do Projeto
-Debugar
-Pipeline
+A principal dificuldade do projeto foi a parte de debugging. A implementação não era difícil, porém, são muitos detalhes que passam despercebidos. Além disso, realizar a simulação do Quartus requer passar os sinais para o Top-Level, que era bem trabalhoso de se fazer.
 
 ## Referências
 [1] - https://pt.wikipedia.org/wiki/Arquitetura_MIPS  
